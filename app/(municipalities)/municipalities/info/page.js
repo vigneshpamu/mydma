@@ -10,7 +10,7 @@ import StickyNav from '@/app/components/common/StickyNav'
 import Footer from '@/app/components/common/Footer'
 import HeroSect from '@/app/components/pages/municipalities/info/HeroSect'
 import InfoSect from '@/app/components/pages/municipalities/info/InfoSect'
-const page = () => {
+const Page = () => {
   const searchParams = useSearchParams()
   console.log(searchParams.get('name'))
   const [paramsData, setParamsData] = useState('')
@@ -277,4 +277,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
