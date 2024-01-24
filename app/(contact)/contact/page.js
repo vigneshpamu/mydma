@@ -7,7 +7,7 @@ import HeroSect from '@/app/components/pages/about/HeroSect'
 import SideMenu from '@/app/components/common/SideMenu'
 import Link from 'next/link'
 import Footer from '@/app/components/common/Footer'
-const page = () => {
+const Page = () => {
   const navData = [
     {
       id: 1,
@@ -282,4 +282,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
