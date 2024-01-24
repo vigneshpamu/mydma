@@ -6,7 +6,7 @@ const ChairManMessageSect = () => {
       <div className="relative h-[850px] m-auto">
         <div className="flex flex-col gap-10 pt-4 w-[1347px] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="flex flex-row items-center gap-6">
-            <p className="text-2xl font-semibold">Chairman Message</p>
+            <p className="text-2xl font-semibold">Chairman's Message</p>
             <div className="w-[120px] h-[5px] rounded-lg bg-customColor"></div>
           </div>
           <div className="flex flex-row justify-between gap-10">
@@ -16,9 +16,9 @@ const ChairManMessageSect = () => {
               alt=""
             />
             <div className="flex flex-col gap-6">
-              <p className="text-4xl font-bold leading-tight">
+              {/* <p className="text-4xl font-bold leading-tight">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-              </p>
+              </p> */}
               <p className="text-md w-[80%] leading-relaxed	">
                 The Department of Municipal Affairs in Sharjah is one of the
                 most important government agencies in the emirate. It is the
@@ -48,6 +48,27 @@ const ChairManMessageSect = () => {
                 public, thus achieving the most important The elements of
                 partnership and success, thank you With you we rise to the best
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative h-[850px] m-auto">
+        <div className="flex flex-col gap-10 pt-4 w-[1347px] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
+          <div className="flex flex-row items-center gap-6">
+            <p className="text-2xl font-semibold">Director's Message</p>
+            <div className="w-[120px] h-[5px] rounded-lg bg-customColor"></div>
+          </div>
+          <div className="flex flex-row justify-between gap-10">
+            <img
+              src="images/about/message/chairman.jpg"
+              className="w-[530px] h-[600px] object-cover"
+              alt=""
+            />
+            <div className="flex flex-col gap-6">
+              {/* <p className="text-4xl font-bold leading-tight">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+              </p> */}
+              <p className="text-md w-[80%] leading-relaxed	">Data is Awaited</p>
             </div>
           </div>
         </div>

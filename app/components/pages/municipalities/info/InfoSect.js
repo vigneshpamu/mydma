@@ -5,7 +5,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
   return (
     <>
       <div className="relative h-[550px]">
-        <div className="absolute h-[350px] flex flex-row justify-between left-1/2 transform -translate-x-1/2 w-[1327px] m-auto z-10">
+        <div className="absolute h-[350px] flex flex-row justify-between left-1/2 transform -translate-x-1/2 w-[1327px] m-auto ">
           <div className="w-[870px] py-16 flex flex-col gap-10">
             <p className="text-4xl font-bold w-[70%] leading-tight	">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
@@ -26,7 +26,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
               eos qui ratione voluptatem sequi nesciunt.
             </p>
           </div>
-          <div className="absolute bg-gray-50 p-4 w-[424px] right-0 top-[-475px] rounded-lg z-10 h-[750px] flex flex-col gap-6">
+          <div className="absolute bg-gray-50 p-4 w-[424px] right-0 top-[-475px] rounded-lg h-[750px] flex flex-col gap-6">
             <Link href={''}>
               <div className="flex flex-row gap-3 hover:bg-gray-100 transition-all">
                 <div className="border-2 rounded-md w-[130px] h-[130px]">

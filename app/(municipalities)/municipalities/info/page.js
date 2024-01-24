@@ -2,14 +2,17 @@
 import { useSearchParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+
 import LeftSideSticky from '@/app/components/common/LeftSideSticky'
 import RightSideSticky from '@/app/components/common/RightSideSticky'
 import StickyNav from '@/app/components/common/StickyNav'
 import Footer from '@/app/components/common/Footer'
 import HeroSect from '@/app/components/pages/municipalities/info/HeroSect'
 import InfoSect from '@/app/components/pages/municipalities/info/InfoSect'
+import AwardsSect from '@/app/components/pages/municipalities/info/AwardsSect'
+import LandmarkSect from '@/app/components/pages/municipalities/info/LandmarkSect'
+import GallerySect from '@/app/components/pages/municipalities/info/GallerySect'
+
 const Page = () => {
   const searchParams = useSearchParams()
   console.log(searchParams.get('name'))
@@ -96,6 +99,58 @@ const Page = () => {
         },
         {
           img: '/images/municipalities/info/awards/khorfakkan/img1.png',
+        },
+      ],
+      landmarks: [
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img1.png',
+          title: 'Rabi Tower',
+          desc: 'It is located on a high peak in one of the mountains of the city of Khor Fakkan, specifically located on the ring road leading to the port of Khor Fakkan.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img2.png',
+          title: 'Resistance monument',
+          desc: 'It is located at the entrance to the city by Khor Fakkan University Road and government buildings, after Khor Fakkan Bridge.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img3.png',
+          title: 'Draw break',
+          desc: 'It is located at the top of Mount Al-Hawami on the ring road towards Khor Fakkan Hospital to the city of Dibba Al-Hisn.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img4.png',
+          title: 'Resistance monument',
+          desc: 'It is located at the entrance to the city by Khor Fakkan University Road and government buildings, after Khor Fakkan Bridge.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img5.png',
+          title: 'Khorfakkan smoker',
+          desc: 'It is located at the entrance to the city of Khor Fakkan, half of the Lakes Roundabout overlooking the flagpole, the Resistance Monument, Khor Fakkan University, and government buildings.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img6.png',
+          title: 'Khor Fakkan Coliseum',
+          desc: 'It is located on the Khor Fakkan Corniche on the way to the Khor Fakkan Hotel, specifically behind the Khor Fakkan Club, next to the Khor Fakkan Waterfall.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img7.png',
+          title: 'Khor Fakkan Waterfall',
+          desc: 'It is located on the Khor Fakkan Corniche, next to the Khor Fakkan Amphitheater on Jebel Seida.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img8.png',
+          title: 'Lakes',
+          desc: 'It is located at the entrance to Khor Fakkan, with Al Khor smokehouse in the middle.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img9.png',
+          title: 'Porcupine garden',
+          desc: 'It is located in the Shis area, on the Khor Fakkan road, towards the Al-Rafisa Dam rest stop.',
+        },
+        {
+          img: '/images/municipalities/info/landmarks/khorfakkan/img10.png',
+          title: 'Khorfakkan Corniche',
+          desc: 'It is located along the Gulf of Oman, extending from Khor Fakkan Port to Khor Fakkan Hotel.',
         },
       ],
     },
@@ -232,47 +287,12 @@ const Page = () => {
       <LeftSideSticky />
       <RightSideSticky />
       <HeroSect paramsData={paramsData} />
-      <StickyNav start={700} end={900} />
+      <StickyNav start={700} end={1000} />
       <InfoSect dataArr={dataArr} paramsData={paramsData} />
-      <div className="relative h-[400px] bg-customColor">
-        <div className="flex flex-col gap-3 absolute py-12 left-1/2 transform -translate-x-1/2 w-[1347px] m-auto">
-          <p className="text-3xl font-semibold text-white">
-            Awards & Recognition
-          </p>
-          <div className="flex flex-row justify-between items-center">
-            <p className="text-xl text-white">
-              Khorfakkan municipality won some awards and reorganization in the
-              past
-            </p>
-            <div className="flex flex-row gap-3">
-              <button className="p-3 py-5 bg-white rounded-md">
-                <img src="/images/home/elements/b-larrow.png" alt="" />
-              </button>
-              <button className="p-3 py-5 bg-white rounded-md">
-                <img src="/images/home/elements/b-rarrow.png" alt="" />
-              </button>
-            </div>
-          </div>
-          <div className="w-[900px] mt-5">
-            <Swiper
-              modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-              slidesPerView={3}
-              spaceBetween={10}
-              pagination
-              // navigation
-              breakpoints={{}}
-              className=""
-            >
-              {dataArr[0]?.awards.map((item, index) => (
-                <SwiperSlide key={index} className="">
-                  <img src={item.img} className=" object-cover" alt="hero" />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </div>
-      {/* <Footer /> */}
+      <AwardsSect data={dataArr[0]} />
+      <LandmarkSect data={dataArr[0]} />
+      <GallerySect data={dataArr[0]} />
+      <Footer />
     </motion.div>
   )
 }

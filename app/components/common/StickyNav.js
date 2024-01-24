@@ -109,7 +109,7 @@ const StickyNav = ({ start, end }) => {
               })}
             </div>
             <div>
-              <img src="images/home/vision/logo.png" alt="" />
+              <img src="/images/home/vision/logo.png" alt="" />
             </div>
           </div>
           <div className="w-[1347px] m-auto h-[2px] bg-gray-300 mt-0 mb-4"></div>
