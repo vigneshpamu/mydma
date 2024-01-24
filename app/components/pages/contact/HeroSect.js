@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SideMenu from '../../common/SideMenu'
+import Link from 'next/link'
 
 const HeroSect = () => {
   const navData = [
