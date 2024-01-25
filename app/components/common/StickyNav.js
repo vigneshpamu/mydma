@@ -82,13 +82,13 @@ const StickyNav = ({ start, end }) => {
       <motion.div
         style={{ y }}
         className={` nav m-auto w-full bg-white shadow-md ${
-          isSticky ? 'sticky block sec-main' : 'hidden'
+          isSticky ? 'sticky block sec-main ' : 'hidden'
         }`}
       >
         {/* Your navigation content goes here */}
-        <div className="h-full  border-red-500 bg-white m-auto flex flex-col justify-between p-4">
-          <div className="flex items-center justify-between align-middle w-[1347px] 2xl:w-[1200px] xl:w-[1000px] m-auto">
-            <div className="flex items-center align-middle justify-center gap-20">
+        <div className="h-full  border-red-500 bg-white m-auto flex flex-col justify-between p-4  lg:w-[800px] 2md:w-[100%]">
+          <div className="flex items-center justify-between align-middle w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[100%] m-auto">
+            <div className="flex items-center align-middle justify-center gap-20 2md:gap-7">
               {navData2.map((item, index) => {
                 return index === 0 ? (
                   <img
@@ -112,8 +112,8 @@ const StickyNav = ({ start, end }) => {
               <img src="/images/home/vision/logo.png" alt="" />
             </div>
           </div>
-          <div className="w-[1347px] m-auto h-[2px] bg-gray-300 mt-0 mb-4"></div>
-          <div className="flex items-center justify-center gap-16">
+          <div className="w-[1347px] m-auto h-[2px] bg-gray-300 mt-0 mb-4 lg:w-[100%] 2md:hidden"></div>
+          <div className="flex items-center justify-center gap-16 2md:hidden">
             {linkData.map((item) => {
               return (
                 <Link href={item.link} key={item.id}>

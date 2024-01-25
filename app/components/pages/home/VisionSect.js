@@ -5,30 +5,30 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 const VisionSect = () => {
   return (
     <>
-      <div className="relative h-[100vh] my-main">
+      <div className="relative h-[1000px] lg:h-[800px] 2md:h-[1350px] sm:h-[1500px] my-main">
         <img
           src="images/home/vision/background.png"
           className=" w-full h-full"
           alt=""
         />
-        <div className="absolute flex flex-col gap-20 top-24 left-1/2 transform -translate-x-1/2">
-          <div className="w-[1347px] 2xl:w-[1200px] xl:w-[1000px] flex flex-col gap-5">
+        <div className="absolute flex flex-col gap-20 top-24 left-1/2 transform lg:w-[800px] 2md:w-[600px] sm:w-[90%] -translate-x-1/2 2md:top-72">
+          <div className="w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] flex flex-col gap-5">
             <div className="flex flex-row gap-3 items-center">
               <p className="text-2xl font-semibold">Vision</p>
               <div className="w-[120px] bg-amber-600 h-[5px] rounded-lg"></div>
             </div>
-            <h4 className="text-6xl font-semibold">
+            <h4 className="text-6xl font-semibold lg:text-3xl lg:w-[65%]">
               Meeting the needs of Present and Future Generations.
             </h4>
           </div>
-          <div className="flex flex-row items-center gap-16">
+          <div className="flex flex-row items-center gap-16 2md:flex-col">
             <img
               src="images/home/vision/1.png"
-              className="w-[530px] h-[550px]"
+              className="w-[530px] h-[550px] lg:w-[400px] lg:h-[405px] sm:w-full sm:h-auto object-cover"
               alt=""
             />
-            <div className="w-[550px] flex flex-col justify-between gap-16">
-              <p className="text-xl xl:text-lg">
+            <div className="w-[550px] flex flex-col justify-between gap-16 sm:w-full">
+              <p className="text-xl xl:text-lg lg:text-sm  ">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae

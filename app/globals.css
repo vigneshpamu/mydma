@@ -97,6 +97,7 @@
   position: relative;
   transition-delay: 0s;
   width: 25%;
+  min-width: 400px;
   /* border: 1px solid red; */
   box-shadow: 5px 2px 8px -7px rgba(0, 0, 0, 0.75);
 }

@@ -42,25 +42,25 @@ const MagazineSect = () => {
 
   return (
     <>
-      <div className="relative pb-5 bg-gray-50 h-[95vh] my-main">
+      <div className="relative pb-5 bg-gray-50 h-[950px] xl:h-[1200px] 2md:h-[1600px] sm:h-[2900px]  my-main">
         <div className="absolute flex flex-col gap-20 top-24 left-1/2 transform -translate-x-1/2 ">
-          <div className="w-[1347px] 2xl:w-[1200px] xl:w-[1000px] flex flex-col gap-24">
-            <div className="flex flex-col gap-8">
+          <div className="w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[100%]  flex flex-col gap-24 lg:gap-7">
+            <div className="flex flex-col gap-8 sm:items-center sm:justify-center">
               <div className="flex flex-row gap-6 items-center">
                 <p className="text-2xl font-semibold">Magazine</p>
                 <div className="w-[120px] bg-amber-600 h-[5px] rounded-lg"></div>
               </div>
-              <div className="flex flex-row items-center xl:flex-col xl:items-start xl:gap-2 justify-between">
-                <h4 className="text-6xl font-semibold">
+              <div className="flex flex-row items-center xl:flex-col xl:items-start xl:gap-2 justify-between sm:items-center sm:justify-center">
+                <h4 className="text-6xl font-semibold lg:text-3xl">
                   An Extraordinary Year,<br></br> An Extraordinary Journey
                 </h4>
-                <p className="text-xl font-semibold w-[430px]">
+                <p className="text-xl font-semibold w-[430px] text-center">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, nesciunt.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-5 gap-5 mt-10 xl:grid-cols-4">
+            <div className="grid grid-cols-5 gap-5 mt-10 xl:grid-cols-4 lg:grid-cols-3 2md:grid-cols-2 sm:grid-cols-1">
               {magazineCard.map((item) => {
                 return (
                   <div
@@ -68,7 +68,7 @@ const MagazineSect = () => {
                     className="flex flex-col gap-4 shadow-lg rounded-2xl p-2 h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer"
                   >
                     <div>
-                      <img src={item.img} alt="" />
+                      <img src={item.img} className="w-full" alt="" />
                     </div>
                     <div className="flex flex-col gap-4 px-2">
                       <div>

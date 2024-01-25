@@ -43,7 +43,7 @@ const InfoSect = () => {
 
   return (
     <>
-      <div className="relative pb-5 h-[80vh] my-main">
+      <div className="relative pb-5 h-[900px] lg:h-[700px] sm:h-[800px]  my-main">
         <Swiper
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
           slidesPerView={1}
@@ -85,37 +85,45 @@ const InfoSect = () => {
                 <img
                   src={item.img}
                   alt=""
-                  className="h-[900px] w-full object-cover"
+                  className="h-[900px] lg:h-[700px] sm:h-[800px] w-full  object-cover"
                 />
               </SwiperSlide>
             ))}
         </Swiper>
-        <div className="flex flex-col gap-12 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] m-auto z-10">
+        <div className="flex flex-col gap-12 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:top-14 2md:left-[350px] sm:top-24 2md:w-[600px] sm:w-[90%] sm:left-[320px] lg:left-[420px] m-auto z-10">
           <div className="flex flex-row items-center gap-5">
             <p className="text-2xl text-white ">{aboveSwiper[dIndex].topic}</p>
             <div className="w-[110px] h-[4px] bg-gray-100 rounded-sm"></div>
           </div>
-          <p className="text-6xl text-white font-semibold w-[1000px] leading-tight	">
+          <p className="text-6xl text-white font-semibold w-[1000px] leading-tight lg:text-3xl lg:w-[60%]">
             {aboveSwiper[dIndex].title}
           </p>
-          <p className="text-white w-[900px] text-xl tracking-wide">
+          <p className="text-white w-[900px] text-xl tracking-wide lg:text-lg lg:w-[600px] sm:text-sm sm:w-[80%]">
             {aboveSwiper[dIndex].desc}
           </p>
         </div>
-        <div className="absolute bottom-24 right-28 flex flex-row gap-2 z-10">
+        <div className="absolute bottom-20 right-28 flex flex-row gap-2 z-10">
           {/* Previous */}
           <button
-            className="border-2 p-6 px-3 bg-white hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-lg"
+            className="border-2 p-6 px-3 bg-white hover:opacity-90 active:scale-95 transition-all 2md:p-4 rounded-lg shadow-lg"
             onClick={() => goToSlide(dIndex - 1)}
           >
-            <img src="/images/home/elements/b-larrow.png" alt="" />
+            <img
+              src="/images/home/elements/b-larrow.png"
+              className="2md:w-[80%] object-cover"
+              alt=""
+            />
           </button>
           {/* Next */}
           <button
-            className="border-2 p-6 px-3 bg-white hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-lg"
+            className="border-2 p-6 px-3 bg-white hover:opacity-90 active:scale-95 transition-all 2md:p-4  rounded-lg shadow-lg"
             onClick={() => goToSlide(dIndex + 1)}
           >
-            <img src="/images/home/elements/b-rarrow.png" alt="" />
+            <img
+              src="/images/home/elements/b-rarrow.png"
+              className="2md:w-[80%] object-cover"
+              alt=""
+            />
           </button>
         </div>
       </div>

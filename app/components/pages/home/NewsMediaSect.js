@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 const NewsMediaSect = () => {
   const newsData = [
     {
@@ -18,17 +19,17 @@ const NewsMediaSect = () => {
   ]
   return (
     <>
-      <div className="relative h-[100vh]">
+      <div className="relative h-[1000px] lg:h-[900px] 2md:h-[850px]">
         <img
           src="/images/home/news/background.png"
           className="h-full w-full"
           alt=""
         />
-        <div className="flex flex-col gap-20 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px]  m-auto">
+        <div className="flex flex-col gap-20 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%] lg:top-10  m-auto">
           <div className="flex flex-col gap-6">
-            <p className="text-5xl">Latest News & Media</p>
+            <p className="text-5xl sm:text-3xl">Latest News & Media</p>
             <div className="flex flex-row justify-between items-center">
-              <p className="w-[800px] text-xl">
+              <p className="w-[800px] text-xl 2md:text-lg 2md:w-[400px] sm:text-sm ">
                 We offer a wide range of e-Services designed to meet your needs,
                 in a simple, smarter and more convenient way.
               </p>
@@ -58,50 +59,86 @@ const NewsMediaSect = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-between gap-8">
-            <div className="relative">
-              <div className="w-[600px] 2xl:w-[500px] xl:w-[400px] rounded-lg border-2 border-customColor">
+          <Swiper
+            modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={2.8}
+            spaceBetween={20}
+            navigation
+            // ref={swiperRef}
+            breakpoints={{
+              // 300: {
+              //   slidesPerView: 1,
+              //   spaceBetween: 0,
+              // },
+              // 430: {
+              //   slidesPerView: 1,
+              //   spaceBetween: 0,
+              // },
+              610: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 1.9,
+                spaceBetween: 20,
+              },
+              1000: {
+                slidesPerView: 2.5,
+                spaceBetween: 10,
+              },
+              1300: {
+                slidesPerView: 2.8,
+                spaceBetween: 20,
+              },
+            }}
+            className="w-[1200px] 2xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%]"
+          >
+            <SwiperSlide className="relative">
+              <div className=" rounded-lg border-2 border-customColor">
                 <img
                   src="/images/home/news/img1.png"
                   alt="Your Image"
-                  className="w-[600px] h-[430px] 2xl:w-[500px] xl:w-[400px] shadow-md rounded-xl object-cover"
+                  className="w-full h-[400px] shadow-md rounded-xl object-cover"
                 />
                 <div
                   style={{
                     background:
                       'linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.5) 100%)',
                   }}
-                  className="absolute w-[600px] 2xl:w-[500px] xl:w-[400px] xl:h-[435px] rounded-xl inset-0"
+                  className="absolute rounded-xl inset-0"
                 ></div>
               </div>
-              <div className="absolute left-10 bottom-10 xl:left-7 flex flex-row items-end gap-16">
-                <p className="text-3xl text-white font-semibold w-[400px] xl:w-[350px]">
+              <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row items-end gap-16 2md:left-3">
+                <p className="text-3xl text-white font-semibold 2xl:text-2xl">
                   Quis autem vel eum iure reprehenderit qui in ea voluptate....
                 </p>
                 <div>
-                  <img src="/images/home/elements/rarrow.png" alt="" />
+                  <img
+                    src="/images/home/elements/rarrow.png"
+                    className="2md:hidden"
+                    alt=""
+                  />
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-2 w-full gap-8">
+            </SwiperSlide>
+            <div className="">
               {newsData.map((item) => {
                 return (
-                  <div
-                    key={item.id}
-                    className="bg-white rounded-xl border-2 border-customColor"
-                  >
-                    <img src={item.img} alt="" className="w-full h-[190px]" />
-                    <div className="p-3 flex flex-col gap-3">
-                      <p className="text-2xl font-semibold xl:text-xl text-customColor">
-                        {item.title}
-                      </p>
-                      <p className="text-xl xl:text-lg">{item.desc}</p>
+                  <SwiperSlide key={item.id} className="">
+                    <div className="bg-white rounded-xl border-2 border-customColor">
+                      <img src={item.img} alt="" className="w-full h-[190px]" />
+                      <div className="p-3 flex flex-col gap-3">
+                        <p className="text-2xl font-semibold xl:text-xl text-customColor">
+                          {item.title}
+                        </p>
+                        <p className="text-xl xl:text-lg">{item.desc}</p>
+                      </div>
                     </div>
-                  </div>
+                  </SwiperSlide>
                 )
               })}
             </div>
-          </div>
+          </Swiper>
           <button className="border-2 border-customColor w-[190px] rounded-lg bg-white p-2 m-auto">
             View All
           </button>

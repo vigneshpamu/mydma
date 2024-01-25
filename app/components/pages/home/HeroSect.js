@@ -107,15 +107,15 @@ const HeroSect = () => {
             <SwiperSlide key={item.id} className="">
               <img
                 src={item.img}
-                className="w-full  h-[920px] object-cover pointer-events-none"
+                className="w-full   h-[920px] object-cover pointer-events-none 2md:h-[750px]"
                 alt="hero"
               />
             </SwiperSlide>
           ))}
       </Swiper>
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 m-auto bg-transparent z-10">
-        <div className="flex items-center justify-between align-middle w-[1347px] 2xl:w-[1200px] xl:w-[1000px] m-auto z-10">
-          <div className="flex items-center align-middle justify-center gap-20 z-10">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 m-auto bg-transparent lg:w-[800px] 2md:w-[600px] sm:w-[90%]  z-10">
+        <div className="flex items-center justify-between align-middle w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-full m-auto z-10">
+          <div className="flex items-center align-middle justify-center gap-20 2md:gap-7  z-10">
             {/* <button onClick={() => setVisible(true)}>hi</button> */}
             {navData.map((item, index) => {
               return index === 0 ? (
@@ -137,11 +137,11 @@ const HeroSect = () => {
             })}
           </div>
           <div>
-            <img src="/images/home/nav/logo/logo.png" alt="" />
+            <img src="/images/home/nav/logo/logo1.png" className="" alt="" />
           </div>
         </div>
-        <div className="max-w-[1347px] h-[2px] bg-gray-100 mt-0 mb-6"></div>
-        <div className="flex items-center justify-center gap-16 z-10">
+        <div className="max-w-[1347px] h-[2px] bg-gray-100 mt-0 mb-6 2md:hidden"></div>
+        <div className="flex items-center justify-center gap-16 z-10 2md:hidden">
           {linkData.map((item) => {
             return (
               <Link href={item.link} key={item.id}>
@@ -151,8 +151,8 @@ const HeroSect = () => {
           })}
         </div>
       </div>
-      <div className="absolute top-[400px] left-1/2 transform -translate-x-1/2 w-[1327px] 2xl:w-[1200px] xl:w-[1000px]  m-auto flex flex-row justify-between z-10">
-        <div className="flex justify-between flex-col gap-4">
+      <div className="absolute top-[400px] left-1/2 transform -translate-x-1/2 w-[1327px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[90%] 2md:flex-col 2md:gap-10 2md:top-[200px]  m-auto flex flex-row justify-between z-10">
+        <div className="flex justify-between flex-col gap-4 ">
           <div className="flex flex-col gap-5">
             <div>
               <p className="text-white text-2xl font-semibold">Welcome to</p>
@@ -167,12 +167,12 @@ const HeroSect = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 2md:hidden">
             <img src="images/home/elements/5.png" alt="" className="" />
             <p className="text-white text-2xl tracking-wider">Scroll</p>
           </div>
         </div>
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-7 2md:absolute 2md:top-[400px] 2md:left-1/2 2md:transform 2md:w-[500px] 2md:-translate-x-1/2 ">
           <div className="flex flex-row items-center gap-5">
             <p className="text-white text-lg font-semibold">Quick Find</p>
             <div className="w-[100px] h-[3px] bg-gray-100 rounded-sm"></div>
@@ -181,7 +181,7 @@ const HeroSect = () => {
             {quickFindData.map((item) => {
               return (
                 <div
-                  className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl  hover:bg-gray-50 cursor-pointer"
+                  className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 cursor-pointer"
                   key={item.id}
                 >
                   <img

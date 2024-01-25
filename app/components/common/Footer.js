@@ -81,29 +81,29 @@ const Footer = () => {
   ]
   return (
     <>
-      <div className="relative h-[80vh]">
+      <div className="relative h-[700px] sm:h-[1100px]">
         <img
           src="/images/home/footer/background.png"
           className="w-full h-full"
           alt=""
         />
-        <div className="flex flex-col text-white gap-20 absolute top-6 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] m-auto">
+        <div className="flex flex-col text-white gap-20 absolute top-6 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] m-auto">
           <div className="flex w-full justify-end items-end">
             <img src="/images/home/nav/logo/logo.png" alt="" />
           </div>
-          <div className="flex mt-10 flex-col gap-12">
-            <div className="flex flex-row justify-between gap-10">
+          <div className="flex mt-10 sm:ml-10 flex-col gap-12">
+            <div className="flex flex-row justify-between gap-10 sm:flex-col">
               <div className="max-w-[550px] flex flex-col gap-7">
                 <div className="flex flex-row items-center gap-5">
-                  <p className="text-2xl">Contact.</p>
+                  <p className="text-2xl lg:text-xl">Contact.</p>
                   <div className="w-[120px] h-[4px] rounded-lg bg-white"></div>
                 </div>
-                <p className="text-6xl font-semibold w-[100%] leading-tight tracking-wide	xl:text-5xl">
+                <p className="text-6xl font-semibold w-[100%] leading-tight tracking-wide	xl:text-5xl lg:text-3xl">
                   Connect with the Dha Sharjah.
                 </p>
               </div>
               <div className="flex flex-col gap-7">
-                <p className="text-2xl">Connect with us</p>
+                <p className="text-2xl lg:text-xl">Connect with us</p>
                 <div className="flex flex-col gap-7">
                   {connectData.map((item) => {
                     return (
@@ -111,8 +111,12 @@ const Footer = () => {
                         key={item.id}
                         className="flex items-center flex-row gap-4"
                       >
-                        <img src={item.img} alt="" />
-                        <p className="w-[60%] 2xl:w-[80%] text-lg">
+                        <img
+                          src={item.img}
+                          alt=""
+                          className="lg:w-[30px] lg:h-[30px]"
+                        />
+                        <p className="w-[60%] 2xl:w-[80%] text-lg lg:text-sm">
                           {item.info}
                         </p>
                       </div>
@@ -121,8 +125,8 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-7">
-                <p className="text-2xl">Connect with us</p>
-                <p className="w-[70%] text-lg">
+                <p className="text-2xl lg:text-xl">Connect with us</p>
+                <p className="w-[70%] text-lg lg:text-sm">
                   The departments official social media channels.
                 </p>
                 <div className="flex flex-row gap-3">
@@ -130,7 +134,11 @@ const Footer = () => {
                     return (
                       <Link href={item.link} key={item.id}>
                         <div>
-                          <img src={item.icon} alt="" />
+                          <img
+                            src={item.icon}
+                            className="lg:w-[30px] lg:h-[30px]"
+                            alt=""
+                          />
                         </div>
                       </Link>
                     )
@@ -139,16 +147,16 @@ const Footer = () => {
               </div>
             </div>
             <div className="w-full h-[3px] bg-gray-400"></div>
-            <div className="flex flex-row gap-10">
+            <div className="flex flex-row gap-10 sm:gap-3">
               {linkData.map((item) => {
                 return (
                   <Link href={item.link} key={item.id}>
-                    <p>{item.name}</p>
+                    <p className="sm:text-sm">{item.name}</p>
                   </Link>
                 )
               })}
             </div>
-            <div className="flex flex-row gap-10 justify-between">
+            <div className="flex flex-row gap-10 justify-between sm:flex-col">
               <div className="flex flex-row gap-2">
                 <Link href={'/'}>
                   <p>Privacy Policy</p>
