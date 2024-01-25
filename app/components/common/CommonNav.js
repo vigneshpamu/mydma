@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const CommonNav = () => {
+const CommonNav = ({ setVisible }) => {
   const navData = [
     {
       id: 1,
