@@ -44,10 +44,10 @@ const GovtEntities = () => {
           <div className="flex flex-col gap-6">
             <p className="text-5xl">Visit other Government Entities.</p>
             <div className="flex flex-row justify-between items-center">
-              <p className="w-[600px] text-xl">
+              {/* <p className="w-[600px] text-xl">
                 We offer a wide range of e-Services designed to meet your needs,
                 in a simple, smarter and more convenient way.
-              </p>
+              </p> */}
               <div className="flex flex-row gap-2">
                 {/* Previous */}
                 <button
@@ -78,7 +78,7 @@ const GovtEntities = () => {
             <Swiper
               modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
               slidesPerView={6}
-              spaceBetween={10}
+              spaceBetween={20}
               // ref={swiperRef}
               breakpoints={{
                 // 300: {
@@ -99,7 +99,7 @@ const GovtEntities = () => {
                 },
                 1300: {
                   slidesPerView: 6,
-                  spaceBetween: 0,
+                  spaceBetween: 20,
                 },
               }}
               className=""
