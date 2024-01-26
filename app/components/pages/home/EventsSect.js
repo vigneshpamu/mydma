@@ -81,7 +81,7 @@ const EventsSect = () => {
               //   spaceBetween: 0,
               // },
               430: {
-                slidesPerView: 2,
+                slidesPerView: 1.5,
                 spaceBetween: 20,
               },
               610: {

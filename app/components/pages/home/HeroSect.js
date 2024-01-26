@@ -136,8 +136,12 @@ const HeroSect = () => {
               )
             })}
           </div>
-          <div>
-            <img src="/images/home/nav/logo/logo1.png" className="" alt="" />
+          <div className="sm:w-[250px] flex items-center justify-end">
+            <img
+              src="/images/home/nav/logo/logo1.png"
+              className="sm:w-[80%]"
+              alt=""
+            />
           </div>
         </div>
         <div className="max-w-[1347px] h-[2px] bg-gray-100 mt-0 mb-6 2md:hidden"></div>
@@ -156,12 +160,12 @@ const HeroSect = () => {
           <div className="flex flex-col gap-5">
             <div>
               <p className="text-white text-2xl font-semibold">Welcome to</p>
-              <p className="text-white text-7xl font-semibold w-[850px] 2xl:text-6xl xl:text-5xl 2xl:w-[700px] xl:w-[500px] leading-tight tracking-wide	">
+              <p className="text-white text-7xl font-semibold w-[850px] 2xl:text-6xl xl:text-5xl 2xl:w-[700px] xl:w-[500px]  sm:w-[80%] leading-tight tracking-wide	">
                 Department of Municipalities Affairs.
               </p>
             </div>
             <div>
-              <p className="text-white text-xl w-[541px] xl:text-lg">
+              <p className="text-white text-xl w-[541px] xl:text-lg sm:w-[80%]">
                 Committing to transparency, providing mutual trust and
                 strengthening the relationship with partners and the community.
               </p>
@@ -174,10 +178,10 @@ const HeroSect = () => {
         </div>
         <div className="flex flex-col gap-7 2md:absolute 2md:top-[400px] 2md:left-1/2 2md:transform 2md:w-[500px] 2md:-translate-x-1/2 ">
           <div className="flex flex-row items-center gap-5">
-            <p className="text-white text-lg font-semibold">Quick Find</p>
+            <p className="text-white text-lg font-semibold ml-10">Quick Find</p>
             <div className="w-[100px] h-[3px] bg-gray-100 rounded-sm"></div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 max-w-[400px] m-auto">
             {quickFindData.map((item) => {
               return (
                 <div

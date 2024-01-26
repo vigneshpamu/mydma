@@ -74,8 +74,8 @@ const NewsMediaSect = () => {
               //   slidesPerView: 1,
               //   spaceBetween: 0,
               // },
-              610: {
-                slidesPerView: 2,
+              420: {
+                slidesPerView: 1.5,
                 spaceBetween: 20,
               },
               640: {
