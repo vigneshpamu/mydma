@@ -67,10 +67,6 @@ const Home_1 = () => {
       <GovtEntities />
       <Footer />
     </motion.div>
-
-    // <>
-    //   <AllHome />
-    // </>
   )
 }
 

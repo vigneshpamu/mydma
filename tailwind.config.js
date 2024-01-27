@@ -25,10 +25,10 @@ module.exports = {
       '2md': { max: '853px' },
       // => @media (max-width: 767px) { ... }
 
-      md: { max: '500px' },
+      md: { max: '640px' },
       // => @media (max-width: 500px) { ... }
 
-      sm: { max: '640px' },
+      sm: { max: '500px' },
       // => @media (max-width: 639px) { ... }
     },
     extend: {

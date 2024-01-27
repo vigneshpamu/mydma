@@ -118,7 +118,7 @@ const EventsSect = () => {
                         ></div> */}
                     </div>
                     <div className="absolute left-7 bottom-7 flex flex-row items-end gap-16 xl:left-5 xl:bottom-10">
-                      <p className="text-3xl text-white font-semibold  2xl:text-2xl xl:text-xl xl:w-[70%] lg:text-sm">
+                      <p className="text-2xl text-white font-semibold  2xl:text-2xl xl:text-xl xl:w-[70%] lg:text-sm">
                         Quis autem vel eum iure reprehenderit qui in ea
                         voluptate....
                       </p>
