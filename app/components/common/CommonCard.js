@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const CommonCard = ({ data }) => {
+  console.log(data)
   return (
     <>
       <div className="relative h-[1780px]">

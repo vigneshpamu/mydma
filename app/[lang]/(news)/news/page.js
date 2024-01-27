@@ -10,42 +10,42 @@ import StickyNav from '@/app/components/common/StickyNav'
 const page = () => {
   const mainData = [
     {
-      img: 'images/municipalities/main/im1.png',
+      img: '/images/municipalities/main/im1.png',
       title: 'Hamriyah City Municipality',
       link: '/',
     },
     {
-      img: 'images/municipalities/main/im2.png',
+      img: '/images/municipalities/main/im2.png',
       title: 'Municipality of Mleiha City',
       link: '/',
     },
     {
-      img: 'images/municipalities/main/im3.png',
+      img: '/images/municipalities/main/im3.png',
       title: 'Municipality of Khorfakkan City',
       link: '/',
     },
     {
-      img: 'images/municipalities/main/im4.png',
+      img: '/images/municipalities/main/im4.png',
       title: 'Municipality of Al-Bataeh City',
       link: '/',
     },
     {
-      img: 'images/municipalities/main/im5.png',
+      img: '/images/municipalities/main/im5.png',
       title: 'Municipality of Al Madam City',
       link: '/',
     },
     {
-      img: 'images/municipalities/main/im6.png',
+      img: '/images/municipalities/main/im6.png',
       title: 'Dibba Al Hisn City Municipality',
       link: '/',
     },
     {
-      img: 'images/municipalities/main/im7.png',
+      img: '/images/municipalities/main/im7.png',
       title: 'Al Dhaid City Municipality',
       link: '/',
     },
     {
-      img: 'images/municipalities/main/im8.png',
+      img: '/images/municipalities/main/im8.png',
       title: 'Kalba City Municipality',
       link: '/',
     },

@@ -4,7 +4,8 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import Link from 'next/link'
 import SideMenu from '../../common/SideMenu'
-const HeroSect = () => {
+import { usePathname, useRouter } from 'next/navigation'
+const HeroSect = ({ lang }) => {
   const navData = [
     {
       id: 1,
@@ -84,7 +85,25 @@ const HeroSect = () => {
     },
   ]
   const [visible, setVisible] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
 
+  const handleClick = () => {
+    const path = pathname[1] + pathname[2]
+    const currentPath = '/' + path + '/'
+    console.log(currentPath)
+    if (path === 'ar') {
+      const newPath = currentPath.replace('/ar/', '/en/')
+      router.push(newPath)
+    } else {
+      const newPath = currentPath.replace('/en/', '/ar/')
+      router.push(newPath)
+    }
+    // Change the language to Arabic
+    // console.log(currentPath, 'This is currentPath')
+
+    // Navigate to the new path
+  }
   return (
     <>
       <SideMenu visible={visible} setVisible={setVisible} />
@@ -95,7 +114,7 @@ const HeroSect = () => {
         loop={true}
         effect={'fade'}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination
@@ -124,6 +143,16 @@ const HeroSect = () => {
                   className="w-[20px] h-[20px] object-cover cursor-pointer"
                   src={item.icon}
                   onClick={() => setVisible(true)}
+                  alt=""
+                />
+              ) : index === 3 ? (
+                // Add your condition for index === 4 here
+                // For example, you can add a specific class or modify the behavior
+                <img
+                  key={item.id}
+                  className="w-[20px] h-[20px] object-cover cursor-pointer special-class"
+                  src={item.icon}
+                  onClick={handleClick}
                   alt=""
                 />
               ) : (
@@ -159,15 +188,22 @@ const HeroSect = () => {
         <div className="flex justify-between flex-col gap-4 ">
           <div className="flex flex-col gap-5">
             <div>
-              <p className="text-white text-2xl font-semibold">Welcome to</p>
-              <p className="text-white text-7xl font-semibold w-[850px] 2xl:text-6xl xl:text-5xl 2xl:w-[700px] xl:w-[500px]  sm:w-[80%] leading-tight tracking-wide	">
-                Department of Municipalities Affairs.
+              <p
+                dir={lang && lang?.isArabic ? 'rtl' : ''}
+                className="text-white text-2xl font-semibold"
+              >
+                {lang && lang?.home?.hero?.heroWel}
+              </p>
+              <p
+                dir={lang && lang?.isArabic ? 'rtl' : ''}
+                className="text-white text-7xl font-semibold w-[850px] 2xl:text-6xl xl:text-5xl 2xl:w-[700px] xl:w-[500px]  sm:w-[80%] leading-tight tracking-wide	"
+              >
+                {lang && lang?.home?.hero?.heroDepartment}
               </p>
             </div>
-            <div>
+            <div dir={lang && lang?.isArabic ? 'rtl' : ''}>
               <p className="text-white text-xl w-[541px] xl:text-lg sm:w-[80%]">
-                Committing to transparency, providing mutual trust and
-                strengthening the relationship with partners and the community.
+                {lang && lang?.home?.hero?.heroDesc}
               </p>
             </div>
           </div>

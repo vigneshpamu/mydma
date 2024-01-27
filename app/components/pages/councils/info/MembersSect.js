@@ -1,6 +1,7 @@
 import React from 'react'
 
 const MembersSect = ({ dataArr }) => {
+  console.log(dataArr, 'DataArr')
   return (
     <>
       <div className="relative h-[1882px] mt-10">
