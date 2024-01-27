@@ -10,10 +10,10 @@ const AwardsSect = ({ data }) => {
             Awards & Recognition
           </p>
           <div className="flex flex-row justify-between items-center">
-            <p className="text-xl text-white">
+            {/* <p className="text-xl text-white">
               Khorfakkan municipality won some awards and reorganization in the
               past
-            </p>
+            </p> */}
             <div className="flex flex-row gap-3">
               <button className="p-3 py-5 bg-white rounded-md">
                 <img src="/images/home/elements/b-larrow.png" alt="" />

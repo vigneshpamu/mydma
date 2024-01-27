@@ -128,6 +128,60 @@ const page = () => {
       setDataArr(result[0])
     }
   }, [searchParams.get('name')])
+
+  const myArr = [
+    {
+      slug: 'Khorfakkan City',
+      img: '/images/municipalities/main/im3.png',
+      title: 'Khorfakkan City Municipality',
+      link: '/councils/info',
+      logo: '/images/municipalities/logo/logo3.jpg',
+      councilMembers: {
+        chairman: {
+          name: 'Dr. Khamis Al-Naqbi',
+          role: 'Chairman of the Rashid Municipal Council of Khor Fakkan',
+          img: '/images/councils/info/members/khorfakkan/img4.jpg',
+        },
+        vicePresident: {
+          name: 'Dr. Suhail Al Naqbi,',
+          role: 'Vice President of the Council',
+          img: '/images/councils/info/members/khorfakkan/img5.jpg',
+        },
+        otherMembers: [
+          {
+            name: 'Rashid Khamis',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/khorfakkan/img1.png',
+          },
+          {
+            name: 'Saeed Abdullah',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/khorfakkan/img2.png',
+          },
+          {
+            name: 'Muhammad Al-Gohary',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/khorfakkan/img3.png',
+          },
+          {
+            name: 'Muhammad Khalfan',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/khorfakkan/img6.png',
+          },
+          {
+            name: 'Muhammad Zaid',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/khorfakkan/img7.jpg',
+          },
+          {
+            name: 'Youssef Shaheen',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/khorfakkan/img8.jpg',
+          },
+        ],
+      },
+    },
+  ]
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -139,7 +193,7 @@ const page = () => {
       <RightSideSticky />
       <StickyNav start={700} end={1000} />
       <HeroSect />
-      <MembersSect dataArr={dataArr} />
+      <MembersSect dataArr={myArr[0]} />
       <Footer />
     </motion.div>
   )
