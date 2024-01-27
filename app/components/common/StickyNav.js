@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from 'react'
-import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
+import React, { useEffect, useState } from 'react'
+
+import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import SideMenu from './SideMenu'
 const StickyNav = ({ start, end }) => {
   const navData2 = [
@@ -61,6 +64,32 @@ const StickyNav = ({ start, end }) => {
   //   const height = useTransform(scrollY, [700, 0], ['100%', '100px'])
   const [isSticky, setIsSticky] = useState(false)
   const [visible, setVisible] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
+  const [par, setPar] = useState('')
+  const handleClick = () => {
+    const path = pathname[1] + pathname[2]
+    // const path = pathname[1] + pathname[2]
+    const currentPath = '/' + path + '/'
+    let newStr = pathname.substring(3)
+    if (path === 'ar') {
+      const newPath = currentPath.replace(`/ar`, `/en${newStr}`)
+      router.push(newPath)
+    } else {
+      const newPath = currentPath.replace(`/en`, `/ar${newStr}`)
+      router.push(newPath)
+    }
+
+    // Change the language to Arabic
+    // console.log(currentPath, 'This is currentPath')
+
+    // Navigate to the new path
+  }
+  useEffect(() => {
+    const path = pathname[1] + pathname[2]
+    console.log('This is Path', path)
+    setPar(path)
+  }, [])
   useEffect(() => {
     if (start === 0) {
       setIsSticky(true)
@@ -92,15 +121,26 @@ const StickyNav = ({ start, end }) => {
               {navData2.map((item, index) => {
                 return index === 0 ? (
                   <img
-                    key={item.id}
+                    key={index}
                     className="w-[20px] h-[20px] object-cover cursor-pointer"
                     src={item.icon}
                     onClick={() => setVisible(true)}
                     alt=""
                   />
+                ) : index === 3 ? (
+                  // Add your condition for index === 4 here
+                  // For example, you can add a specific class or modify the behavior
+                  <div key={index}>
+                    <img
+                      className="w-[20px] h-[20px] object-cover cursor-pointer special-class"
+                      src={item.icon}
+                      onClick={handleClick}
+                      alt=""
+                    />
+                  </div>
                 ) : (
                   <img
-                    key={item.id}
+                    key={index}
                     className="w-[20px] h-[20px] object-cover cursor-pointer"
                     src={item.icon}
                     alt=""
@@ -120,7 +160,7 @@ const StickyNav = ({ start, end }) => {
           <div className="flex items-center justify-center gap-16 2md:hidden">
             {linkData.map((item) => {
               return (
-                <Link href={item.link} key={item.id}>
+                <Link href={`/${par}${item.link}`} key={item.id}>
                   <p className="text-black hover:text-gray-100 font-semibold">
                     {item.name}
                   </p>

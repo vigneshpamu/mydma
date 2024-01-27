@@ -1,5 +1,6 @@
 import CommonNav from '@/app/components/common/CommonNav'
 import SideMenu from '@/app/components/common/SideMenu'
+import UpperNav from '@/app/components/common/UpperNav'
 import React, { useState } from 'react'
 
 const HeroSect = ({ paramsData }) => {
@@ -13,7 +14,8 @@ const HeroSect = ({ paramsData }) => {
           className="w-full h-[750px] object-cover pointer-events-none"
           alt="hero"
         />
-        <CommonNav />
+        {/* <CommonNav /> */}
+        <UpperNav setVisible={setVisible} />
         <div className="absolute top-[290px] h-[350px] flex flex-col justify-between left-1/2 transform -translate-x-1/2 w-[1327px] m-auto z-10">
           <div>
             <p className="text-white text-2xl font-semibold">Municipalities</p>

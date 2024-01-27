@@ -12,42 +12,42 @@ const page = () => {
     {
       img: '/images/municipalities/main/im1.png',
       title: 'Hamriyah City Municipality',
-      link: '/',
+      link: '/councils/info',
     },
     {
       img: '/images/municipalities/main/im2.png',
       title: 'Municipality of Mleiha City',
-      link: '/',
+      link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im3.png',
       title: 'Municipality of Khorfakkan City',
-      link: '/',
+      link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im4.png',
       title: 'Municipality of Al-Bataeh City',
-      link: '/',
+      link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im5.png',
       title: 'Municipality of Al Madam City',
-      link: '/',
+      link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im6.png',
       title: 'Dibba Al Hisn City Municipality',
-      link: '/',
+      link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im7.png',
       title: 'Al Dhaid City Municipality',
-      link: '/',
+      link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im8.png',
       title: 'Kalba City Municipality',
-      link: '/',
+      link: '/news/info',
     },
   ]
   return (
