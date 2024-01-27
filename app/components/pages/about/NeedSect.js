@@ -5,18 +5,18 @@ const NeedSect = () => {
   const needData = [
     {
       id: 1,
-      img: 'images/about/need/hero.png',
+      img: '/images/about/need/hero.png',
     },
     {
       id: 2,
-      img: 'images/about/need/hero2.png',
+      img: '/images/about/need/hero2.png',
     },
   ]
   return (
     <>
       <div className="relative h-[1013px] m-auto">
         <img
-          src="images/about/need/background.png"
+          src="/images/about/need/background.png"
           className="w-full h-[814px] object-cover"
           alt=""
         />
@@ -49,11 +49,11 @@ const NeedSect = () => {
             </Swiper>
             <div className="flex flex-row gap-2 absolute left-1/2 transform -translate-x-1/2 bottom-16 z-10">
               <button className="px-4 py-6 rounded-md bg-white active:scale-95 hover:opacity-95">
-                <img src="images/home/elements/b-larrow.png" alt="" />
+                <img src="/images/home/elements/b-larrow.png" alt="" />
               </button>
 
               <button className="px-4 py-6 rounded-md bg-white active:scale-95 hover:opacity-95">
-                <img src="images/home/elements/b-rarrow.png" alt="" />
+                <img src="/images/home/elements/b-rarrow.png" alt="" />
               </button>
             </div>
           </div>

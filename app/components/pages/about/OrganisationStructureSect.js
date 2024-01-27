@@ -5,7 +5,7 @@ const OrganisationStructureSect = () => {
     <>
       <div className="relative h-[1756px] m-auto">
         <img
-          src="images\about\org-str\background.png"
+          src="/images\about\org-str\background.png"
           className="w-full h-full object-cover"
           alt=""
         />
@@ -13,7 +13,7 @@ const OrganisationStructureSect = () => {
           <div className="py-20 flex items-center justify-center">
             <p className="text-6xl font-bold">Organizational Structure.</p>
           </div>
-          <img src="images\about\org-str\structure.png" alt="" />
+          <img src="/images\about\org-str\structure.png" alt="" />
         </div>
       </div>
     </>
