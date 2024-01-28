@@ -3,20 +3,19 @@ import React from 'react'
 const LandmarkSect = ({ data }) => {
   return (
     <>
-      <div className="relative py-20 h-[2500px]">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[1347px] m-auto ">
-          <div className="w-[900px] flex flex-col gap-7">
+      <div className="relative py-20 h-[2500px] lg:h-[2300px] 2md:h-[2250px] sm:h-[4550px] xsm:h-[4350px] 2xsm:h-[4150px]">
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[1347px] 1xl:w-[90%] m-auto ">
+          <div className="w-[900px] lg:w-[95%] flex flex-col gap-7">
             <div className="flex flex-col gap-4">
-              <p className="font-bold text-3xl">Landmarks of Khorfakkan</p>
+              <p className="font-bold text-3xl sm:text-[25px]">
+                Landmarks of Khorfakkan
+              </p>
               <p>These are the main landmarks of our municipality</p>
             </div>
-            <div className="grid grid-cols-2 gap-y-10">
-              {data?.landmarks.map((item) => {
+            <div className="grid grid-cols-2 sm:grid-cols-1 gap-y-10 lg:gap-8 lg:gap-x-3">
+              {data?.landmarks.map((item, index) => {
                 return (
-                  <div
-                    key={item.id}
-                    className="flex flex-col items-center gap-3"
-                  >
+                  <div key={index} className="flex flex-col items-center gap-3">
                     <div>
                       <img src={item.img} alt="" />
                     </div>

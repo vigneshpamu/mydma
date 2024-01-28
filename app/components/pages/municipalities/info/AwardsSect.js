@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 const AwardsSect = ({ data }) => {
   return (
     <>
-      <div className="relative h-[400px] bg-customColor">
-        <div className="flex flex-col gap-3 absolute py-12 left-1/2 transform -translate-x-1/2 w-[1347px] m-auto">
-          <p className="text-3xl font-semibold text-white">
+      <div className="relative h-[200px] bg-customColor">
+        <div className="flex flex-col gap-3 absolute py-12 left-1/2 transform -translate-x-1/2 w-[1347px] 1xl:w-[90%] m-auto">
+          <p className="text-3xl font-semibold text-white sm:text-[25px]">
             Awards & Recognition
           </p>
           <div className="flex flex-row justify-between items-center">
@@ -23,7 +23,7 @@ const AwardsSect = ({ data }) => {
               </button>
             </div>
           </div>
-          <div className="w-[900px] mt-5">
+          {/* <div className="w-[900px] mt-5">
             <Swiper
               modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
               slidesPerView={3}
@@ -39,7 +39,7 @@ const AwardsSect = ({ data }) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

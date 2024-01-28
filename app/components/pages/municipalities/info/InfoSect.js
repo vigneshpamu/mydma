@@ -4,13 +4,13 @@ import React from 'react'
 const InfoSect = ({ dataArr, paramsData }) => {
   return (
     <>
-      <div className="relative h-[550px]">
-        <div className="absolute h-[350px] flex flex-row justify-between left-1/2 transform -translate-x-1/2 w-[1327px] m-auto ">
-          <div className="w-[870px] py-16 flex flex-col gap-10">
-            <p className="text-4xl font-bold w-[70%] leading-tight	">
+      <div className="relative h-[550px] 1xl:h-[650px] lg:h-[1350px] xsm:h-[1470px] 3xsm:h-[1570px]">
+        <div className="absolute h-[350px]  lg:flex-col left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto ">
+          <div className="w-[55%] lg:w-[100%] lg:mt-[730px]  xl:w-[52%] py-4 flex flex-col mr-5 gap-10">
+            <p className="text-4xl font-bold w-[100%] leading-tight xl:text-3xl	sm:text-2xl">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
             </p>
-            <p className="text-xl tracking-wide	">
+            <p className="text-xl tracking-wide	xl:text-lg">
               (Awaiting Data for all Municipalities)
               <br /> Sed ut perspiciatis unde omnis iste natus error sit
               voluptatem accusantium doloremque laudantium, totam rem aperiam,
@@ -26,7 +26,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
               eos qui ratione voluptatem sequi nesciunt.
             </p>
           </div>
-          <div className="absolute bg-gray-50 p-4 w-[424px] right-0 top-[-475px] rounded-lg h-[750px] flex flex-col gap-6">
+          <div className="absolute bg-gray-50 p-4 w-[424px] lg:w-[100%] right-0 top-[-475px] lg:top-[-40px] rounded-lg h-[750px] flex flex-col gap-6">
             <Link href={''}>
               <div className="flex flex-row gap-3 hover:bg-gray-100 transition-all">
                 <div className="border-2 rounded-md w-[130px] h-[130px]">
@@ -52,7 +52,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
                 src={dataArr[0]?.map}
                 width="400"
                 height="300"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
                 // referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
@@ -62,9 +62,9 @@ const InfoSect = ({ dataArr, paramsData }) => {
               <img src="//images/home/elements/b-rarrow.png" alt="" />
             </button>
             <div className="flex flex-row items-center justify-center gap-5">
-              {dataArr[0]?.socials.map((item) => {
+              {dataArr[0]?.socials.map((item, index) => {
                 return (
-                  <Link key={item.id} href={item.link}>
+                  <Link key={index} href={item.link}>
                     <div>
                       <img src={item.icon} alt="" />
                     </div>

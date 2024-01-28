@@ -272,7 +272,6 @@ const Page = () => {
     if (searchParams.get('name')) {
       setParamsData(searchParams.get('name'))
       const result = getDataByTitle(mainData, paramsData)
-      console.log(result)
       setDataArr(result)
     }
   }, [searchParams.get('name')])
@@ -282,7 +281,7 @@ const Page = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1.25 } }}
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
-      className="relative max-w-8xl m-auto"
+      className="relative max-w-8xl m-auto overflow-hidden"
     >
       <LeftSideSticky />
       <RightSideSticky />

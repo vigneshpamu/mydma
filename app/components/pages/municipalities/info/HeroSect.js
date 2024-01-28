@@ -11,15 +11,17 @@ const HeroSect = ({ paramsData }) => {
         <SideMenu visible={visible} setVisible={setVisible} />
         <img
           src="/images/municipalities/hero/hero.png"
-          className="w-full h-[750px] object-cover pointer-events-none"
+          className="w-full h-[750px] lg:h-[650px] xsm:h-[450px] object-cover pointer-events-none"
           alt="hero"
         />
         {/* <CommonNav /> */}
         <UpperNav setVisible={setVisible} />
-        <div className="absolute top-[290px] h-[350px] flex flex-col justify-between left-1/2 transform -translate-x-1/2 w-[1327px] m-auto z-10">
+        <div className="absolute top-[290px] h-[350px] lg:h-[280px] xsm:h-[180px] xsm:top-[140px] lg:top-[200px] flex flex-col justify-between left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto z-10">
           <div>
-            <p className="text-white text-2xl font-semibold">Municipalities</p>
-            <p className="text-white text-7xl w-[50%] font-semibold leading-tight tracking-wide">
+            <p className="text-white text-2xl font-semibold xsm:text-lg">
+              Municipalities
+            </p>
+            <p className="text-white text-7xl xl:text-6xl sm:text-5xl xsm:text-4xl w-[50%] xl:w-[90%] font-semibold leading-tight tracking-wide">
               {paramsData}
             </p>
           </div>
