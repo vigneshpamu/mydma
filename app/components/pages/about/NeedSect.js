@@ -14,14 +14,14 @@ const NeedSect = () => {
   ]
   return (
     <>
-      <div className="relative h-[1013px] m-auto">
+      <div className="relative h-[1013px] sm:h-[700px] m-auto">
         <img
           src="/images/about/need/background.png"
-          className="w-full h-[814px] object-cover"
+          className="w-full h-[814px] sm:h-[500px] object-cover"
           alt=""
         />
         <div className="flex flex-col items-center gap-16 overflow-hidden pt-4 w-[1347px] top-10 absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
-          <p className="text-5xl font-bold text-center	">
+          <p className="text-5xl font-bold text-center	2md:text-4xl sm:text-2xl 2xsm:text-lg">
             Meeting the needs of <br /> Present and Future Generations.
           </p>
         </div>
@@ -41,7 +41,7 @@ const NeedSect = () => {
                   <SwiperSlide key={item.id} className="">
                     <img
                       src={item.img}
-                      className="w-[1347px] h-[777px] object-cover"
+                      className="w-[1347px] h-[777px] sm:h-[500px] object-cover"
                       alt="hero"
                     />
                   </SwiperSlide>

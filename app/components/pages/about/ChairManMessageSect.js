@@ -3,18 +3,27 @@ import React from 'react'
 const ChairManMessageSect = () => {
   return (
     <>
-      <div className="relative h-[650px] m-auto">
+      <div className="relative h-[650px] xl:h-[800px] lg:h-[1700px] md:h-[1300px] sm:h-[1450px] xsm:h-[1550px] 2xsm:h-[1600px] m-auto">
         <div className="flex flex-col gap-10 pt-4 w-[1347px] 1xl:w-[90%] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="flex flex-row items-center gap-6">
-            <p className="text-2xl font-semibold">Chairman's Message</p>
+            <p className="text-2xl font-semibold xsm:text-lg">
+              Chairman's Message
+            </p>
             <div className="w-[120px] h-[5px] rounded-lg bg-customColor"></div>
           </div>
-          <div className="flex flex-row gap-10 w-full">
-            <img
-              src="/images/about/message/chairman.jpg"
-              className="min-w-[470px] rounded-xl h-[490px] object-cover"
-              alt=""
-            />
+          <div className="flex flex-row gap-10 w-full lg:flex-col">
+            <div className="2xsm:w-[350px]">
+              <img
+                src="/images/about/message/chairman.jpg"
+                className="min-w-[470px] xl:min-w-[380px] xsm:w-[100%] 2xsm:hidden lg:h-auto md:h-[500px] rounded-xl h-[490px] xl:h-[600px] custom-img object-cover"
+                alt=""
+              />
+              <img
+                src="/images/about/message/chairman.jpg"
+                className="hidden 2xsm:block 2xsm:w-[340px] 3xsm:w-[300px] rounded-xl"
+                alt=""
+              />
+            </div>
             <div className="flex flex-col gap-6">
               {/* <p className="text-4xl font-bold leading-tight">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
@@ -52,18 +61,27 @@ const ChairManMessageSect = () => {
           </div>
         </div>
       </div>
-      <div className="relative h-[650px] m-auto">
+      <div className="relative h-[650px] xl:h-[800px] lg:h-[1700px] md:h-[1300px] sm:h-[1450px] xsm:h-[1550px] 2xsm:h-[1600px] m-auto">
         <div className="flex flex-col gap-10 pt-4 w-[1347px] 1xl:w-[90%] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="flex flex-row items-center gap-6">
-            <p className="text-2xl font-semibold">Direector's Message</p>
+            <p className="text-2xl font-semibold xsm:text-lg">
+              Director's Message
+            </p>
             <div className="w-[120px] h-[5px] rounded-lg bg-customColor"></div>
           </div>
-          <div className="flex flex-row gap-10 w-full">
-            <img
-              src="/images/about/message/chairman.jpg"
-              className="min-w-[470px] rounded-xl h-[490px] object-cover"
-              alt=""
-            />
+          <div className="flex flex-row gap-10 w-full lg:flex-col">
+            <div className="2xsm:w-[350px]">
+              <img
+                src="/images/about/message/chairman.jpg"
+                className="min-w-[470px] xl:min-w-[380px] xsm:w-[100%] 2xsm:hidden lg:h-auto md:h-[500px] rounded-xl h-[490px] xl:h-[600px] custom-img object-cover"
+                alt=""
+              />
+              <img
+                src="/images/about/message/chairman.jpg"
+                className="hidden 2xsm:block 2xsm:w-[340px] 3xsm:w-[300px] rounded-xl"
+                alt=""
+              />
+            </div>
             <div className="flex flex-col gap-6">
               {/* <p className="text-4xl font-bold leading-tight">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem.

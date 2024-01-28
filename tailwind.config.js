@@ -25,17 +25,25 @@ module.exports = {
       lg: { max: '1045px' },
       // => @media (max-width: 1023px) { ... }
 
-      '2md': { max: '853px' },
+      '2md': { max: '868px' },
       // => @media (max-width: 767px) { ... }
 
-      md: { max: '640px' },
+      md: { max: '670px' },
       // => @media (max-width: 500px) { ... }
 
       sm: { max: '580px' },
       // => @media (max-width: 639px) { ... }
+
       xsm: { max: '460px' },
       // => @media (max-width: 639px) { ... }
+
       '2xsm': { max: '410px' },
+      // => @media (max-width: 639px) { ... }
+
+      '3xsm': { max: '395px' },
+      // => @media (max-width: 639px) { ... }
+
+      '4xsm': { max: '360px' },
       // => @media (max-width: 639px) { ... }
     },
     extend: {

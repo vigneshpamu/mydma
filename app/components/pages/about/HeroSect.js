@@ -63,23 +63,31 @@ const HeroSect = () => {
         <SideMenu visible={visible} setVisible={setVisible} />
         <img
           src="/images/about/hero/b1.png"
-          className="w-full h-[750px] object-cover pointer-events-none"
+          className="w-full h-[750px] 2md:h-[500px] md:h-[400px] object-cover pointer-events-none"
           alt="hero"
         />
         <UpperNav setVisible={setVisible} />
-        <div className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] 1xl:top-[50%] m-auto flex flex-row justify-between z-10">
+        <div className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%]  1xl:top-[50%] 2md:top-[35%]  m-auto flex flex-row justify-between ">
           <div className="flex justify-between flex-col gap-4">
             <div className="flex flex-col gap-5">
               <div>
-                <p className="text-white text-2xl font-semibold">About DMA</p>
-                <p className="text-white text-7xl font-semibold w-[850px] leading-tight tracking-wide	 1xl:text-6xl">
+                <p className="text-white text-2xl font-semibold 2md:text-lg md:text-sm">
+                  About DMA
+                </p>
+                <p className="text-white text-7xl font-semibold w-[850px] leading-tight tracking-wide	1xl:text-6xl 	xl:text-5xl xl:w-[60%] lg:text-3xl lg:w-[50%] md:text-2xl sm:w-full sm:text-3xl ">
                   Meeting the needs of Present and Future Generations.{' '}
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <img src="images/home/elements/5.png" alt="" className="" />
-              <p className="text-white text-2xl tracking-wider">Scroll</p>
+              <img
+                src="/images/home/elements/5.png"
+                alt=""
+                className="w-[2%] mt-[6px]"
+              />
+              <p className="text-white text-2xl tracking-wider 2md:text-xl">
+                Scroll
+              </p>
             </div>
           </div>
         </div>
