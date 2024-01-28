@@ -111,10 +111,10 @@ const UpperNav = ({ setVisible }) => {
               )
             })}
           </div>
-          <div className="sm:w-[250px] flex items-center justify-end">
+          <div className="sm:w-[250px] flex items-center justify-end xsm:w-[35%]">
             <img
               src="/images/home/nav/logo/logo1.png"
-              className="sm:w-[80%]"
+              className="sm:w-[80%] xsm:w-[100%]"
               alt=""
             />
           </div>

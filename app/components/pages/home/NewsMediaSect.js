@@ -70,12 +70,12 @@ const NewsMediaSect = () => {
               //   slidesPerView: 1,
               //   spaceBetween: 0,
               // },
-              // 430: {
-              //   slidesPerView: 1,
-              //   spaceBetween: 0,
-              // },
+              330: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
               420: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.25,
                 spaceBetween: 20,
               },
               640: {
@@ -108,8 +108,8 @@ const NewsMediaSect = () => {
                   className="absolute rounded-xl inset-0"
                 ></div>
               </div>
-              <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row items-end gap-16 2md:left-3">
-                <p className="text-3xl text-white font-semibold 2xl:text-2xl">
+              <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row sm:left-6 items-end gap-16 2md:left-3">
+                <p className="text-3xl text-white font-semibold 2xl:text-2xl sm:text-xl">
                   Quis autem vel eum iure reprehenderit qui in ea voluptate....
                 </p>
                 <div>

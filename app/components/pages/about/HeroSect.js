@@ -67,12 +67,12 @@ const HeroSect = () => {
           alt="hero"
         />
         <UpperNav setVisible={setVisible} />
-        <div className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-[1327px] m-auto flex flex-row justify-between z-10">
+        <div className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] 1xl:top-[50%] m-auto flex flex-row justify-between z-10">
           <div className="flex justify-between flex-col gap-4">
             <div className="flex flex-col gap-5">
               <div>
                 <p className="text-white text-2xl font-semibold">About DMA</p>
-                <p className="text-white text-7xl font-semibold w-[850px] leading-tight tracking-wide	">
+                <p className="text-white text-7xl font-semibold w-[850px] leading-tight tracking-wide	 1xl:text-6xl">
                   Meeting the needs of Present and Future Generations.{' '}
                 </p>
               </div>

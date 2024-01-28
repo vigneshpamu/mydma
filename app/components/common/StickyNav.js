@@ -148,10 +148,10 @@ const StickyNav = ({ start, end }) => {
                 )
               })}
             </div>
-            <div className="sm:w-[250px] flex items-center justify-end">
+            <div className="sm:w-[250px] flex items-center justify-end xsm:w-[35%]">
               <img
                 src="/images/home/vision/logo.png"
-                className="sm:w-[80%]"
+                className="sm:w-[80%] xsm:w-full"
                 alt=""
               />
             </div>

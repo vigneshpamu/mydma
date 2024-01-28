@@ -25,7 +25,7 @@ const NeedSect = () => {
             Meeting the needs of <br /> Present and Future Generations.
           </p>
         </div>
-        <div className="w-[1347px] m-auto absolute left-1/2 transform -translate-x-1/2 bottom-5">
+        <div className="w-[1347px] 1xl:w-[90%] m-auto absolute left-1/2 transform -translate-x-1/2 bottom-5">
           <div className="relative">
             <Swiper
               modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}

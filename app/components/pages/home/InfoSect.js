@@ -90,12 +90,12 @@ const InfoSect = () => {
               </SwiperSlide>
             ))}
         </Swiper>
-        <div className="flex flex-col gap-12 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:top-14 2md:left-[350px] sm:top-24 2md:w-[600px] sm:w-[90%] sm:left-[320px] lg:left-[420px] m-auto z-10">
+        <div className="flex flex-col gap-12 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:top-14 sm:top-24 2md:w-[600px] sm:w-[90%] sm:left-[320px] lg:left-[45%] 2md:left-[50%] xsm:left-[55%] m-auto z-10">
           <div className="flex flex-row items-center gap-5">
             <p className="text-2xl text-white ">{aboveSwiper[dIndex].topic}</p>
             <div className="w-[110px] h-[4px] bg-gray-100 rounded-sm"></div>
           </div>
-          <p className="text-6xl text-white font-semibold w-[1000px] leading-tight lg:text-3xl lg:w-[60%]">
+          <p className="text-6xl text-white font-semibold w-[1000px] leading-tight lg:text-3xl lg:w-[60%] xsm:w-[90%] xsm:text-2xl">
             {aboveSwiper[dIndex].title}
           </p>
           <p className="text-white w-[900px] text-xl tracking-wide lg:text-lg lg:w-[600px] sm:text-sm sm:w-[80%]">

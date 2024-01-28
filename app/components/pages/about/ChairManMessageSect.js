@@ -4,22 +4,22 @@ const ChairManMessageSect = () => {
   return (
     <>
       <div className="relative h-[650px] m-auto">
-        <div className="flex flex-col gap-10 pt-4 w-[1347px] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
+        <div className="flex flex-col gap-10 pt-4 w-[1347px] 1xl:w-[90%] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="flex flex-row items-center gap-6">
             <p className="text-2xl font-semibold">Chairman's Message</p>
             <div className="w-[120px] h-[5px] rounded-lg bg-customColor"></div>
           </div>
-          <div className="flex flex-row justify-between gap-10">
+          <div className="flex flex-row gap-10 w-full">
             <img
               src="/images/about/message/chairman.jpg"
-              className="w-[470px] rounded-xl h-[490px] object-cover"
+              className="min-w-[470px] rounded-xl h-[490px] object-cover"
               alt=""
             />
             <div className="flex flex-col gap-6">
               {/* <p className="text-4xl font-bold leading-tight">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
               </p> */}
-              <p className="text-md w-[80%] leading-relaxed	">
+              <p className="text-md w-[90%] 1xl:w-[100%] leading-relaxed	">
                 The Department of Municipal Affairs in Sharjah is one of the
                 most important government agencies in the emirate. It is the
                 department responsible and concerned with developing the
@@ -53,22 +53,22 @@ const ChairManMessageSect = () => {
         </div>
       </div>
       <div className="relative h-[650px] m-auto">
-        <div className="flex flex-col gap-10 pt-4 w-[1347px] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
+        <div className="flex flex-col gap-10 pt-4 w-[1347px] 1xl:w-[90%] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="flex flex-row items-center gap-6">
-            <p className="text-2xl font-semibold">Director's Message</p>
+            <p className="text-2xl font-semibold">Direector's Message</p>
             <div className="w-[120px] h-[5px] rounded-lg bg-customColor"></div>
           </div>
-          <div className="flex flex-row justify-between gap-10">
+          <div className="flex flex-row gap-10 w-full">
             <img
               src="/images/about/message/chairman.jpg"
-              className="w-[470px] rounded-xl h-[490px] object-cover"
+              className="min-w-[470px] rounded-xl h-[490px] object-cover"
               alt=""
             />
             <div className="flex flex-col gap-6">
               {/* <p className="text-4xl font-bold leading-tight">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
               </p> */}
-              <p className="text-md w-[80%] leading-relaxed	">
+              <p className="text-md w-[90%] 1xl:w-[100%] leading-relaxed	">
                 The Department of Municipal Affairs in Sharjah is one of the
                 most important government agencies in the emirate. It is the
                 department responsible and concerned with developing the

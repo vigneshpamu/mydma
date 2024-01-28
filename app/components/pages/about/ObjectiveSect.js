@@ -56,8 +56,8 @@ const ObjectiveSect = () => {
 
   return (
     <>
-      <div className="relative h-[700px] m-auto">
-        <div className="grid grid-cols-2 justify-between w-[1347px] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
+      <div className="relative h-[700px] 1xl:h-[750px] m-auto">
+        <div className="grid grid-cols-2 justify-between w-[1347px] 1xl:w-[95%] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="w-full h-full flex flex-col items-center justify-center gap-7 py-14 bg-[#036C73]">
             <div className="flex flex-row items-center gap-7">
               <p className="text-white text-3xl">Evaluation</p>

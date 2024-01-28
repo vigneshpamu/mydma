@@ -29,7 +29,7 @@ const EventsSect = () => {
 
   return (
     <>
-      <div className="relative h-[1000px] xl:h-[900px] lg:h-[730px]">
+      <div className="relative h-[1000px] xl:h-[900px] lg:h-[730px] 2xsm:h-[770px]">
         <img
           src="/images/home/events/background.png"
           className="w-full h-full"
@@ -76,12 +76,12 @@ const EventsSect = () => {
             navigation
             // ref={swiperRef}
             breakpoints={{
-              // 300: {
-              //   slidesPerView: 1,
-              //   spaceBetween: 0,
-              // },
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
               430: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.25,
                 spaceBetween: 20,
               },
               610: {

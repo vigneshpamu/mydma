@@ -81,13 +81,13 @@ const Footer = () => {
   ]
   return (
     <>
-      <div className="relative h-[700px] sm:h-[1100px]">
+      <div className="relative h-[750px] sm:h-[1150px]">
         <img
           src="/images/home/footer/background.png"
           className="w-full h-full"
           alt=""
         />
-        <div className="flex flex-col text-white gap-20 absolute top-6 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] m-auto">
+        <div className="flex flex-col text-white gap-20 absolute top-6 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:gap-5 sm:w-[95%] m-auto">
           <div className="flex w-full justify-end items-end">
             <img src="/images/home/nav/logo/logo.png" alt="" />
           </div>
@@ -98,7 +98,7 @@ const Footer = () => {
                   <p className="text-2xl lg:text-xl">Contact.</p>
                   <div className="w-[120px] h-[4px] rounded-lg bg-white"></div>
                 </div>
-                <p className="text-6xl font-semibold w-[100%] leading-tight tracking-wide	xl:text-5xl lg:text-3xl">
+                <p className="text-6xl font-semibold w-[100%] leading-tight tracking-wide	xl:text-5xl lg:text-3xl sm:text-2xl sm:w-[50%] xsm:w-[70%]">
                   Connect with the Dha Sharjah.
                 </p>
               </div>
@@ -147,7 +147,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="w-full h-[3px] bg-gray-400"></div>
-            <div className="flex flex-row gap-10 sm:gap-3">
+            <div className="flex flex-row gap-10 sm:gap-3 sm:flex-wrap">
               {linkData.map((item) => {
                 return (
                   <Link href={item.link} key={item.id}>

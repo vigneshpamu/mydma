@@ -127,32 +127,32 @@ const HeroSect = ({ lang }) => {
             <SwiperSlide key={item.id} className="">
               <img
                 src={item.img}
-                className="w-full   h-[920px] object-cover pointer-events-none 2md:h-[750px]"
+                className="w-full   h-[920px] object-cover pointer-events-none 2md:h-[750px] xsm:h-[650px]"
                 alt="hero"
               />
             </SwiperSlide>
           ))}
       </Swiper>
-      <UpperNav />
-      <div className="absolute top-[400px] left-1/2 transform -translate-x-1/2 w-[1327px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[90%] 2md:flex-col 2md:gap-10 2md:top-[200px]  m-auto flex flex-row justify-between z-10">
+      <UpperNav setVisible={setVisible} />
+      <div className="absolute top-[400px] left-1/2 transform -translate-x-1/2 w-[1327px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[90%] 2md:flex-col 2md:gap-10 2md:top-[200px] xsm:top-[150px]  m-auto flex flex-row justify-between z-10">
         <div className="flex justify-between flex-col gap-4 ">
           <div className="flex flex-col gap-5">
             <div>
               <p
                 dir={lang && lang?.isArabic ? 'rtl' : ''}
-                className="text-white text-2xl font-semibold"
+                className="text-white text-2xl font-semibold xsm:text-xl"
               >
                 {lang && lang?.home?.hero?.heroWel}
               </p>
               <p
                 dir={lang && lang?.isArabic ? 'rtl' : ''}
-                className="text-white text-7xl font-semibold w-[850px] 2xl:text-6xl xl:text-5xl 2xl:w-[700px] xl:w-[500px]  sm:w-[80%] leading-tight tracking-wide	"
+                className="text-white text-7xl font-semibold w-[850px] 2xl:text-6xl xl:text-5xl 2xl:w-[700px] xl:w-[500px]  sm:w-[80%] xsm:text-4xl xsm:w-[90%] leading-tight tracking-wide	"
               >
                 {lang && lang?.home?.hero?.heroDepartment}
               </p>
             </div>
             <div dir={lang && lang?.isArabic ? 'rtl' : ''}>
-              <p className="text-white text-xl w-[541px] xl:text-lg sm:w-[80%]">
+              <p className="text-white text-xl w-[541px] xl:text-lg sm:w-[80%] xsm:text-sm xsm:w-[80%]">
                 {lang && lang?.home?.hero?.heroDesc}
               </p>
             </div>
@@ -162,16 +162,18 @@ const HeroSect = ({ lang }) => {
             <p className="text-white text-2xl tracking-wider">Scroll</p>
           </div>
         </div>
-        <div className="flex flex-col gap-7 2md:absolute 2md:top-[400px] 2md:left-1/2 2md:transform 2md:w-[500px] 2md:-translate-x-1/2 ">
+        <div className="flex flex-col gap-7 2md:absolute 2md:top-[400px] 2md:left-1/2 2md:transform 2md:w-[500px] items-start justify-start xsm:top-[300px] 2md:-translate-x-1/2 2xsm:max-w-[350px]">
           <div className="flex flex-row items-center gap-5">
-            <p className="text-white text-lg font-semibold ml-10">Quick Find</p>
+            <p className="text-white text-lg font-semibold 2md:ml-16">
+              Quick Find
+            </p>
             <div className="w-[100px] h-[3px] bg-gray-100 rounded-sm"></div>
           </div>
           <div className="grid grid-cols-2 gap-4 max-w-[400px] m-auto">
             {quickFindData.map((item) => {
               return (
                 <div
-                  className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 cursor-pointer"
+                  className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 xsm:p-7 cursor-pointer"
                   key={item.id}
                 >
                   <img
@@ -179,7 +181,7 @@ const HeroSect = ({ lang }) => {
                     alt=""
                     className="w-[80px] h-[80px] object-cover xl:w-[50px] xl:h-[45px]"
                   />
-                  <p className="font-semibold">{item.name}</p>
+                  <p className="font-semibold  2xsm:text-sm">{item.name}</p>
                 </div>
               )
             })}
