@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
+import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 const SideMenu = ({ visible, setVisible }) => {
-  // const [visible, setVisible] = useState(false)
   const linkData = [
     {
       id: 1,
@@ -34,15 +35,30 @@ const SideMenu = ({ visible, setVisible }) => {
     },
     {
       id: 6,
-      link: '/events',
-      name: 'Events',
-    },
-    {
-      id: 7,
       link: '/contact',
       name: 'Contact us',
     },
   ]
+  const router = useRouter()
+  const pathname = usePathname()
+  const [par, setPar] = useState('')
+  const handleClick = () => {
+    const path = pathname[1] + pathname[2]
+    // const path = pathname[1] + pathname[2]
+    const currentPath = '/' + path + '/'
+    let newStr = pathname.substring(3)
+    if (path === 'ar') {
+      const newPath = currentPath.replace(`/ar`, `/en${newStr}`)
+      router.push(newPath)
+    } else {
+      const newPath = currentPath.replace(`/en`, `/ar${newStr}`)
+      router.push(newPath)
+    }
+  }
+  useEffect(() => {
+    const path = pathname[1] + pathname[2]
+    setPar(path)
+  }, [])
   return (
     <>
       <div
@@ -73,7 +89,7 @@ const SideMenu = ({ visible, setVisible }) => {
           <ul className="absolute top-1/3  left-20 flex flex-col gap-8 netflix-list">
             {linkData.map((item) => {
               return (
-                <Link key={item.id} href={item.link}>
+                <Link href={`/${par}${item.link}`} key={item.id}>
                   <p className="font-bold text-2xl">{item.name}</p>
                 </Link>
               )
