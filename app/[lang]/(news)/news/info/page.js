@@ -11,7 +11,7 @@ const page = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1.25 } }}
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
-      className="relative max-w-8xl m-auto"
+      className="relative max-w-8xl m-auto overflow-hidden"
     >
       <StickyNav start={0} end={0} />
       <HeroSect />

@@ -4,7 +4,7 @@ import { MdWhatsapp } from 'react-icons/md'
 const HeroSect = () => {
   return (
     <>
-      <div className="relative h-[1000px]">
+      {/* <div className="relative h-[1000px]">
         <div className="absolute w-[1347px] top-48 left-1/2 transform -translate-x-1/2 m-auto">
           <img
             src="/images/events/info/hero/hero.png"
@@ -40,6 +40,15 @@ const HeroSect = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div> */}
+      <div className="mt-52 sm:mt-32 xsm:mt-28 flex items-center justify-center ">
+        <div className="w-[1347px] 1xl:w-[90%] ">
+          <img
+            src="/images/events/info/hero/hero.png"
+            className="w-[1347px] object-cover"
+            alt=""
+          />
         </div>
       </div>
     </>
