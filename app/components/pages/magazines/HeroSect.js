@@ -57,29 +57,29 @@ const HeroSect = () => {
   }, [])
   return (
     <>
-      <div className="relative h-[1476px] w-[100%] m-auto">
+      <div className="relative h-[1476px] sm:h-[1750px] w-[100%] m-auto">
         {/* <CommonNav /> */}
         <StickyNav start={0} end={0} />
         <img
           src="/images/magazine/hero/hero.png"
-          className="w-full h-[750px] object-cover pointer-events-none"
+          className="w-full h-[750px] md:h-[650px] object-cover pointer-events-none"
           alt="hero"
         />
-        <div className="flex flex-col gap-3 items-center justify-center w-[1347px] absolute top-[400px] left-1/2 transform -translate-x-1/2 m-auto">
+        <div className="flex flex-col gap-3 items-center justify-center w-[1347px] 1xl:w-[90%] absolute top-[400px] md:top-[15%] sm:top-[11%] xsm:top-[8%] left-1/2 transform -translate-x-1/2 m-auto">
           <p className="text-2xl font-bold">Magazine</p>
-          <p className="text-5xl font-bold text-center w-[50%]">
+          <p className="text-5xl font-bold text-center w-[50%] 1xl:w-[70%] xsm:text-2xl mxsm:w-[90%] md:text-3xl md:w-[80%]">
             Check out our magazines, Know Sharjah more...
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center w-[1347px] absolute top-[600px] left-1/2 transform -translate-x-1/2 m-auto">
-          <div className="grid grid-cols-4 gap-5 mt-10 xl:grid-cols-4">
+        <div className="flex flex-col items-center justify-center w-[1347px] absolute top-[600px] md:top-[25%] sm:top-[20%] xsm:top-[14%]  left-1/2 transform -translate-x-1/2 m-auto">
+          <div className="grid grid-cols-4 2lg:grid-cols-2 sm:grid-cols-1 gap-5 mt-10 xl:grid-cols-4">
             {magazineCard.map((item) => {
               return (
                 <Link
                   key={item.id}
                   href={`/${par}${item.link}?name=${item.title}`}
                 >
-                  <div className="flex flex-col gap-4 shadow-lg rounded-2xl p-2 h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                  <div className="flex w-full bg-white flex-col gap-4 shadow-lg rounded-2xl p-2 h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer">
                     <div>
                       <img src={item.img} alt="" />
                     </div>
