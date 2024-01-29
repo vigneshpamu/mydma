@@ -91,7 +91,7 @@ const NewsMediaSect = () => {
                 spaceBetween: 20,
               },
             }}
-            className="w-[1200px] 2xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%]"
+            className="w-[1100px] 2xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%]"
           >
             <SwiperSlide className="relative">
               <div className=" rounded-lg border-2 border-customColor">
@@ -108,8 +108,8 @@ const NewsMediaSect = () => {
                   className="absolute rounded-xl inset-0"
                 ></div>
               </div>
-              <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row sm:left-6 items-end gap-16 2md:left-3">
-                <p className="text-3xl text-white font-semibold 2xl:text-2xl sm:text-xl">
+              <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row sm:left-6  items-end gap-16 2md:left-3">
+                <p className="text-3xl text-white font-semibold 2xl:text-2xl 2md:text-xl sm:text-xl">
                   Quis autem vel eum iure reprehenderit qui in ea voluptate....
                 </p>
                 <div>
@@ -125,13 +125,15 @@ const NewsMediaSect = () => {
               {newsData.map((item) => {
                 return (
                   <SwiperSlide key={item.id} className="">
-                    <div className="bg-white rounded-xl border-2 border-customColor">
+                    <div className="bg-white h-[400px] max-w-[370px] rounded-xl border-2 border-customColor">
                       <img src={item.img} alt="" className="w-full h-[190px]" />
                       <div className="p-3 flex flex-col gap-3">
-                        <p className="text-2xl font-semibold xl:text-xl text-customColor">
+                        <p className="text-2xl font-semibold xl:text-xl  text-customColor">
                           {item.title}
                         </p>
-                        <p className="text-xl xl:text-lg">{item.desc}</p>
+                        <p className="text-xl xl:text-lg xsm:text-sm">
+                          {item.desc}
+                        </p>
                       </div>
                     </div>
                   </SwiperSlide>

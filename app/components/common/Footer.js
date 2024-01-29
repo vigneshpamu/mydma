@@ -24,27 +24,18 @@ const Footer = () => {
     {
       id: 1,
       icon: '/images/home/elements/social_icon/fb.png',
-      link: '/',
+      link: 'https://www.facebook.com/SharjahDma',
     },
     {
       id: 2,
       icon: '/images/home/elements/social_icon/tw.png',
-      link: '/',
+      link: 'https://twitter.com/sharjahdma',
     },
-    {
-      id: 3,
-      icon: '/images/home/elements/social_icon/ld.png',
-      link: '/',
-    },
+
     {
       id: 4,
       icon: '/images/home/elements/social_icon/ins.png',
-      link: '/',
-    },
-    {
-      id: 5,
-      icon: '/images/home/elements/social_icon/yt.png',
-      link: '/',
+      link: 'https://www.instagram.com/sharjahdma/',
     },
   ]
   const linkData = [

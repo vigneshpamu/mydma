@@ -54,7 +54,7 @@ const MagazineSect = () => {
                 <h4 className="text-6xl font-semibold lg:text-3xl xsm:text-2xl xsm:text-center">
                   An Extraordinary Year,<br></br> An Extraordinary Journey
                 </h4>
-                <p className="text-xl font-semibold w-[430px] text-center sm:text-left xsm:text-center xsm:text-sm xsm:font-medium">
+                <p className="text-xl font-semibold w-[430px] text-center sm:text-left xsm:text-center xsm:text-sm xsm:font-medium 2xsm:px-10">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, nesciunt.
                 </p>
