@@ -130,22 +130,29 @@ const StickyNav = ({ start, end }) => {
                 ) : index === 3 ? (
                   // Add your condition for index === 4 here
                   // For example, you can add a specific class or modify the behavior
-                  <div key={index}>
+                  <div
+                    key={index}
+                    className="flex cursor-pointer flex-row items-center justify-center gap-2"
+                    onClick={handleClick}
+                  >
                     <img
                       className="w-[20px] h-[20px] object-cover cursor-pointer special-class"
                       src={item.icon}
-                      onClick={handleClick}
                       alt=""
                     />
+                    <div className="px-2 rounded-lg bg-customColor">
+                      <p className="text-sm text-white">
+                        {par === 'ar' ? 'EN' : 'AR'}
+                      </p>
+                    </div>
                   </div>
-                ) : (
-                  <img
-                    key={index}
-                    className="w-[20px] h-[20px] object-cover cursor-pointer"
-                    src={item.icon}
-                    alt=""
-                  />
-                )
+                ) : // <img
+                //   key={index}
+                //   className="w-[20px] h-[20px] object-cover cursor-pointer"
+                //   src={item.icon}
+                //   alt=""
+                // />
+                null
               })}
             </div>
             <div className="sm:w-[250px] flex items-center justify-end xsm:w-[35%]">
