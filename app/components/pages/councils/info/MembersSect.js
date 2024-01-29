@@ -68,7 +68,7 @@ const MembersSect = ({ dataArr }) => {
                   <p className="text-center font-bold text-xl lg:text-lg xsm:text-[13px]">
                     {item.name}
                   </p>
-                  <p className="text-center xsm:text-[12px]">{item.role}</p>
+                  {/* <p className="text-center xsm:text-[12px]">{item.role}</p> */}
                   <button className="bg-[#036C73] w-full rounded-md hover:opacity-95 text-white py-2">
                     Know More
                   </button>

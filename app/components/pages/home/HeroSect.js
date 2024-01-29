@@ -68,26 +68,31 @@ const HeroSect = ({ lang }) => {
       id: 1,
       name: 'Municipalities',
       icon: 'images/home/elements/1.png',
+      link: '/municipalities',
     },
     {
       id: 2,
       name: 'Councils',
       icon: 'images/home/elements/2.png',
+      link: '/councils',
     },
     {
       id: 3,
       name: 'Magazines',
       icon: 'images/home/elements/3.png',
+      link: '/magazines',
     },
     {
       id: 4,
       name: 'News & Media',
       icon: 'images/home/elements/4.png',
+      link: '/news',
     },
   ]
   const [visible, setVisible] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
+  const path = pathname[1] + pathname[2]
 
   const handleClick = () => {
     const path = pathname[1] + pathname[2]
@@ -172,17 +177,19 @@ const HeroSect = ({ lang }) => {
           <div className="grid grid-cols-2 gap-4 max-w-[400px] m-auto">
             {quickFindData.map((item) => {
               return (
-                <div
-                  className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 xsm:p-7 cursor-pointer"
-                  key={item.id}
-                >
-                  <img
-                    src={item.icon}
-                    alt=""
-                    className="w-[80px] h-[80px] object-cover xl:w-[50px] xl:h-[45px]"
-                  />
-                  <p className="font-semibold  2xsm:text-sm">{item.name}</p>
-                </div>
+                <Link href={`/${path}${item.link}`}>
+                  <div
+                    className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 xsm:p-7 cursor-pointer"
+                    key={item.id}
+                  >
+                    <img
+                      src={item.icon}
+                      alt=""
+                      className="w-[80px] h-[80px] object-cover xl:w-[50px] xl:h-[45px]"
+                    />
+                    <p className="font-semibold  2xsm:text-sm">{item.name}</p>
+                  </div>
+                </Link>
               )
             })}
           </div>

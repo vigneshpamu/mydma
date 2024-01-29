@@ -7,46 +7,47 @@ import Footer from '@/app/components/common/Footer'
 import CommonHero from '@/app/components/common/CommonHero'
 import CommonCard from '@/app/components/common/CommonCard'
 import StickyNav from '@/app/components/common/StickyNav'
+import HeroSectNews from '@/app/components/pages/news/HeroSectNews'
 const page = () => {
   const mainData = [
     {
       img: '/images/municipalities/main/im1.png',
-      title: 'Hamriyah City Municipality',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/councils/info',
     },
     {
       img: '/images/municipalities/main/im2.png',
-      title: 'Municipality of Mleiha City',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im3.png',
-      title: 'Municipality of Khorfakkan City',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im4.png',
-      title: 'Municipality of Al-Bataeh City',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im5.png',
-      title: 'Municipality of Al Madam City',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im6.png',
-      title: 'Dibba Al Hisn City Municipality',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im7.png',
-      title: 'Al Dhaid City Municipality',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im8.png',
-      title: 'Kalba City Municipality',
+      title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
       link: '/news/info',
     },
   ]
@@ -59,13 +60,14 @@ const page = () => {
     >
       <LeftSideSticky />
       <RightSideSticky />
-      <CommonHero
+      {/* <CommonHero
         hero={'/images/news/hero/hero.png'}
         page={'News & Media'}
         desc={`Leadership which Embrace the change`}
-      />
-      <StickyNav start={700} end={900} />
-      <CommonCard data={mainData} />
+      /> */}
+      {/* <StickyNav start={700} end={900} /> */}
+      <HeroSectNews />
+      {/* <CommonCard data={mainData} /> */}
       <Footer />
     </motion.div>
   )
