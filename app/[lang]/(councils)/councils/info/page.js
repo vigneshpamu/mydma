@@ -11,7 +11,7 @@ import HeroSect from '@/app/components/pages/councils/info/HeroSect'
 import { useSearchParams } from 'next/navigation'
 import MembersSect from '@/app/components/pages/councils/info/MembersSect'
 
-const page = () => {
+const Page = () => {
   const [visible, setVisible] = useState(false)
   const mainData = [
     {
@@ -199,4 +199,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

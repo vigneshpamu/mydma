@@ -7,7 +7,7 @@ const ChairManMessageSect = () => {
         <div className="flex flex-col gap-10 pt-4 w-[1347px] 1xl:w-[90%] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="flex flex-row items-center gap-6">
             <p className="text-2xl font-semibold xsm:text-lg">
-              Chairman's Message
+              Chairman&apos;s Message
             </p>
             <div className="w-[120px] h-[5px] rounded-lg bg-customColor"></div>
           </div>

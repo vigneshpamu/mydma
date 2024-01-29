@@ -8,7 +8,7 @@ import RightSideSticky from '@/app/components/common/RightSideSticky'
 import Footer from '@/app/components/common/Footer'
 import MainSect from '@/app/components/pages/events/MainSect'
 
-const page = () => {
+const Page = () => {
   const eventData = [
     {
       date: '03',
@@ -71,4 +71,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
