@@ -22,7 +22,7 @@ const MembersSect = ({ dataArr }) => {
                 alt=""
               />
               <div className="absolute bottom-10 w-full flex flex-col gap-7 2lg:gap-3 lg:bottom-5 items-center justify-center">
-                <p className="text-xl font-bold text-white sm:text-[15px] xsm:text-[13px]">
+                <p className="text-lg font-bold text-white sm:text-[15px] xsm:text-[13px]">
                   {dataArr?.councilMembers?.chairman?.name}
                 </p>
                 <p className="text-white text-center w-[80%] sm:text-[12px]">
@@ -42,7 +42,7 @@ const MembersSect = ({ dataArr }) => {
                 alt=""
               />
               <div className="absolute bottom-10 w-full flex flex-col 2lg:gap-3 md:gap-0 sm:gap-0 2lg:bottom-7 gap-7 items-center justify-center">
-                <p className="text-xl font-bold text-white sm:text-[15px] xsm:text-[13px]">
+                <p className="text-lg font-bold text-white sm:text-[15px] xsm:text-[13px]">
                   {dataArr?.councilMembers?.vicePresident?.name}
                 </p>
                 <p className="text-white w-[80%] text-center sm:text-[12px]">
@@ -51,7 +51,7 @@ const MembersSect = ({ dataArr }) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 lg:mt-10 md:grid-cols-2  items-center	justify-items-center lg:px-2 gap-24 gap-x-32 1xl:gap-x-4 max-w-[1200px] px-10 m-auto">
+          <div className="grid grid-cols-3 place-items-center	 lg:mt-10 md:grid-cols-2 justify-center  items-center	justify-items-center lg:px-2 gap-24 gap-x-32 1xl:gap-x-4 max-w-[1200px] px-10 m-auto">
             {dataArr?.councilMembers?.otherMembers?.map((item) => {
               return (
                 <div

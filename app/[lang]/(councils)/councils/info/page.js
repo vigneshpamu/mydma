@@ -22,35 +22,35 @@ const Page = () => {
       logo: '/images/municipalities/logo/logo1.jpg',
       councilMembers: {
         chairman: {
-          name: 'Dr. Khamis Al-Naqbi',
+          name: 'His Excellency Humaid Saif bin Samha Al Shamsi',
           role: 'Chairman of the Rashid Municipal Council of Khor Fakkan',
-          img: '/images/councils/info/members/hamriya/1.png',
+          img: '/images/councils/info/members/hamriya/6.png',
         },
         vicePresident: {
-          name: 'Dr. Suhail Al Naqbi,',
+          name: 'His Excellency Humaid Fayez Abdul Rahman Al Shamsi',
           role: 'Vice President of the Council',
-          img: '/images/councils/info/members/hamriya/2.png',
+          img: '/images/councils/info/members/hamriya/3.png',
         },
         otherMembers: [
           {
-            name: 'Rashid Khamis',
+            name: 'His Excellency Hassan Salem bin Harb Al Shamsi',
             role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/hamriya/3.png',
+            img: '/images/councils/info/members/hamriya/1.png',
           },
           {
-            name: 'Saeed Abdullah',
+            name: 'His Excellency Ahmed Saeed Al Muhairi',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/hamriya/2.png',
+          },
+          {
+            name: 'His Excellency Talib Rashid Al-Musaferi',
             role: 'Position of this person With more details if any',
             img: '/images/councils/info/members/hamriya/4.png',
           },
           {
-            name: 'Muhammad Al-Gohary',
+            name: 'His Excellency Majid Ali Bouvier Al Shamsi',
             role: 'Position of this person With more details if any',
             img: '/images/councils/info/members/hamriya/5.png',
-          },
-          {
-            name: 'Muhammad Khalfan',
-            role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/hamriya/6.png',
           },
         ],
       },
@@ -126,6 +126,45 @@ const Page = () => {
       title: 'Al Madam City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo5.jpg',
+      councilMembers: {
+        chairman: {
+          name: 'Sultan Muhammad Maadhad bin Huwaydin',
+          role: 'Chairman of the Rashid Municipal Council of Khor Fakkan',
+          img: '/images/councils/info/members/al-madam/3.png',
+        },
+        vicePresident: {
+          name: 'Saeed Mohammed Saeed Al Rashidi',
+          role: 'Vice President of the Council',
+          img: '/images/councils/info/members/al-madam/5.png',
+        },
+        otherMembers: [
+          {
+            name: 'Ali Awad Ali Omair Al Ketbi',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/al-madam/1.png',
+          },
+          {
+            name: 'Abdullah Saber Saeed Saber Al Ketbi',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/al-madam/2.png',
+          },
+          {
+            name: 'Sheriji Muhammad Muhammad Eid Al-Kutbi',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/al-madam/4.png',
+          },
+          {
+            name: 'Salem Matar Hamad Saud Al Ketbi',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/al-madam/6.png',
+          },
+          {
+            name: 'Juma Muhammad Ali Sharara',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/al-madam/7.png',
+          },
+        ],
+      },
     },
     {
       slug: 'Dibba Al Hisn City Municipality',
