@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 const GallerySect = ({ data }) => {
+  const [galleryHeight, setGalleryHeight] = useState('relative py-20 h-[800px]')
+
+  useEffect(() => {
+    if (data?.landmarks?.length === 0) {
+      const height = 'mt-10 h-[200px]'
+      setGalleryHeight(height)
+    }
+  }, [data])
   return (
     <>
-      <div className="relative py-20 h-[800px]">
+      <div className={`${galleryHeight}`}>
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[1347px] 1xl:w-[90%] m-auto ">
           <div className="w-[900px] lg:w-[95%] flex flex-col gap-7">
             <div className="flex flex-col gap-3">

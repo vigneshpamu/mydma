@@ -54,7 +54,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
                 height="300"
                 allowFullScreen=""
                 loading="lazy"
-                // referrerpolicy="no-referrer-when-downgrade"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <button className="flex w-[200px] justify-between items-center m-auto border-2 border-customColor shadow-md p-3 px-4 transition-all hover:text-white hover:bg-customColor rounded-3xl">
