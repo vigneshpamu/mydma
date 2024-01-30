@@ -6,6 +6,7 @@ import Link from 'next/link'
 import SideMenu from '../../common/SideMenu'
 import { usePathname, useRouter } from 'next/navigation'
 import UpperNav from '../../common/UpperNav'
+import Image from 'next/image'
 const HeroSect = ({ lang }) => {
   const navData = [
     {
@@ -130,11 +131,15 @@ const HeroSect = ({ lang }) => {
         {heroSwiper.length > 0 &&
           heroSwiper.map((item, index) => (
             <SwiperSlide key={item.id} className="">
-              <img
-                src={item.img}
-                className="w-full   h-[920px] object-cover pointer-events-none 2md:h-[750px] xsm:h-[650px]"
-                alt="hero"
-              />
+              <div className="w-full h-[920px] object-cover pointer-events-none 2md:h-[750px] xsm:h-[650px]">
+                <Image
+                  src={item.img}
+                  alt="hero"
+                  layout="fill"
+                  objectFit="cover"
+                  className="pointer-events-none"
+                />
+              </div>
             </SwiperSlide>
           ))}
       </Swiper>
@@ -163,7 +168,15 @@ const HeroSect = ({ lang }) => {
             </div>
           </div>
           <div className="flex items-center gap-3 2md:hidden">
-            <img src="images/home/elements/5.png" alt="" className="" />
+            <Image
+              src="/images/home/elements/5.png"
+              alt="hero"
+              height={13}
+              width={13}
+              objectFit="cover"
+              className="pointer-events-none"
+            />
+            {/* <img src="/images/home/elements/5.png" alt="" className="" /> */}
             <p className="text-white text-2xl tracking-wider">Scroll</p>
           </div>
         </div>
@@ -178,12 +191,17 @@ const HeroSect = ({ lang }) => {
             {quickFindData.map((item, index) => {
               return (
                 <Link key={index} href={`/${path}${item.link}`}>
-                  <div className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 xsm:p-7 cursor-pointer">
-                    <img
-                      src={item.icon}
-                      alt=""
-                      className="w-[80px] h-[80px] object-cover xl:w-[50px] xl:h-[45px]"
-                    />
+                  <div className="flex gap-2 items-center justify-center flex-col p-10 2lg:p-6 2md:p-8 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 xsm:p-7 cursor-pointer">
+                    <div className="w-[80px] h-[80px] object-cover xl:w-[50px] xl:h-[45px]">
+                      <Image
+                        src={`/${item.icon}`}
+                        alt="hero"
+                        height={80}
+                        width={80}
+                        objectFit="cover"
+                        className="pointer-events-none"
+                      />
+                    </div>
                     <p className="font-semibold  2xsm:text-sm">{item.name}</p>
                   </div>
                 </Link>

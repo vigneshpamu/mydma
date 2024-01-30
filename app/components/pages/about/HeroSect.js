@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import SideMenu from '../../common/SideMenu'
 import Link from 'next/link'
 import UpperNav from '../../common/UpperNav'
+import Image from 'next/image'
 
 const HeroSect = () => {
   const navData = [
@@ -62,12 +63,21 @@ const HeroSect = () => {
       <div className="relative h-full w-[100%] m-auto ">
         <SideMenu visible={visible} setVisible={setVisible} />
         <div className="relative">
-          <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
-          <img
+          {/* <img
             src="/images/about/hero/hero.jpg"
             className="w-full  h-[750px] 2md:h-[500px] md:h-[400px] object-cover pointer-events-none"
             alt="hero"
-          />
+          /> */}
+          <div className="w-full  h-[750px] 2md:h-[500px] md:h-[400px] object-cover pointer-events-none">
+            <Image
+              src="/images/about/hero/hero.jpg"
+              alt="hero"
+              layout="fill"
+              objectFit="cover"
+              className="pointer-events-none"
+            />
+            <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
+          </div>
         </div>
         <UpperNav setVisible={setVisible} />
         <div className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%]  1xl:top-[50%] 2md:top-[35%]  m-auto flex flex-row justify-between ">

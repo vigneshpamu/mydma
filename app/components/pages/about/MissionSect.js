@@ -37,7 +37,7 @@ const MissionSect = () => {
             />
             <div className="absolute top-[6%]  flex flex-col h-[90%] justify-between left-[10%] ">
               <div>
-                <p className="text-8xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
+                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
                   8
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
@@ -45,7 +45,7 @@ const MissionSect = () => {
                 </p>
               </div>
               <div>
-                <p className="text-8xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
+                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
                   28
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
@@ -53,7 +53,7 @@ const MissionSect = () => {
                 </p>
               </div>
               <div>
-                <p className="text-8xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
+                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
                   6
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
@@ -61,7 +61,7 @@ const MissionSect = () => {
                 </p>
               </div>
               <div>
-                <p className="text-8xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
+                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
                   17
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
@@ -69,8 +69,8 @@ const MissionSect = () => {
                 </p>
               </div>
               <div>
-                <p className="text-8xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
-                  2590+<span className="text-2xl 2md:text-sm"> km2</span>
+                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
+                  2590+<span className="text-xl 2md:text-sm"> km2</span>
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
                   Area of the Emirates of Sharjah
@@ -78,7 +78,7 @@ const MissionSect = () => {
               </div>
 
               <div>
-                <p className="text-8xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
+                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
                   1400k+
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">

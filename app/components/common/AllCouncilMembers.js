@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 
@@ -126,11 +127,18 @@ const AllCouncilMembers = () => {
             {membersData.map((item) => {
               return (
                 <div className="relative max-w-[250px] ml-2 mr-2" key={item.id}>
-                  <div className="h-[300px]">
-                    <img
+                  <div className="min-h-[300px]">
+                    {/* <img
                       src={item.img}
                       alt=""
                       className="w-[250px] h-[300px] object-cover"
+                    /> */}
+                    <Image
+                      src={item.img}
+                      alt="council-members"
+                      width={250}
+                      height={300}
+                      className="pointer-events-none"
                     />
                   </div>
                   <div className="">
