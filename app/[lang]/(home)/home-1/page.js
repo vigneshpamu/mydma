@@ -59,10 +59,10 @@ const Home_1 = () => {
       <RightSideSticky />
       <StickyNav start={910} end={1200} />
       <VisionSect />
-      <MagazineSect />
-      <InfoSect />
       <NewsMediaSect />
       <EventsSect />
+      <MagazineSect />
+      <InfoSect />
       <FeedbackSect />
       <GovtEntities />
       <Footer />

@@ -69,9 +69,9 @@ const MembersSect = ({ dataArr }) => {
                     {item.name}
                   </p>
                   {/* <p className="text-center xsm:text-[12px]">{item.role}</p> */}
-                  <button className="bg-[#036C73] w-full rounded-md hover:opacity-95 text-white py-2">
+                  {/* <button className="bg-[#036C73] w-full rounded-md hover:opacity-95 text-white py-2">
                     Know More
-                  </button>
+                  </button> */}
                 </div>
               )
             })}

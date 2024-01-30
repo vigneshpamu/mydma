@@ -9,6 +9,7 @@ import Footer from '@/app/components/common/Footer'
 import CommonHero from '@/app/components/common/CommonHero'
 import CommonCard from '@/app/components/common/CommonCard'
 import StickyNav from '@/app/components/common/StickyNav'
+import AllCouncilMembers from '@/app/components/common/AllCouncilMembers'
 const page = () => {
   const mainData = [
     {
@@ -83,6 +84,7 @@ const page = () => {
       />
       <StickyNav start={700} end={900} />
       <CommonCard data={mainData} />
+      <AllCouncilMembers />
       <Footer />
     </motion.div>
   )

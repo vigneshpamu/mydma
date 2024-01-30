@@ -109,7 +109,7 @@ const NewsMediaSect = () => {
                 ></div>
               </div>
               <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row sm:left-6  items-end gap-16 2md:left-3">
-                <p className="text-3xl text-white font-semibold 2xl:text-2xl 2md:text-xl sm:text-xl">
+                <p className="text-2xl text-white font-semibold 2xl:text-2xl 2md:text-xl sm:text-xl">
                   Quis autem vel eum iure reprehenderit qui in ea voluptate....
                 </p>
                 <div>
