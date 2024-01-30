@@ -38,11 +38,8 @@ const CommonCard = ({ data }) => {
         <div className="grid grid-cols-3 2md:grid-cols-2 sm:grid-cols-1 absolute top-[-100px] pb-20 left-1/2 transform -translate-x-1/2 gap-y-10 sm:gap-y-3 gap-6 w-[1347px] 1xl:w-[95%] m-auto">
           {data?.map((item, index) => {
             return (
-              <Link href={`/${par}${item.link}?name=${item.title}`}>
-                <div
-                  key={index}
-                  className="w-[100%] h-[400px] lg:h-[250px] sm:h-[350px] rounded-xl relative transition-all hover:scale-105"
-                >
+              <Link key={index} href={`/${par}${item.link}?name=${item.title}`}>
+                <div className="w-[100%] h-[400px] lg:h-[250px] sm:h-[350px] rounded-xl relative transition-all hover:scale-105">
                   <img
                     src={item.img}
                     className="w-[100%] h-[100%] rounded-xl object-cover"
