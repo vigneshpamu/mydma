@@ -136,7 +136,7 @@ const page = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1.25 } }}
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
-      className="relative max-w-8xl m-auto border-2 overflow-hidden"
+      className="relative max-w-8xl m-auto  border-2 overflow-hidden"
     >
       <LeftSideSticky />
       <RightSideSticky />

@@ -137,7 +137,7 @@
 
 /* /// Marquee Effect */
 
-/* .arabic p {
+.arabic {
   font-family: 'Alexandria', sans-serif !important;
-  text-align: right;
-} */
+  /* text-align: right; */
+}
