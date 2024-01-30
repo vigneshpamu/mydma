@@ -45,7 +45,7 @@ const CommonCard = ({ data }) => {
                     className="w-[100%] h-[100%] rounded-xl object-cover"
                     alt=""
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t rounded-xl from-black/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t rounded-xl from-black to-transparent"></div>
                   <div className="absolute left-5 bottom-7  flex flex-col justify-between h-[100px] lg:h-[100px]">
                     <p className="text-white text-2xl w-[80%] font-semibold lg:text-xl sm:text-2xl md:text-lg">
                       {item.title}

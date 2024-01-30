@@ -80,7 +80,7 @@ const page = () => {
       <LeftSideSticky />
       <RightSideSticky />
       <CommonHero
-        hero={'/images/municipalities/hero/hero.png'}
+        hero={'/images/municipalities/hero/hero2.jpg'}
         page={'Municipalities'}
         desc={`Embrace change, for it brings growth and endless possibilities ahead.`}
       />
