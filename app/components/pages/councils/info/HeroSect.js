@@ -3,7 +3,7 @@ import SideMenu from '@/app/components/common/SideMenu'
 import UpperNav from '@/app/components/common/UpperNav'
 import React, { useState } from 'react'
 
-const HeroSect = () => {
+const HeroSect = ({ dataArr }) => {
   const [visible, setVisible] = useState(false)
   return (
     <>
@@ -25,7 +25,7 @@ const HeroSect = () => {
             />
             <div className="absolute top-0 py-10 h-[100%] w-full flex items-center justify-center">
               <p className="text-6xl font-semibold text-white text-center md:text-4xl xsm:text-3xl">
-                Khorfakkan <br /> Municipality Council
+                {dataArr?.slug} <br /> Municipality Council
               </p>
               {/* <p className="text-white text-xl	text-center px-20">
                 The Executive Council of the Emirate of Sharjah, the supreme

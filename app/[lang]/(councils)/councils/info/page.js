@@ -15,10 +15,45 @@ const Page = () => {
   const [visible, setVisible] = useState(false)
   const mainData = [
     {
+      slug: 'Hamriyah City',
       img: '/images/municipalities/main/im1.png',
       title: 'Hamriyah City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo1.jpg',
+      councilMembers: {
+        chairman: {
+          name: 'Dr. Khamis Al-Naqbi',
+          role: 'Chairman of the Rashid Municipal Council of Khor Fakkan',
+          img: '/images/councils/info/members/hamriya/1.png',
+        },
+        vicePresident: {
+          name: 'Dr. Suhail Al Naqbi,',
+          role: 'Vice President of the Council',
+          img: '/images/councils/info/members/hamriya/2.png',
+        },
+        otherMembers: [
+          {
+            name: 'Rashid Khamis',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/hamriya/3.png',
+          },
+          {
+            name: 'Saeed Abdullah',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/hamriya/4.png',
+          },
+          {
+            name: 'Muhammad Al-Gohary',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/hamriya/5.png',
+          },
+          {
+            name: 'Muhammad Khalfan',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/hamriya/6.png',
+          },
+        ],
+      },
     },
     {
       slug: 'Mleiha City',
@@ -116,7 +151,7 @@ const Page = () => {
   ]
   const searchParams = useSearchParams()
   const [paramsData, setParamsData] = useState('')
-  const [dataArr, setDataArr] = useState({})
+  const [dataArr, setDataArr] = useState([])
   function getDataByTitle(array, paramsData) {
     return array.filter((item) => item.title === searchParams.get('name'))
   }
@@ -124,64 +159,11 @@ const Page = () => {
     if (searchParams.get('name')) {
       setParamsData(searchParams.get('name'))
       const result = getDataByTitle(mainData, paramsData)
-      console.log(result)
-      setDataArr(result[0])
+      console.log(result, 'Resut')
+      setDataArr(result)
     }
   }, [searchParams.get('name')])
 
-  const myArr = [
-    {
-      slug: 'Khorfakkan City',
-      img: '/images/municipalities/main/im3.png',
-      title: 'Khorfakkan City Municipality',
-      link: '/councils/info',
-      logo: '/images/municipalities/logo/logo3.jpg',
-      councilMembers: {
-        chairman: {
-          name: 'Dr. Khamis Al-Naqbi',
-          role: 'Chairman of the Rashid Municipal Council of Khor Fakkan',
-          img: '/images/councils/info/members/khorfakkan/img4.jpg',
-        },
-        vicePresident: {
-          name: 'Dr. Suhail Al Naqbi,',
-          role: 'Vice President of the Council',
-          img: '/images/councils/info/members/khorfakkan/img5.jpg',
-        },
-        otherMembers: [
-          {
-            name: 'Rashid Khamis',
-            role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/khorfakkan/img1.png',
-          },
-          {
-            name: 'Saeed Abdullah',
-            role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/khorfakkan/img2.png',
-          },
-          {
-            name: 'Muhammad Al-Gohary',
-            role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/khorfakkan/img3.png',
-          },
-          {
-            name: 'Muhammad Khalfan',
-            role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/khorfakkan/img6.png',
-          },
-          {
-            name: 'Muhammad Zaid',
-            role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/khorfakkan/img7.jpg',
-          },
-          {
-            name: 'Youssef Shaheen',
-            role: 'Position of this person With more details if any',
-            img: '/images/councils/info/members/khorfakkan/img8.jpg',
-          },
-        ],
-      },
-    },
-  ]
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -192,8 +174,8 @@ const Page = () => {
       <LeftSideSticky />
       <RightSideSticky />
       <StickyNav start={700} end={1000} />
-      <HeroSect />
-      <MembersSect dataArr={myArr[0]} />
+      <HeroSect dataArr={dataArr[0]} />
+      <MembersSect dataArr={dataArr[0]} />
       <Footer />
     </motion.div>
   )
