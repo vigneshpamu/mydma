@@ -2,9 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 
 const InfoSect = ({ dataArr, paramsData }) => {
+  console.log(dataArr[0]?.website)
   return (
     <>
-      <div className="relative h-[550px] 1xl:h-[650px] lg:h-[1350px] xsm:h-[1470px] 3xsm:h-[1570px]">
+      <div className="relative h-[550px] 1xl:h-[650px] lg:h-[1350px]  xsm:h-[1470px] 3xsm:h-[1570px]">
         <div className="absolute h-[350px]  lg:flex-col left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto ">
           <div className="w-[55%] lg:w-[100%] lg:mt-[730px]  xl:w-[52%] py-4 flex flex-col mr-5 gap-10">
             <p className="text-4xl font-bold w-[100%] leading-tight xl:text-3xl	sm:text-2xl">
@@ -26,9 +27,9 @@ const InfoSect = ({ dataArr, paramsData }) => {
               eos qui ratione voluptatem sequi nesciunt.
             </p>
           </div>
-          <div className="absolute bg-gray-50 p-4 w-[424px] lg:w-[100%] right-0 top-[-475px] lg:top-[-40px] rounded-lg h-[750px] flex flex-col gap-6">
-            <Link href={''}>
-              <div className="flex flex-row gap-3 hover:bg-gray-100 transition-all">
+          <div className="absolute bg-gray-50 p-4 w-[424px] lg:w-[100%] z-20 right-0 top-[-475px] lg:top-[-40px] rounded-lg h-[750px] flex flex-col gap-6">
+            <Link href={`${dataArr[0]?.website}`}>
+              <div className="flex flex-row gap-3 border-2 cursor-pointer hover:bg-gray-100 transition-all">
                 <div className="border-2 rounded-md w-[130px] h-[130px]">
                   <img
                     src={dataArr[0]?.logo}
@@ -40,7 +41,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
                   <p className="font-bold w-[60%]">{paramsData}</p>
                   <div className="flex flex-row w-full justify-between">
                     <p className="text-customColor text-lg">Visit Website</p>
-                    <img src="//images/home/elements/b-rarrow.png" alt="" />
+                    {/* <img src="/images/home/elements/b-rarrow.png" alt="" /> */}
                   </div>
                 </div>
               </div>
@@ -57,10 +58,13 @@ const InfoSect = ({ dataArr, paramsData }) => {
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <button className="flex w-[200px] justify-between items-center m-auto border-2 border-customColor shadow-md p-3 px-4 transition-all hover:text-white hover:bg-customColor rounded-3xl">
-              <p className="font-bold">Call now</p>
-              <img src="//images/home/elements/b-rarrow.png" alt="" />
-            </button>
+
+            <Link href={`tel:${dataArr[0]?.number}`}>
+              <button className="flex w-[200px] justify-between items-center m-auto z-20 border-2 border-customColor shadow-md p-3 px-4 transition-all hover:text-white hover:bg-customColor rounded-3xl">
+                <p className="font-bold">Call now</p>
+                <img src="//images/home/elements/b-rarrow.png" alt="" />
+              </button>
+            </Link>
             <div className="flex flex-row items-center justify-center gap-5">
               {dataArr[0]?.socials.map((item, index) => {
                 return (

@@ -23,8 +23,8 @@ export default function RootLayout({ children, params }) {
 
   // setLang(params.lang === 'en' ? 'ar' : 'en') // Toggle between 'en' and 'fr'
   return (
-    <html lang={params.lang} className="">
-      <body className={openSans.className}>{children}</body>
+    <html lang={params.lang}>
+      <body className="font-alexandria">{children}</body>
     </html>
   )
 }

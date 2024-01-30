@@ -20,7 +20,7 @@ const HeroSect = ({ paramsData }) => {
 
         {/* <CommonNav /> */}
         <UpperNav setVisible={setVisible} />
-        <div className="absolute top-[290px] h-[350px] lg:h-[280px] xsm:h-[180px] xsm:top-[140px] lg:top-[200px] flex flex-col justify-between left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto z-10">
+        <div className="absolute top-[290px] h-[350px] lg:h-[280px] xsm:h-[180px] xsm:top-[140px] lg:top-[200px] flex flex-col justify-between left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto z-0">
           <div>
             <p className="text-white text-2xl font-semibold xsm:text-lg">
               Municipalities
