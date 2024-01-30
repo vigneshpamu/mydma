@@ -175,13 +175,10 @@ const HeroSect = ({ lang }) => {
             <div className="w-[100px] h-[3px] bg-gray-100 rounded-sm"></div>
           </div>
           <div className="grid grid-cols-2 gap-4 max-w-[400px] m-auto">
-            {quickFindData.map((item) => {
+            {quickFindData.map((item, index) => {
               return (
-                <Link href={`/${path}${item.link}`}>
-                  <div
-                    className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 xsm:p-7 cursor-pointer"
-                    key={item.id}
-                  >
+                <Link key={index} href={`/${path}${item.link}`}>
+                  <div className="flex gap-2 items-center justify-center flex-col p-10 bg-white rounded-xl 2md:shadow-lg  hover:bg-gray-50 xsm:p-7 cursor-pointer">
                     <img
                       src={item.icon}
                       alt=""
