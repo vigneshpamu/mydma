@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
@@ -44,6 +45,16 @@ const NeedSect = () => {
                       className="w-[1347px] h-[777px] sm:h-[500px] object-cover"
                       alt="hero"
                     />
+                    {/* <div className="w-[1347px] h-[777px] sm:h-[500px] object-cover">
+                      <Image
+                        src={item.img}
+                        alt="meeting-img"
+                        width={1347}
+                        height={777}
+                        objectFit="cover"
+                        className="pointer-events-none  object-cover"
+                      />
+                    </div> */}
                   </SwiperSlide>
                 ))}
             </Swiper>

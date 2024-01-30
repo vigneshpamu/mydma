@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -73,10 +74,17 @@ const Footer = () => {
   return (
     <>
       <div className="relative h-[750px] sm:h-[1150px]">
-        <img
+        {/* <img
           src="/images/home/footer/background.png"
           className="w-full h-full"
           alt=""
+        /> */}
+        <Image
+          src="/images/home/footer/background.png"
+          alt="meeting-img"
+          layout="fill"
+          objectFit="cover"
+          className="pointer-events-none  object-cover"
         />
         <div className="flex flex-col text-white gap-20 absolute top-6 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:gap-5 sm:w-[95%] m-auto">
           <div className="flex w-full justify-end items-end">

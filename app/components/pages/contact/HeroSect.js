@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SideMenu from '../../common/SideMenu'
 import Link from 'next/link'
 import UpperNav from '../../common/UpperNav'
+import Image from 'next/image'
 
 const HeroSect = () => {
   const [visible, setVisible] = useState(false)
@@ -9,11 +10,19 @@ const HeroSect = () => {
     <>
       <div className="relative h-full w-[100%] m-auto">
         <SideMenu visible={visible} setVisible={setVisible} />
-        <img
-          src="/images/contact/hero/hero.png"
-          className="w-full h-[750px] 2md:h-[550px] sm:h-[400px] object-cover pointer-events-none"
-          alt="hero"
-        />
+
+        <div className="w-full h-[750px] 2md:h-[550px] sm:h-[400px] object-cover pointer-events-none">
+          <Image
+            src="/images/contact/hero/hero.png"
+            alt="contact-img"
+            // height={750}
+            // width={2500}
+            layout="fill"
+            objectFit="cover"
+            className="pointer-events-none  object-cover"
+          />
+          <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
+        </div>
         <UpperNav setVisible={setVisible} />
         <div className="absolute bottom-[40px] left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto flex flex-row justify-between ">
           <div className="flex justify-between h-[420px] 2md:h-[300px]  sm:h-[200px] flex-col gap-4">

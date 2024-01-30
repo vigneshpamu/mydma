@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6'
 
 import StickyNav from '../../common/StickyNav'
+import Image from 'next/image'
 
 const HeroSectNews = () => {
   const magazineCard = [
@@ -101,7 +102,7 @@ const HeroSectNews = () => {
   }, [])
   return (
     <>
-      <div className="relative h-[2076px] 2lg:h-[2500px] 2md:h-[2300px] sm:h-[4000px] xsm:h-[3800px] md:h-[2100px] w-[100%] m-auto">
+      <div className="relative h-[2076px] 2lg:h-[2500px] 2md:h-[2300px] sm:h-[4100px] xsm:h-[4000px] 4xsm:h-[4300px] md:h-[2100px] w-[100%] m-auto">
         {/* <CommonNav /> */}
         <StickyNav start={0} end={0} />
         <img
@@ -109,6 +110,7 @@ const HeroSectNews = () => {
           className="w-full h-[750px] md:h-[650px] xsm:h-[450px] object-cover pointer-events-none"
           alt="hero"
         />
+
         <div className="flex flex-col gap-3 items-center justify-center w-[1347px] 1xl:w-[90%] absolute top-[350px] md:top-[15%] sm:top-[5%] xsm:top-[4%] left-1/2 transform -translate-x-1/2 m-auto">
           <p className="text-2xl font-bold">News & Media</p>
           <p className="text-5xl font-bold text-center w-[50%] 1xl:w-[70%] xsm:text-2xl mxsm:w-[90%] md:text-3xl md:w-[80%]">
@@ -123,12 +125,21 @@ const HeroSectNews = () => {
                   key={item.id}
                   href={`/${par}${item.link}?name=${item.title}`}
                 >
-                  <div className="flex bg-white flex-col gap-4  rounded-2xl h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <div>
-                      <img
+                  <div className="flex bg-white flex-col gap-4 sm:gap-4 sm:mb-6  rounded-2xl h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                    {/* <img
                         src={item.img}
                         className="rounded-lg sm:h-[300px] w-full"
                         alt=""
+                      /> */}
+                    <div className="sm:h-[300px] w-full">
+                      <Image
+                        src={item.img}
+                        alt="news-img"
+                        height={750}
+                        width={450}
+                        // layout="fill"
+                        objectFit="cover"
+                        className="pointer-events-none sm:h-[100%]  object-cover"
                       />
                     </div>
                     <div className="flex flex-col gap-3">

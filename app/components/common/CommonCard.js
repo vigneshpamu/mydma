@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
@@ -40,12 +41,24 @@ const CommonCard = ({ data }) => {
             return (
               <Link key={index} href={`/${par}${item.link}?name=${item.title}`}>
                 <div className="w-[100%] h-[400px] lg:h-[250px] sm:h-[350px] rounded-xl relative transition-all hover:scale-105">
-                  <img
+                  {/* <img
                     src={item.img}
                     className="w-[100%] h-[100%] rounded-xl object-cover"
                     alt=""
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t rounded-xl from-black to-transparent"></div>
+                  /> */}
+                  <div className="w-[100%] h-[100%] rounded-xl object-cover">
+                    <Image
+                      src={item.img}
+                      alt="municipality-img"
+                      // height={750}
+                      // width={2500}
+                      layout="fill"
+                      objectFit="cover"
+                      className="pointer-events-none rounded-xl object-cover"
+                    />
+                    {/* <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div> */}
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t rounded-xl from-slate-900 opacity-70 to-transparent"></div>
                   <div className="absolute left-5 bottom-7  flex flex-col justify-between h-[100px] lg:h-[100px]">
                     <p className="text-white text-2xl w-[80%] font-semibold lg:text-xl sm:text-2xl md:text-lg">
                       {item.title}

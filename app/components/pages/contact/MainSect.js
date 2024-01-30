@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -60,7 +61,16 @@ const MainSect = () => {
                         key={item.id}
                         className="flex items-center flex-row gap-4"
                       >
-                        <img src={item.img} alt="" />
+                        {/* <img src={item.img} alt="" /> */}
+                        <Image
+                          src={item.img}
+                          alt="contact-img"
+                          height={40}
+                          width={40}
+                          // layout="fill"
+                          objectFit="cover"
+                          className="pointer-events-none  object-cover"
+                        />
                         <p className=" text-white w-[60%] 2xl:w-[80%] text-lg">
                           {item.info}
                         </p>
@@ -79,7 +89,15 @@ const MainSect = () => {
                     return (
                       <Link href={item.link} key={item.id}>
                         <div>
-                          <img src={item.icon} alt="" />
+                          <Image
+                            src={item.icon}
+                            alt="contact-img"
+                            height={40}
+                            width={40}
+                            // layout="fill"
+                            objectFit="cover"
+                            className="pointer-events-none  object-cover"
+                          />
                         </div>
                       </Link>
                     )

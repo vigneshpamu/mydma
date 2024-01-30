@@ -4,6 +4,7 @@ import Link from 'next/link'
 import SideMenu from './SideMenu'
 import CommonNav from './CommonNav'
 import UpperNav from './UpperNav'
+import Image from 'next/image'
 
 const CommonHero = ({ hero, page, desc }) => {
   const [visible, setVisible] = useState(false)
@@ -12,12 +13,23 @@ const CommonHero = ({ hero, page, desc }) => {
       <div className="relative h-full w-[100%] m-auto">
         <SideMenu visible={visible} setVisible={setVisible} />
         <div className="relative">
-          <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
-          <img
+          {/* <img
             src={hero}
             className="w-full h-[750px] 2md:h-[600px] 2xsm:h-[450px] object-cover pointer-events-none"
             alt="hero"
-          />
+          /> */}
+          <div className="w-full h-[750px] 2md:h-[600px] 2xsm:h-[450px] object-cover pointer-events-none">
+            <Image
+              src={hero}
+              alt="meeting-img"
+              // height={750}
+              // width={2500}
+              layout="fill"
+              objectFit="cover"
+              className="pointer-events-none  object-cover"
+            />
+            <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
+          </div>
         </div>
         {/* <CommonNav /> */}
         <UpperNav setVisible={setVisible} />
