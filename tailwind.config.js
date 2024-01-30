@@ -53,6 +53,9 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     extend: {
+      fontFamily: {
+        alexandria: ['Alexandria', 'fallbackFont'],
+      },
       colors: {
         customColor: '#B48348', // Replace with your custom color code
       },
