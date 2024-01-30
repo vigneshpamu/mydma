@@ -59,13 +59,16 @@ const HeroSect = () => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <div className="relative h-full w-[100%] m-auto">
+      <div className="relative h-full w-[100%] m-auto ">
         <SideMenu visible={visible} setVisible={setVisible} />
-        <img
-          src="/images/about/hero/b1.png"
-          className="w-full h-[750px] 2md:h-[500px] md:h-[400px] object-cover pointer-events-none"
-          alt="hero"
-        />
+        <div className="relative">
+          <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
+          <img
+            src="/images/about/hero/hero.jpg"
+            className="w-full  h-[750px] 2md:h-[500px] md:h-[400px] object-cover pointer-events-none"
+            alt="hero"
+          />
+        </div>
         <UpperNav setVisible={setVisible} />
         <div className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%]  1xl:top-[50%] 2md:top-[35%]  m-auto flex flex-row justify-between ">
           <div className="flex justify-between flex-col gap-4">

@@ -9,11 +9,15 @@ const HeroSect = ({ paramsData }) => {
     <>
       <div className="relative h-full w-[100%] m-auto">
         <SideMenu visible={visible} setVisible={setVisible} />
-        <img
-          src="/images/municipalities/hero/hero.png"
-          className="w-full h-[750px] lg:h-[650px] xsm:h-[450px] object-cover pointer-events-none"
-          alt="hero"
-        />
+        <div className="relative">
+          <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
+          <img
+            src="/images/municipalities/hero/hero.png"
+            className="w-full h-[750px] lg:h-[650px] xsm:h-[450px] object-cover pointer-events-none"
+            alt="hero"
+          />
+        </div>
+
         {/* <CommonNav /> */}
         <UpperNav setVisible={setVisible} />
         <div className="absolute top-[290px] h-[350px] lg:h-[280px] xsm:h-[180px] xsm:top-[140px] lg:top-[200px] flex flex-col justify-between left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto z-10">

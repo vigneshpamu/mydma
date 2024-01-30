@@ -11,11 +11,14 @@ const CommonHero = ({ hero, page, desc }) => {
     <>
       <div className="relative h-full w-[100%] m-auto">
         <SideMenu visible={visible} setVisible={setVisible} />
-        <img
-          src={hero}
-          className="w-full h-[750px] 2md:h-[600px] 2xsm:h-[450px] object-cover pointer-events-none"
-          alt="hero"
-        />
+        <div className="relative">
+          <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
+          <img
+            src={hero}
+            className="w-full h-[750px] 2md:h-[600px] 2xsm:h-[450px] object-cover pointer-events-none"
+            alt="hero"
+          />
+        </div>
         {/* <CommonNav /> */}
         <UpperNav setVisible={setVisible} />
         <div className="absolute top-[290px] 2md:top-[200px] 2xsm:top-[150px] left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[95%] m-auto flex flex-col items-center justify-center  z-10">
