@@ -50,8 +50,8 @@ const GovtEntities = () => {
                 We offer a wide range of e-Services designed to meet your needs,
                 in a simple, smarter and more convenient way.
               </p> */}
-              <div className="flex flex-row gap-2">
-                {/* Previous */}
+              {/* <div className="flex flex-row gap-2">
+                Previous
                 <button
                   className="border-2 p-4 px-3 bg-white hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-lg"
                   // onClick={() => goToSlide(dIndex - 1)}
@@ -62,7 +62,7 @@ const GovtEntities = () => {
                     alt=""
                   />
                 </button>
-                {/* Next */}
+                Next
                 <button
                   className="border-2 p-4 px-3 bg-white hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-lg"
                   // onClick={() => goToSlide(dIndex + 1)}
@@ -73,7 +73,7 @@ const GovtEntities = () => {
                     alt=""
                   />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div>

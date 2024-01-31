@@ -146,7 +146,7 @@ const page = () => {
       <ObjectiveSect />
       <ChairManMessageSect />
       <OrganisationStructureSect />
-      <AllCouncilMembers />
+      {/* <AllCouncilMembers /> */}
       <NeedSect />
       <GovtEntities />
       <Footer />

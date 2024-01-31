@@ -31,11 +31,19 @@ const MissionSect = () => {
           </div>
           <div className="absolute top-[-470px] 2md:top-[-270px] md:top-[-200px] sm:top-[-150px] xsm:top-[-40px] right-0">
             <img
-              className="xl:w-[95%] xl:h-[911px] 2md:h-[700px] md:h-[550px] sm:h-[480px] xsm:h-[420px]  xsm:w-[130px] rounded-xl object-cover"
+              className="xl:w-[95%] h-[970px] xl:h-[911px] 2md:h-[700px] md:h-[550px] sm:h-[480px] xsm:h-[420px]  xsm:w-[130px] rounded-xl object-cover"
               src="/images/about/mission/info2.png"
               alt=""
             />
             <div className="absolute top-[6%]  flex flex-col h-[90%] justify-between left-[10%] ">
+              <div>
+                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
+                  8
+                </p>
+                <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
+                  Major cities of Sharjah
+                </p>
+              </div>
               <div>
                 <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
                   8
@@ -46,43 +54,19 @@ const MissionSect = () => {
               </div>
               <div>
                 <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
-                  28
+                  54
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
-                  Industrial Areas
-                </p>
-              </div>
-              <div>
-                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
-                  6
-                </p>
-                <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
-                  Free Zones
-                </p>
-              </div>
-              <div>
-                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
-                  17
-                </p>
-                <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
-                  Museums
-                </p>
-              </div>
-              <div>
-                <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
-                  2590+<span className="text-xl 2md:text-sm"> km2</span>
-                </p>
-                <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
-                  Area of the Emirates of Sharjah
+                  Tourist destinations
                 </p>
               </div>
 
               <div>
                 <p className="text-7xl xl:text-6xl 2md:text-4xl md:text-3xl sm:text-2xl xsm:text-lg font-bold text-white">
-                  1400k+
+                  2590<span className="text-xl 2md:text-sm"> km2</span>
                 </p>
                 <p className="text-xl xl:text-lg 2md:text-sm 2md:w-[80%] md:text-[12px] xsm:text-[8px] font-bold text-white">
-                  Population
+                  Area of the Emirates of Sharjah
                 </p>
               </div>
             </div>

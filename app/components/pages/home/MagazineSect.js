@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
+import React, { useEffect, useState } from 'react'
 
 const MagazineSect = () => {
   const magazineCard = [
@@ -10,35 +12,44 @@ const MagazineSect = () => {
       img: '/images/home/magazine/1.png',
       link: '/',
     },
-    {
-      id: 2,
-      title: 'DMA Magazine 22',
-      desc: '02 Dec 22',
-      img: '/images/home/magazine/2.png',
-      link: '/',
-    },
-    {
-      id: 3,
-      title: 'DMA Magazine 21',
-      desc: '02 Dec 21',
-      img: '/images/home/magazine/3.png',
-      link: '/',
-    },
-    {
-      id: 4,
-      title: 'DMA Magazine 20',
-      desc: '02 Dec 20',
-      img: '/images/home/magazine/4.png',
-      link: '/',
-    },
-    {
-      id: 5,
-      title: 'DMA Magazine 20',
-      desc: '02 Dec 20',
-      img: '/images/home/magazine/5.png',
-      link: '/',
-    },
+    // {
+    //   id: 2,
+    //   title: 'DMA Magazine 22',
+    //   desc: '02 Dec 22',
+    //   img: '/images/home/magazine/2.png',
+    //   link: '/',
+    // },
+    // {
+    //   id: 3,
+    //   title: 'DMA Magazine 21',
+    //   desc: '02 Dec 21',
+    //   img: '/images/home/magazine/3.png',
+    //   link: '/',
+    // },
+    // {
+    //   id: 4,
+    //   title: 'DMA Magazine 20',
+    //   desc: '02 Dec 20',
+    //   img: '/images/home/magazine/4.png',
+    //   link: '/',
+    // },
+    // {
+    //   id: 5,
+    //   title: 'DMA Magazine 20',
+    //   desc: '02 Dec 20',
+    //   img: '/images/home/magazine/5.png',
+    //   link: '/',
+    // },
   ]
+
+  const router = useRouter()
+  const pathname = usePathname()
+  const [par, setPar] = useState('')
+
+  useEffect(() => {
+    const path = pathname[1] + pathname[2]
+    setPar(path)
+  }, [])
 
   return (
     <>
@@ -54,10 +65,10 @@ const MagazineSect = () => {
                 <h4 className="text-6xl font-semibold lg:text-3xl xsm:text-2xl xsm:text-center">
                   An Extraordinary Year,<br></br> An Extraordinary Journey
                 </h4>
-                <p className="text-xl font-semibold w-[430px] text-center sm:text-left xsm:text-center xsm:text-sm xsm:font-medium 2xsm:px-10">
+                {/* <p className="text-xl font-semibold w-[430px] text-center sm:text-left xsm:text-center xsm:text-sm xsm:font-medium 2xsm:px-10">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, nesciunt.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="grid grid-cols-5 gap-5 mt-10 xl:grid-cols-4 lg:grid-cols-3 2md:grid-cols-2 sm:grid-cols-1">
@@ -67,29 +78,33 @@ const MagazineSect = () => {
                     key={item.id}
                     className="flex flex-col gap-4 shadow-lg rounded-2xl p-2 h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer"
                   >
-                    <div>
-                      <img src={item.img} className="w-full" alt="" />
-                    </div>
-                    <div className="flex flex-col gap-4 px-2">
+                    <Link href={`${par}/magazines/info?name=${item.title}`}>
                       <div>
-                        <p className="text-xl font-semibold">{item.title}</p>
-                        <p className="text-gray-400">
-                          Published on: {item.desc}
-                        </p>
+                        <img src={item.img} className="w-full" alt="" />
                       </div>
-                      <div className="flex flex-row justify-between">
-                        <p className="text-customColor">View now</p>
-                        <img src="/images/home/elements/rarrow.png" alt="" />
+                      <div className="flex flex-col gap-4 px-2">
+                        <div>
+                          <p className="text-xl font-semibold">{item.title}</p>
+                          <p className="text-gray-400">
+                            Published on: {item.desc}
+                          </p>
+                        </div>
+                        <div className="flex flex-row justify-between">
+                          <p className="text-customColor">View now</p>
+                          <img src="/images/home/elements/rarrow.png" alt="" />
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 )
               })}
             </div>
-            <button className="transition-all hover:bg-customColor hover:text-white flex w-[160px] m-auto flex-row justify-between rounded-2xl px-3 items-center shadow-xl p-2 border-2 border-customColor">
-              <p className="font-semibold">View All</p>
-              <img src="/images/home/elements/rarrow.png" alt="" />
-            </button>
+            <Link href={`${par}/magazines/`}>
+              <div className="transition-all hover:bg-customColor hover:text-white flex w-[160px] m-auto flex-row justify-between rounded-2xl px-3 items-center shadow-xl p-2 border-2 border-customColor">
+                <p className="font-semibold">View All</p>
+                <img src="/images/home/elements/rarrow.png" alt="" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

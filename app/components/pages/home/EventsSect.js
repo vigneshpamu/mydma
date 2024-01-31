@@ -39,12 +39,12 @@ const EventsSect = () => {
           <div className="flex flex-col gap-6">
             <p className="text-5xl sm:text-3xl">Activities & Events</p>
             <div className="flex flex-row justify-between items-center">
-              <p className="w-[600px] text-xl sm:text-sm sm:w-[60%]">
+              {/* <p className="w-[600px] text-xl sm:text-sm sm:w-[60%]">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam.
-              </p>
-              <div className="flex flex-row gap-2">
-                {/* Previous */}
+              </p> */}
+              {/* <div className="flex flex-row gap-2">
+                Previous
                 <button
                   className="border-2 p-4 px-3 bg-white hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-lg"
                   // onClick={() => goToSlide(dIndex - 1)}
@@ -55,7 +55,7 @@ const EventsSect = () => {
                     alt=""
                   />
                 </button>
-                {/* Next */}
+                Next
                 <button
                   className="border-2 p-4 px-3 bg-white hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-lg"
                   // onClick={() => goToSlide(dIndex + 1)}
@@ -66,7 +66,7 @@ const EventsSect = () => {
                     alt=""
                   />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <Swiper
@@ -119,8 +119,9 @@ const EventsSect = () => {
                     </div>
                     <div className="absolute left-7 bottom-7 flex flex-row items-end gap-16 xl:left-5 xl:bottom-10">
                       <p className="text-2xl text-white font-semibold  2xl:text-2xl xl:text-xl xl:w-[70%] lg:text-sm">
-                        Quis autem vel eum iure reprehenderit qui in ea
-                        voluptate....
+                        {/* Quis autem vel eum iure reprehenderit qui in ea
+                        voluptate.... */}
+                        Data is Awaited
                       </p>
                     </div>
                     <div className="flex flex-col px-4 py-2 items-center justify-center absolute top-2 left-2 rounded-md bg-white">
@@ -134,9 +135,9 @@ const EventsSect = () => {
               )
             })}
           </Swiper>
-          <button className="border-2 text-black border-customColor w-[190px] rounded-lg bg-white p-2 m-auto">
+          {/* <button className="border-2 text-black border-customColor w-[190px] rounded-lg bg-white p-2 m-auto">
             View All
-          </button>
+          </button> */}
         </div>
       </div>
     </>

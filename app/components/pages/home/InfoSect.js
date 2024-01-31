@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 
 const InfoSect = () => {
   const aboveSwiper = [
-    {
-      id: 1,
-      img: '/images/home/about/b1.png',
-      topic: 'History',
-      title: 'History of Sharjah - Emirates Culture, Religion, Way of Life',
-      desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
-    },
+    // {
+    //   id: 1,
+    //   img: '/images/home/about/b1.png',
+    //   topic: 'History',
+    //   title: 'History of Sharjah - Emirates Culture, Religion, Way of Life',
+    //   desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
+    // },
     {
       id: 2,
       img: '/images/home/about/b2.png',
@@ -98,12 +98,13 @@ const InfoSect = () => {
           <p className="text-6xl text-white font-semibold w-[1000px] leading-tight lg:text-3xl lg:w-[60%] xsm:w-[90%] xsm:text-2xl">
             {aboveSwiper[dIndex].title}
           </p>
-          <p className="text-white w-[900px] text-xl tracking-wide lg:text-lg lg:w-[600px] sm:text-sm sm:w-[80%]">
-            {aboveSwiper[dIndex].desc}
+          <p className="text-white w-[900px] text-2xl tracking-wide lg:text-lg lg:w-[600px] sm:text-sm sm:w-[80%]">
+            {/* {aboveSwiper[dIndex].desc} */}
+            Data is Awaited
           </p>
         </div>
-        <div className="absolute bottom-20 right-28 flex flex-row gap-2 z-10">
-          {/* Previous */}
+        {/* <div className="absolute bottom-20 right-28 flex flex-row gap-2 z-10">
+          Previous
           <button
             className="border-2 p-6 px-3 bg-white hover:opacity-90 active:scale-95 transition-all 2md:p-4 rounded-lg shadow-lg"
             onClick={() => goToSlide(dIndex - 1)}
@@ -114,7 +115,7 @@ const InfoSect = () => {
               alt=""
             />
           </button>
-          {/* Next */}
+          Next
           <button
             className="border-2 p-6 px-3 bg-white hover:opacity-90 active:scale-95 transition-all 2md:p-4  rounded-lg shadow-lg"
             onClick={() => goToSlide(dIndex + 1)}
@@ -125,7 +126,7 @@ const InfoSect = () => {
               alt=""
             />
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   )

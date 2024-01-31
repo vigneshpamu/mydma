@@ -58,7 +58,7 @@ const NeedSect = () => {
                   </SwiperSlide>
                 ))}
             </Swiper>
-            <div className="flex flex-row gap-2 absolute left-1/2 transform -translate-x-1/2 bottom-16 z-10">
+            {/* <div className="flex flex-row gap-2 absolute left-1/2 transform -translate-x-1/2 bottom-16 z-10">
               <button className="px-4 py-6 rounded-md bg-white active:scale-95 hover:opacity-95">
                 <img src="/images/home/elements/b-larrow.png" alt="" />
               </button>
@@ -66,7 +66,7 @@ const NeedSect = () => {
               <button className="px-4 py-6 rounded-md bg-white active:scale-95 hover:opacity-95">
                 <img src="/images/home/elements/b-rarrow.png" alt="" />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
