@@ -42,7 +42,7 @@ const HeroSectNews = () => {
     {
       img: '/images/municipalities/main/im1.png',
       title: 'Quis autem vel eum iure reprehenderit qui in ea voluptate.',
-      link: '/councils/info',
+      link: '/news/info',
     },
     {
       img: '/images/municipalities/main/im2.png',
@@ -112,10 +112,10 @@ const HeroSectNews = () => {
         />
 
         <div className="flex flex-col gap-3 items-center justify-center w-[1347px] 1xl:w-[90%] absolute top-[350px] md:top-[15%] sm:top-[5%] xsm:top-[4%] left-1/2 transform -translate-x-1/2 m-auto">
-          <p className="text-2xl font-bold">News & Media</p>
-          <p className="text-5xl font-bold text-center w-[50%] 1xl:w-[70%] xsm:text-2xl mxsm:w-[90%] md:text-3xl md:w-[80%]">
+          <p className="text-6xl sm:text-2xl font-bold">News & Media</p>
+          {/* <p className="text-5xl font-bold text-center w-[50%] 1xl:w-[70%] xsm:text-2xl mxsm:w-[90%] md:text-3xl md:w-[80%]">
             Know More About <br /> DMA Sharjah
-          </p>
+          </p> */}
         </div>
         <div className="flex flex-col items-center justify-center w-[1347px] 1xl:w-[90%] absolute top-[600px] md:top-[25%] sm:top-[10%] xsm:top-[8%]  left-1/2 transform -translate-x-1/2 m-auto">
           <div className="grid grid-cols-3 2lg:grid-cols-2 sm:grid-cols-1 sm:gap-y-5 gap-5 gap-y-12 mt-10 ">
@@ -144,14 +144,15 @@ const HeroSectNews = () => {
                     </div>
                     <div className="flex flex-col gap-3">
                       <p className="text-2xl 1xl:text-xl font-bold text-[#036C73] w-[90%">
-                        {item.title}
+                        {/* {item.title} */}
+                        <p>Data is Awaited</p>
                       </p>
-                      <div className="flex flex-row gap-3 items-center ">
+                      {/* <div className="flex flex-row gap-3 items-center ">
                         <p className="text-[#036C73]">Read More</p>
                         <p className="mt-1 text-xl text-[#036C73]">
                           <FaArrowRightLong />
                         </p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </Link>
