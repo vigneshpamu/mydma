@@ -302,6 +302,7 @@ const Page = () => {
       ],
     },
   ]
+
   function getDataByTitle(array, paramsData) {
     return array.filter((item) => item.title === searchParams.get('name'))
   }
