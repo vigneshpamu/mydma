@@ -52,20 +52,20 @@ const Home_1 = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1.25 } }}
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
-      className="relative max-w-8xl m-auto overflow-hidden"
+      className="relative  m-auto ove rflow-h idden"
     >
       <HeroSect lang={langData} />
       <LeftSideSticky />
       <RightSideSticky />
-      <StickyNav start={910} end={1200} />
+      {/* <StickyNav start={910} end={1200} />
       <VisionSect />
       <NewsMediaSect />
       <EventsSect />
-      <MagazineSect />
+      <MagazineSect /> */}
       {/* <InfoSect /> */}
-      <FeedbackSect />
+      {/* <FeedbackSect />
       <GovtEntities />
-      <Footer />
+      <Footer /> */}
     </motion.div>
   )
 }

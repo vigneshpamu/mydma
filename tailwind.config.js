@@ -9,50 +9,10 @@ module.exports = {
   ],
   prefix: '',
   theme: {
-    screens: {
-      '3xl': { max: '1535px' },
-      // => @media (max-width: 1535px) { ... }
-
-      '2xl': { max: '1428px' },
-      // => @media (max-width: 1535px) { ... }
-
-      '1xl': { max: '1388px' },
-      // => @media (max-width: 1535px) { ... }
-
-      xl: { max: '1279px' },
-      // => @media (max-width: 1279px) { ... }
-
-      '2lg': { max: '1112px' },
-      // => @media (max-width: 1023px) { ... }
-
-      lg: { max: '1045px' },
-      // => @media (max-width: 1023px) { ... }
-
-      '2md': { max: '868px' },
-      // => @media (max-width: 767px) { ... }
-
-      md: { max: '670px' },
-      // => @media (max-width: 500px) { ... }
-
-      sm: { max: '580px' },
-      // => @media (max-width: 639px) { ... }
-
-      mxsm: { max: '508px' },
-      // => @media (max-width: 639px) { ... }
-
-      xsm: { max: '460px' },
-      // => @media (max-width: 639px) { ... }
-
-      '2xsm': { max: '410px' },
-      // => @media (max-width: 639px) { ... }
-
-      '3xsm': { max: '395px' },
-      // => @media (max-width: 639px) { ... }
-
-      '4xsm': { max: '360px' },
-      // => @media (max-width: 639px) { ... }
-    },
     extend: {
+      screens: {
+        xs: '375px',
+      },
       fontFamily: {
         alexandria: ['Alexandria', 'fallbackFont'],
       },

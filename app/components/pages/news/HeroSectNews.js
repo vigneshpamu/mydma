@@ -99,26 +99,29 @@ const HeroSectNews = () => {
   useEffect(() => {
     const path = pathname[1] + pathname[2]
     setPar(path)
-  }, [])
+  }, [pathname])
+
   return (
     <>
-      <div className="relative h-[2076px] 2lg:h-[2500px] 2md:h-[2300px] sm:h-[4100px] xsm:h-[4000px] 4xsm:h-[4300px] md:h-[2100px] w-[100%] m-auto">
+      <div className="h-full ">
         {/* <CommonNav /> */}
         <StickyNav start={0} end={0} />
-        <img
-          src="/images/magazine/hero/hero.png"
-          className="w-full h-[750px] md:h-[650px] xsm:h-[450px] object-cover pointer-events-none"
-          alt="hero"
-        />
-
-        <div className="flex flex-col gap-3 items-center justify-center w-[1347px] 1xl:w-[90%] absolute top-[350px] md:top-[15%] sm:top-[5%] xsm:top-[4%] left-1/2 transform -translate-x-1/2 m-auto">
-          <p className="text-6xl sm:text-2xl font-bold">News & Media</p>
+        <div className=" h-full cong  ">
+          <img
+            src="/images/magazine/hero/hero.png"
+            className="object-cover pointer-events-none"
+            alt="hero"
+          />
+        </div>
+        <div className="flex text-4xl font-bold items-center justify-center w-full">
+          News & Media
+          {/* <p className="text-6xl sm:text-2xl font-bold">News & Media</p> */}
           {/* <p className="text-5xl font-bold text-center w-[50%] 1xl:w-[70%] xsm:text-2xl mxsm:w-[90%] md:text-3xl md:w-[80%]">
             Know More About <br /> DMA Sharjah
           </p> */}
         </div>
-        <div className="flex flex-col items-center justify-center w-[1347px] 1xl:w-[90%] absolute top-[600px] md:top-[25%] sm:top-[10%] xsm:top-[8%]  left-1/2 transform -translate-x-1/2 m-auto">
-          <div className="grid grid-cols-3 2lg:grid-cols-2 sm:grid-cols-1 sm:gap-y-5 gap-5 gap-y-12 mt-10 ">
+        <div className="flex items-center justify-center ">
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
             {mainData.map((item) => {
               return (
                 <Link
