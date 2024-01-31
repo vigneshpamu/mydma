@@ -30,26 +30,28 @@ const MembersSect = ({ dataArr }) => {
                 </p>
               </div>
             </div>
-            <div className="relative w-[538px] 1xl:w-[470px] 1xl:h-[450px] sm:h-[400px] xsm:h-[350px] 2lg:h-[420px] lg:w-[330px]  h-[550px]">
-              <img
-                src="/images/councils/info/members/bg.png"
-                className="w-full h-[240px] 1xl:h-[200px] 2lg:h-[150px]  object-cover absolute bottom-0"
-                alt=""
-              />
-              <img
-                src={dataArr?.councilMembers?.vicePresident?.img}
-                className="w-[260px] h-[293px] 1xl:w-[200px] 1xl:h-[230px] lg:w-[160px] lg:h-auto xsm:w-[120px] 2lg:bottom-28 absolute bottom-40 left-1/2 transform -translate-x-1/2  object-cover"
-                alt=""
-              />
-              <div className="absolute bottom-10 w-full flex flex-col 2lg:gap-3 md:gap-0 sm:gap-0 2lg:bottom-7 gap-7 items-center justify-center">
-                <p className="text-lg font-bold text-white sm:text-[15px] xsm:text-[13px]">
-                  {dataArr?.councilMembers?.vicePresident?.name}
-                </p>
-                <p className="text-white w-[80%] text-center sm:text-[12px]">
-                  {dataArr?.councilMembers?.vicePresident?.role}
-                </p>
+            {dataArr?.councilMembers?.vicePresident?.img.length > 0 && (
+              <div className="relative w-[538px] 1xl:w-[470px] 1xl:h-[450px] sm:h-[400px] xsm:h-[350px] 2lg:h-[420px] lg:w-[330px]  h-[550px]">
+                <img
+                  src="/images/councils/info/members/bg.png"
+                  className="w-full h-[240px] 1xl:h-[200px] 2lg:h-[150px]  object-cover absolute bottom-0"
+                  alt=""
+                />
+                <img
+                  src={dataArr?.councilMembers?.vicePresident?.img}
+                  className="w-[260px] h-[293px] 1xl:w-[200px] 1xl:h-[230px] lg:w-[160px] lg:h-auto xsm:w-[120px] 2lg:bottom-28 absolute bottom-40 left-1/2 transform -translate-x-1/2  object-cover"
+                  alt=""
+                />
+                <div className="absolute bottom-10 w-full flex flex-col 2lg:gap-3 md:gap-0 sm:gap-0 2lg:bottom-7 gap-7 items-center justify-center">
+                  <p className="text-lg font-bold text-white sm:text-[15px] xsm:text-[13px]">
+                    {dataArr?.councilMembers?.vicePresident?.name}
+                  </p>
+                  <p className="text-white w-[80%] text-center sm:text-[12px]">
+                    {dataArr?.councilMembers?.vicePresident?.role}
+                  </p>
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="grid grid-cols-3 place-items-center	 lg:mt-10 md:grid-cols-2 justify-center  items-center	justify-items-center lg:px-2 gap-24 gap-x-32 1xl:gap-x-4 max-w-[1200px] px-10 m-auto">
             {dataArr?.councilMembers?.otherMembers?.map((item) => {
