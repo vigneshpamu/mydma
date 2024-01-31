@@ -176,7 +176,7 @@ const HeroSect = ({ lang }) => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-3 2md:hidden">
+          {/* <div className="flex items-center gap-3 2md:hidden">
             <Image
               src="/images/home/elements/5.png"
               alt="hero"
@@ -185,9 +185,9 @@ const HeroSect = ({ lang }) => {
               objectFit="cover"
               className="pointer-events-none"
             />
-            {/* <img src="/images/home/elements/5.png" alt="" className="" /> */}
+            <img src="/images/home/elements/5.png" alt="" className="" />
             <p className="text-white text-2xl tracking-wider">Scroll</p>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col gap-7 2md:absolute 2md:top-[400px] 2md:left-1/2 2md:transform 2md:w-[500px] items-start justify-start xsm:top-[300px] 2md:-translate-x-1/2 2xsm:max-w-[350px]">
           <div className="flex flex-row items-center gap-5">
