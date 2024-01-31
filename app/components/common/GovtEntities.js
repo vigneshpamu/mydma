@@ -42,9 +42,7 @@ const GovtEntities = () => {
       <div className="relative h-[550px] sm:h-[400px] xsm:h-[450px]">
         <div className="flex flex-col text-black gap-20 absolute top-16 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px]  lg:w-[800px] 2md:w-[600px] sm:w-[90%] m-auto">
           <div className="flex flex-col gap-6">
-            <p className="text-5xl sm:text-3xl">
-              Visit other Government Entities.
-            </p>
+            <p className="text-5xl sm:text-3xl">Other Government Entities.</p>
             <div className="flex flex-row justify-between items-center">
               {/* <p className="w-[600px] text-xl">
                 We offer a wide range of e-Services designed to meet your needs,
