@@ -186,6 +186,55 @@ const Page = () => {
       title: 'Kalba City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo8.jpg',
+      councilMembers: {
+        chairman: {
+          name: 'His Excellency Dr. Obaid Saif Hamad Al Zaabi',
+          role: 'His Excellency the Chairman of the Council',
+          img: '/images/councils/info/members/kalba/5.png',
+        },
+        vicePresident: {
+          name: 'His Excellency Salem Abdullah Al Kindi',
+          role: 'Vice President of the Council',
+          img: '/images/councils/info/members/kalba/2.png',
+        },
+        otherMembers: [
+          {
+            name: 'His Excellency Hussein Mohammed bin Issa',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/kalba/1.png',
+          },
+          {
+            name: 'His Excellency Dr. Obaid Saqr Al-Marashda',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/kalba/3.png',
+          },
+          {
+            name: 'His Excellency Hamad Salem Al Zaabi',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/kalba/4.png',
+          },
+          {
+            name: 'His Excellency Zayed Al Kalbani',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/kalba/6.png',
+          },
+          {
+            name: 'His Excellency Saif Khamis Al Mazrouei',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/kalba/7.png',
+          },
+          {
+            name: 'His Excellency Saleh Al-Ghamri',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/kalba/8.png',
+          },
+          {
+            name: 'His Excellency Hashem Al-Bairaq',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/kalba/9.png',
+          },
+        ],
+      },
     },
   ]
   const searchParams = useSearchParams()

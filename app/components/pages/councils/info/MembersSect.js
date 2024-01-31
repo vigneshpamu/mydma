@@ -4,7 +4,7 @@ const MembersSect = ({ dataArr }) => {
   console.log(dataArr, 'DataArr')
   return (
     <>
-      <div className="relative h-[2000px] xsm:h-[1700px] mt-10">
+      <div className="relative h-[2100px] xsm:h-[1700px] mt-10">
         <div className="flex flex-col gap-16 lg:gap-4 py-4 absolute w-[1347px] 1xl:w-[90%] left-1/2 transform -translate-x-1/2 m-auto ">
           <p className="text-center font-bold text-5xl w-[80%] md:text-3xl m-auto">
             Members of Executive Council
