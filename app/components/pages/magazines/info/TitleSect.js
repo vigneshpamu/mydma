@@ -18,7 +18,7 @@ const TitleSect = () => {
           <p className="text-5xl font-bold text-center w-[50%] 1xl:w-[70%] xsm:text-2xl mxsm:w-[90%] md:text-3xl md:w-[80%]">
             DMA Magazine 23
           </p>
-          <div className="flex flex-row  mxsm:flex-wrap mxsm:justify-center mxsm:gap-5  items-center justify-between w-[500px] sm:w-[100%]  text-black ">
+          {/* <div className="flex flex-row  mxsm:flex-wrap mxsm:justify-center mxsm:gap-5  items-center justify-between w-[500px] sm:w-[100%]  text-black ">
             <p>
               Author: <span className="font-bold">DMCWebAdmin</span>
             </p>
@@ -33,7 +33,7 @@ const TitleSect = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
