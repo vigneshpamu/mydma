@@ -8,7 +8,7 @@ const VisionSect = () => {
       <div className="relative h-[1000px] lg:h-[900px] 2md:h-[1450px] sm:h-[1800px] 2xsm:h-[1700px] my-main">
         <img
           src="images/home/vision/background.png"
-          className=" w-full h-full"
+          className=" w-full h-full lg:h-[700px]  object-cover"
           alt=""
         />
         <div className="absolute flex flex-col gap-20 top-24 left-1/2 transform lg:w-[800px] 2md:w-[600px] sm:w-[90%] -translate-x-1/2 2md:top-72 xsm:top-60 2xsm:top-48">
