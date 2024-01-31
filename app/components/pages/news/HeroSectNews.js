@@ -144,8 +144,7 @@ const HeroSectNews = () => {
                     </div>
                     <div className="flex flex-col gap-3">
                       <p className="text-2xl 1xl:text-xl font-bold text-[#036C73] w-[90%">
-                        {/* {item.title} */}
-                        <p>Data is Awaited</p>
+                        Data is Awaited
                       </p>
                       {/* <div className="flex flex-row gap-3 items-center ">
                         <p className="text-[#036C73]">Read More</p>

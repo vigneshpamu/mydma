@@ -4,14 +4,14 @@ import { MdWhatsapp } from 'react-icons/md'
 const MainSect = () => {
   const recentData = [
     {
-      title: 'Quis autem vel eum iure reprehenderit.',
+      title: 'Data is Awaited',
       img: '/images/events/info/blog/dm1.png',
-      desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem....',
+      desc: 'Data is Awaited',
     },
     {
-      title: 'Quis autem vel eum iure reprehenderit.',
+      title: 'Data is Awaited',
       img: '/images/events/info/blog/dm2.png',
-      desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem....',
+      desc: 'Data is Awaited',
     },
   ]
   return (
@@ -21,7 +21,7 @@ const MainSect = () => {
           <div className="flex flex-col gap-10   p-7 bg-[#036C73]">
             <div>
               <p className="text-4xl font-semibold text-white w-[70%] lg:w-[90%] 2md:text-3xl md:text-2xl ">
-                Quis autem vel eum iure reprehenderit qui in ea voluptate.
+                Data is Awaited
               </p>
             </div>
             <div className="flex flex-row w-[100%] md:flex-wrap text-white justify-between">
@@ -43,28 +43,22 @@ const MainSect = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row 2md:flex-col gap-24 xl:gap-10">
+          <div className="flex flex-row  2md:flex-col gap-24 xl:gap-10">
             <div className="flex flex-col gap-5">
               <p className="text-4xl font-bold w-[90%] 2md:text-3xl xsm:w-[100%] ">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                Data is Awaited
               </p>
               <p className="leading-normal tracking-wide text-lg xsm:text-sm">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Sed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt.
+                Data is Awaited. Data is Awaited.Data is Awaited. Data is
+                Awaited. Data is Awaited. Data is Awaited. Data is Awaited. Data
+                is Awaited. Data is Awaited. Data is Awaited. Data is Awaited.
+                Data is Awaited. Data is Awaited. Data is Awaited.Data is
+                Awaited. Data is Awaited. Data is Awaited. Data is Awaited. Data
+                is Awaited. Data is Awaited. Data is Awaited. Data is Awaited.
+                Data is Awaited. Data is Awaited
               </p>
               <img src="/images/events/info/blog/demo.png" alt="" />
-              <p className="leading-normal tracking-wide text-lg xsm:text-sm">
+              {/* <p className="leading-normal tracking-wide text-lg xsm:text-sm">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
@@ -78,7 +72,7 @@ const MainSect = () => {
                 quia voluptas sit aspernatur aut odit aut fugit, sed quia
                 consequuntur magni dolores eos qui ratione voluptatem sequi
                 nesciunt.
-              </p>
+              </p> */}
               <div className="flex flex-row justify-between mt-5">
                 <button className="active:scale-95 transition-all">
                   <img src="/images/events/info/blog/icon/left.png" alt="" />
