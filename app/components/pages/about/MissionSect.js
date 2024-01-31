@@ -4,7 +4,7 @@ import React from 'react'
 const MissionSect = () => {
   return (
     <>
-      <div className="relative h-[700px] lg:h-[600px] 2md:h-[450px]  md:h-[400px] sm:h-[350px] xsm:h-[400px] max-w-[1547px] m-auto">
+      <div className="relative h-[700px] lg:h-[600px] 2md:h-[450px]  md:h-[400px] sm:h-[350px] xsm:h-[400px] z-10 max-w-[1547px] m-auto">
         <div className="w-[1347px] 1xl:w-[95%] py-16 2md:py-8 absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
           <div className="flex flex-col gap-5">
             <div className="bg-gray-100 w-[65%] 1xl:w-[62%] lg:w-[57%] xsm:w-[63%] 3xsm:w-[58%] 3xsm:p-3 p-10 2md:p-4 flex flex-col gap-3">

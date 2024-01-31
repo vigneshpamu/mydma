@@ -63,7 +63,7 @@ const CommonCard = ({ data }) => {
                     <p className="text-white text-2xl w-[80%] font-semibold lg:text-xl sm:text-2xl md:text-lg">
                       {item.title}
                     </p>
-                    <p className="text-white text-xl md:text-sm">Know</p>
+                    {/* <p className="text-white text-xl md:text-sm">Know</p> */}
                   </div>
                 </div>
               </Link>

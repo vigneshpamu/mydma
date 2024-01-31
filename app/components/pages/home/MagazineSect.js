@@ -53,7 +53,7 @@ const MagazineSect = () => {
 
   return (
     <>
-      <div className="relative pb-5 bg-gray-50 h-[950px] xl:h-[1200px] 2md:h-[1600px] sm:h-[2900px] xsm:h-[2100px]  my-main">
+      <div className="relative pb-5 bg-gray-50 h-[950px] lg:h-[800px] xl:h-[900px]  2md:h-[850px]    my-main">
         <div className="absolute flex flex-col gap-20 top-24 left-1/2 transform -translate-x-1/2 ">
           <div className="w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[100%] flex flex-col xsm:items-center xsm:justify-center gap-24 lg:gap-7">
             <div className="flex flex-col gap-8">

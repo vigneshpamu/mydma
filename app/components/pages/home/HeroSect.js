@@ -59,10 +59,14 @@ const HeroSect = ({ lang }) => {
     },
   ]
   const heroSwiper = [
+    { id: 3, img: '/images/home/hero/jp5.jpg' },
     { id: 1, img: '/images/home/hero/h1.png' },
-    { id: 2, img: '/images/home/hero/h2.png' },
-    // { id: 3, img: '/images/home/hero/h3.png' },
-    // { id: 4, img: '/images/home/hero/h4.png' },
+    { id: 4, img: '/images/home/hero/jp6.jpg' },
+    { id: 4, img: '/images/home/hero/jp7.jpg' },
+    { id: 5, img: '' },
+    { id: 6, img: '' },
+    // { id: 7, img: '' },
+    // { id: 7, img: '' },
   ]
   const quickFindData = [
     {
@@ -121,7 +125,7 @@ const HeroSect = ({ lang }) => {
         loop={true}
         effect={'fade'}
         autoplay={{
-          delay: 5000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         pagination
@@ -139,6 +143,11 @@ const HeroSect = ({ lang }) => {
                   objectFit="cover"
                   className="pointer-events-none"
                 />
+                {item.img.length < 1 && (
+                  <p className="text-5xl w-full h-full flex items-center justify-center mx-auto mt-[-100px]">
+                    Image is Awaited
+                  </p>
+                )}
               </div>
             </SwiperSlide>
           ))}
@@ -202,7 +211,9 @@ const HeroSect = ({ lang }) => {
                         className="pointer-events-none"
                       />
                     </div>
-                    <p className="font-semibold  2xsm:text-sm">{item.name}</p>
+                    <p className="font-semibold text-[12px] 2xsm:text-sm">
+                      {item.name}
+                    </p>
                   </div>
                 </Link>
               )

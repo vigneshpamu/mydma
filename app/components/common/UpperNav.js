@@ -101,11 +101,11 @@ const UpperNav = ({ setVisible }) => {
                   className="flex cursor-pointer flex-row items-center justify-center gap-2"
                   onClick={handleClick}
                 >
-                  <img
+                  {/* <img
                     className="w-[20px] h-[20px] object-cover cursor-pointer special-class"
                     src={item.icon}
                     alt=""
-                  />
+                  /> */}
                   <div className="px-2 rounded-lg bg-white">
                     <p className="text-sm">{par === 'ar' ? 'EN' : 'AR'}</p>
                   </div>
