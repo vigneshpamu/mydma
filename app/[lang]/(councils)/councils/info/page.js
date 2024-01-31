@@ -56,13 +56,6 @@ const Page = () => {
       },
     },
     {
-      slug: 'Mleiha City',
-      img: '/images/municipalities/main/im2.png',
-      title: 'Mleiha City Municipality',
-      link: '/councils/info',
-      logo: '/images/municipalities/logo/logo2.jpg',
-    },
-    {
       slug: 'Khorfakkan City',
       img: '/images/municipalities/main/im3.png',
       title: 'Khorfakkan City Municipality',
@@ -114,13 +107,6 @@ const Page = () => {
       },
     },
     {
-      slug: 'Al-Bataeh City',
-      img: '/images/municipalities/main/im4.png',
-      title: ' Al-Bataeh City Municipality',
-      link: '/councils/info',
-      logo: '/images/municipalities/logo/logo4.jpg',
-    },
-    {
       slug: 'Al Madam City',
       img: '/images/municipalities/main/im5.png',
       title: 'Al Madam City Municipality',
@@ -165,20 +151,6 @@ const Page = () => {
           },
         ],
       },
-    },
-    {
-      slug: 'Dibba Al Hisn City Municipality',
-      img: '/images/municipalities/main/im6.png',
-      title: 'Dibba Al Hisn City Municipality',
-      link: '/councils/info',
-      logo: '/images/municipalities/logo/logo6.jpg',
-    },
-    {
-      slug: 'Al Dhaid City Municipality',
-      img: '/images/municipalities/main/im7.png',
-      title: 'Al Dhaid City Municipality',
-      link: '/councils/info',
-      logo: '/images/municipalities/logo/logo7.jpg',
     },
     {
       slug: 'Kalba City Municipality',
@@ -235,6 +207,80 @@ const Page = () => {
           },
         ],
       },
+    },
+
+    {
+      slug: 'Mleiha City',
+      img: '/images/municipalities/main/im2.png',
+      title: 'Mleiha City Municipality',
+      link: '/councils/info',
+      logo: '/images/municipalities/logo/logo2.jpg',
+    },
+    {
+      slug: 'Al-Bataeh City',
+      img: '/images/municipalities/main/im4.png',
+      title: ' Al-Bataeh City Municipality',
+      link: '/councils/info',
+      logo: '/images/municipalities/logo/logo4.jpg',
+      councilMembers: {
+        chairman: {
+          name: 'His Excellency Muhammad Abdullah bin Halis Al Ketbi',
+          role: 'His Excellency the Chairman of the Council',
+          img: '/images/councils/info/members/bataeh/4.png',
+        },
+        vicePresident: {
+          name: '',
+          role: '',
+          img: '',
+        },
+        otherMembers: [
+          {
+            name: 'His Excellency Saif Mubarak bin Gwaith',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/bataeh/1.png',
+          },
+          {
+            name: 'His Excellency Abdullah Salem Al-Musafri',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/bataeh/2.png',
+          },
+          {
+            name: 'His Excellency Salem Obaid Bin Shanah',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/bataeh/3.png',
+          },
+          {
+            name: 'His Excellency Khalifa Obaid Bel Rasheed',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/bataeh/5.png',
+          },
+          {
+            name: 'His Excellency Sultan Suwaidan Bel Rasheed',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/bataeh/6.png',
+          },
+          {
+            name: 'His Excellency Muhammad Matar Al-Musafri',
+            role: 'Position of this person With more details if any',
+            img: '/images/councils/info/members/bataeh/7.png',
+          },
+        ],
+      },
+    },
+
+    {
+      slug: 'Dibba Al Hisn City Municipality',
+      img: '/images/municipalities/main/im6.png',
+      title: 'Dibba Al Hisn City Municipality',
+      link: '/councils/info',
+      logo: '/images/municipalities/logo/logo6.jpg',
+    },
+    {
+      slug: 'Al Dhaid City Municipality',
+      img: '/images/municipalities/main/im7.png',
+      title: 'Al Dhaid City Municipality',
+      link: '/councils/info',
+      logo: '/images/municipalities/logo/logo7.jpg',
     },
   ]
   const searchParams = useSearchParams()
