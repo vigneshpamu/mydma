@@ -2,32 +2,20 @@ import Link from 'next/link'
 import React from 'react'
 
 const InfoSect = ({ dataArr, paramsData }) => {
-  console.log(dataArr[0]?.website)
+  console.log(dataArr[0])
   return (
     <>
-      <div className="relative h-[550px] 1xl:h-[650px] lg:h-[1350px]  xsm:h-[1470px] 3xsm:h-[1570px]">
-        <div className="absolute h-[350px]  lg:flex-col left-1/2 transform -translate-x-1/2 w-[1327px] 1xl:w-[90%] m-auto ">
-          <div className="w-[55%] lg:w-[100%] lg:mt-[730px]  xl:w-[52%] py-4 flex flex-col mr-5 gap-10">
+      <div className="relative">
+        <div className="flex items-start justify-between gap-5 mx-auto py-8 lg:flex-col le ft-1/2 transform -translat e-x-1/2 w-[1327px] 1xl:w-[90%] m-auto ">
+          <div className=" lg:w-[100%]   xl:w-[52%] py-4 flex flex-col mr-5 gap-10">
             <p className="text-4xl font-bold w-[100%] leading-tight xl:text-3xl	sm:text-2xl">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+              About {dataArr[0]?.title}
             </p>
             <p className="text-xl tracking-wide	xl:text-lg">
-              (Awaiting Data for all Municipalities)
-              <br /> Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque laudantium, totam rem aperiam,
-              eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-              magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut
-              perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt.
+              {dataArr[0]?.information?.municipalityData}
             </p>
           </div>
-          <div className="absolute bg-gray-50 p-4 w-[424px] lg:w-[100%] z-20 right-0 top-[-475px] lg:top-[-40px] rounded-lg h-[750px] flex flex-col gap-6">
+          <div className=" bg-gray-50 p-4 w-[424px] lg:w-[100%] z-20 right-0 rounded-lg h-[700px] flex flex-col gap-6">
             <Link href={`${dataArr[0]?.website}`}>
               <div className="flex flex-row gap-3 border-2 cursor-pointer hover:bg-gray-100 transition-all">
                 <div className="border-2 rounded-md w-[130px] h-[130px]">
@@ -56,6 +44,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                className="lg:w-full"
               ></iframe>
             </div>
 

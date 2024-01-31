@@ -62,7 +62,7 @@ const Home_1 = () => {
       <NewsMediaSect />
       <EventsSect />
       <MagazineSect />
-      <InfoSect />
+      {/* <InfoSect /> */}
       <FeedbackSect />
       <GovtEntities />
       <Footer />

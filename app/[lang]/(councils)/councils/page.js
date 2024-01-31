@@ -14,7 +14,7 @@ const page = () => {
   const mainData = [
     {
       slug: 'Hamriyah City',
-      img: '/images/municipalities/main/im1.png',
+      img: '/images/municipalities/main/new/img1.jpg',
       title: 'Hamriyah City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo1.jpg',
@@ -55,7 +55,7 @@ const page = () => {
     },
     {
       slug: 'Khorfakkan City',
-      img: '/images/municipalities/main/im3.png',
+      img: '/images/municipalities/main/new/img3.jpg',
       title: 'Khorfakkan City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo3.jpg',
@@ -106,7 +106,7 @@ const page = () => {
     },
     {
       slug: 'Al Madam City',
-      img: '/images/municipalities/main/im5.png',
+      img: '/images/municipalities/main/new/img5.jpg',
       title: 'Al Madam City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo5.jpg',
@@ -152,7 +152,7 @@ const page = () => {
     },
     {
       slug: 'Kalba City Municipality',
-      img: '/images/municipalities/main/im8.png',
+      img: '/images/municipalities/main/new/img8.jpg',
       title: 'Kalba City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo8.jpg',
@@ -209,14 +209,14 @@ const page = () => {
 
     {
       slug: 'Mleiha City',
-      img: '/images/municipalities/main/im2.png',
+      img: '/images/municipalities/main/new/img2.jpg',
       title: 'Mleiha City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo2.jpg',
     },
     {
       slug: 'Al-Bataeh City',
-      img: '/images/municipalities/main/im4.png',
+      img: '/images/municipalities/main/new/img4.jpg',
       title: ' Al-Bataeh City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo4.jpg',
@@ -268,14 +268,14 @@ const page = () => {
 
     {
       slug: 'Dibba Al Hisn City Municipality',
-      img: '/images/municipalities/main/im6.png',
+      img: '/images/municipalities/main/new/img6.jpg',
       title: 'Dibba Al Hisn City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo6.jpg',
     },
     {
       slug: 'Al Dhaid City Municipality',
-      img: '/images/municipalities/main/im7.png',
+      img: '/images/municipalities/main/new/img7.jpg',
       title: 'Al Dhaid City Municipality',
       link: '/councils/info',
       logo: '/images/municipalities/logo/logo7.jpg',

@@ -62,14 +62,13 @@ const page = () => {
     },
     {
       slug: 'Kalba City Municipality',
-      img: '/images/municipalities/main/im8.png',
+      img: '/images/municipalities/main/new/img8.jpg',
       title: 'Kalba City Municipality',
       link: '/municipalities/info',
       logo: '/images/municipalities/logo/logo8.jpg',
     },
   ]
   const pathname = usePathname()
-  console.log(pathname[1] + pathname[2], 'From Home')
   return (
     <motion.div
       initial={{ opacity: 0 }}
