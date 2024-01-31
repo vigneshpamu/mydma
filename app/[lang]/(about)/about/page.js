@@ -142,7 +142,7 @@ const page = () => {
       <RightSideSticky />
       <HeroSect />
       <MissionSect />
-      <StickyNav start={700} end={900} />
+      <StickyNav start={1250} end={1450} />
       <ObjectiveSect />
       <ChairManMessageSect />
       <OrganisationStructureSect />
