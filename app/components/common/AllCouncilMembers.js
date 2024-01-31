@@ -121,7 +121,7 @@ const AllCouncilMembers = () => {
       <div className="relative h-[556px] m-auto">
         <div className="absolute py-12 w-[1347px] 1xl:w-[90%] left-1/2 transform -translate-x-1/2 m-auto ">
           <p className="text-5xl font-semibold sm:text-3xl xsm:text-2xl">
-            Member of Councils
+            Members of Council
           </p>
           <Marquee className="mt-10">
             {membersData.map((item) => {
