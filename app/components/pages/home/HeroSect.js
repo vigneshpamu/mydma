@@ -65,8 +65,8 @@ const HeroSect = ({ lang }) => {
     { id: 4, img: '/images/home/hero/jp7.jpg' },
     { id: 5, img: '' },
     { id: 6, img: '' },
-    // { id: 7, img: '' },
-    // { id: 7, img: '' },
+    { id: 7, img: '' },
+    { id: 7, img: '' },
   ]
   const quickFindData = [
     {

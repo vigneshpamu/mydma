@@ -26,14 +26,14 @@ const HeroSect = () => {
     },
   ]
   const heroSwiper = [
-    { id: 3, img: '/images/home/hero/jp5.jpg' },
-    { id: 1, img: '/images/home/hero/h1.png' },
-    { id: 4, img: '/images/home/hero/jp6.jpg' },
-    { id: 4, img: '/images/home/hero/jp7.jpg' },
+    { id: 3, img: '/images/home/hero/jp8.jpg' },
+    { id: 1, img: '/images/home/hero/jp9.jpg' },
+    { id: 4, img: '/images/home/hero/jp10.jpg' },
+    { id: 4, img: '/images/about/hero/hero.jpg' },
     { id: 5, img: '' },
     { id: 6, img: '' },
-    // { id: 7, img: '' },
-    // { id: 7, img: '' },
+    { id: 7, img: '' },
+    { id: 7, img: '' },
   ]
   const linkData = [
     {
@@ -103,6 +103,7 @@ const HeroSect = () => {
                       Image is Awaited
                     </p>
                   )}
+                  <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
                 </div>
               </SwiperSlide>
             ))}
@@ -121,7 +122,6 @@ const HeroSect = () => {
               objectFit="cover"
               className="pointer-events-none"
             />
-            <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
           </div>
         </div> */}
 
