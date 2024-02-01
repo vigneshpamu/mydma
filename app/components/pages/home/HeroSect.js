@@ -153,7 +153,7 @@ const HeroSect = ({ lang }) => {
           ))}
       </Swiper>
       {/* <UpperNav setVisible={setVisible} /> */}
-      <div className="absolute flex flex-col items-center justify-center gap-10 p-4 w-full top-24 md:flex-row md:items-start md:top-32 z-10">
+      <div className="absolute flex flex-col items-center justify-between gap-10 p-4 w-full lg:max-w-[1100px] top-24 md:flex-row md:items-start md:top-32 z-10">
         <div className="flex flex-col sm:items-center justify-center md:items-start gap-4">
           <div>
             <p

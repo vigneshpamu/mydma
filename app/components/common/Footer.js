@@ -73,36 +73,38 @@ const Footer = () => {
   ]
   return (
     <>
-      <div className="relative h-[750px] sm:h-[1150px]">
+      <div className="relative h-full ">
         {/* <img
           src="/images/home/footer/background.png"
           className="w-full h-full"
           alt=""
         /> */}
-        <Image
-          src="/images/home/footer/background.png"
-          alt="meeting-img"
-          layout="fill"
-          objectFit="cover"
-          className="pointer-events-none  object-cover"
-        />
-        <div className="flex flex-col text-white gap-20 absolute top-6 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:gap-5 sm:w-[95%] m-auto">
+        <div className="h-[1100px]">
+          <Image
+            src="/images/home/footer/background.png"
+            alt="meeting-img"
+            layout="fill"
+            objectFit="cover"
+            className="pointer-events-none  object-cover"
+          />
+        </div>
+        <div className="flex flex-col gap-2 absolute text-white top-4 left-5 transform -tran slate-x-1/2   m-auto">
           <div className="flex w-full justify-end items-end">
             <img src="/images/home/nav/logo/logo.png" alt="" />
           </div>
           <div className="flex mt-10 sm:ml-10 flex-col gap-12">
-            <div className="flex flex-row justify-between gap-10 sm:flex-col">
-              <div className="max-w-[550px] flex flex-col gap-7">
+            <div className="flex flex-col justify-between gap-10 ">
+              <div className="flex flex-col gap-7">
                 <div className="flex flex-row items-center gap-5">
-                  <p className="text-2xl lg:text-xl">Contact.</p>
+                  <p className="text-xl lg:text-xl">Contact.</p>
                   <div className="w-[120px] h-[4px] rounded-lg bg-white"></div>
                 </div>
-                <p className="text-6xl font-semibold w-[100%] leading-tight tracking-wide	xl:text-5xl lg:text-3xl sm:text-2xl sm:w-[50%] xsm:w-[70%]">
-                  Connect with the Dha Sharjah.
+                <p className="text-xl font-semibold w-[100%] leading-tight tracking-wide">
+                  Connect with the DHA Sharjah.
                 </p>
               </div>
               <div className="flex flex-col gap-7">
-                <p className="text-2xl lg:text-xl">Connect with us</p>
+                <p className="text-xl lg:text-xl">Connect with us</p>
                 <div className="flex flex-col gap-7">
                   {connectData.map((item) => {
                     return (
@@ -124,7 +126,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-7">
-                <p className="text-2xl lg:text-xl">Connect with us</p>
+                <p className="text-xl lg:text-xl">Connect with us</p>
                 <p className="w-[70%] text-lg lg:text-sm">
                   The departments official social media channels.
                 </p>
@@ -145,8 +147,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full h-[3px] bg-gray-400"></div>
-            <div className="flex flex-row gap-10 sm:gap-3 sm:flex-wrap">
+            {/* <div className="w-full h-[3px] bg-gray-400"></div> */}
+            <div className="flex flex-row flex-wrap gap-3 sm:gap-3 sm:flex-wrap">
               {linkData.map((item) => {
                 return (
                   <Link href={item.link} key={item.id}>
@@ -155,7 +157,7 @@ const Footer = () => {
                 )
               })}
             </div>
-            <div className="flex flex-row gap-10 justify-between sm:flex-col">
+            <div className="flex flex-col gap-10 justify-between sm:flex-col">
               <div className="flex flex-row gap-2">
                 <Link href={'/'}>
                   <p>Privacy Policy</p>
@@ -169,7 +171,6 @@ const Footer = () => {
                 <p>
                   © 2023 All Rights Reserved -
                   <span className="font-bold">
-                    {' '}
                     Department of Municipalities Affairs.
                   </span>
                 </p>

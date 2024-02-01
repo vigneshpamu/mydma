@@ -52,20 +52,20 @@ const Home_1 = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1.25 } }}
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
-      className="relative  m-auto ove rflow-h idden"
+      className="min- -full"
     >
       <HeroSect lang={langData} />
-      <LeftSideSticky />
-      <RightSideSticky />
-      {/* <StickyNav start={910} end={1200} />
+      {/* <LeftSideSticky />
+      <RightSideSticky /> */}
+      {/* <StickyNav start={910} end={1200} /> */}
       <VisionSect />
       <NewsMediaSect />
-      <EventsSect />
-      <MagazineSect /> */}
+      {/* <EventsSect /> */}
+      <MagazineSect />
       {/* <InfoSect /> */}
-      {/* <FeedbackSect />
+      <FeedbackSect />
       <GovtEntities />
-      <Footer /> */}
+      <Footer />
     </motion.div>
   )
 }

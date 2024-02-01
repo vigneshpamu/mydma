@@ -30,15 +30,15 @@ const NewsMediaSect = () => {
   }, [])
   return (
     <>
-      <div className="relative h-[1000px] lg:h-[900px] 2md:h-[850px]">
-        <img
+      <div className="p-3 w-fu ll  min-h-full">
+        {/* <img
           src="/images/home/news/background.png"
           className="h-full w-full"
           alt=""
-        />
-        <div className="flex flex-col gap-20 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%] lg:top-10  m-auto">
+        /> */}
+        <div className="flex flex-col  max-w-[1100px]   gap-10 mx-auto">
           <div className="flex flex-col gap-6">
-            <p className="text-5xl sm:text-3xl">Latest News & Media</p>
+            <p className="text-xl  font-semibold px-2">Latest News & Media</p>
             {/* <div className="flex flex-row justify-between items-center">
               <p className="w-[800px] text-xl 2md:text-lg 2md:w-[400px] sm:text-sm ">
                 We offer a wide range of e-Services designed to meet your needs,
@@ -72,8 +72,6 @@ const NewsMediaSect = () => {
           </div>
           <Swiper
             modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-            slidesPerView={2.8}
-            spaceBetween={20}
             navigation
             // ref={swiperRef}
             breakpoints={{
@@ -85,24 +83,28 @@ const NewsMediaSect = () => {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
-              420: {
-                slidesPerView: 1.25,
+              400: {
+                slidesPerView: 1.35,
                 spaceBetween: 20,
               },
-              640: {
-                slidesPerView: 1.9,
+              500: {
+                slidesPerView: 1.4,
                 spaceBetween: 20,
               },
-              1000: {
-                slidesPerView: 2.5,
+              658: {
+                slidesPerView: 2.15,
                 spaceBetween: 10,
               },
-              1300: {
+              // 768: {
+              //   slidesPerView: 2.8,
+              //   spaceBetween: 20,
+              // },
+              968: {
                 slidesPerView: 2.8,
                 spaceBetween: 20,
               },
             }}
-            className="w-[1100px] 2xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%]"
+            className="w-[350px] sm:w-[600px]  md:w-[700px] lg:w-[1000px]"
           >
             <SwiperSlide className="relative">
               <Link
@@ -113,7 +115,7 @@ const NewsMediaSect = () => {
                   <img
                     src="/images/home/news/img1.png"
                     alt="Your Image"
-                    className="w-full h-[400px] shadow-md rounded-xl object-cover"
+                    className="w-full h-[350px] shadow-md rounded-xl object-cover"
                   />
                   <div
                     style={{
@@ -123,8 +125,8 @@ const NewsMediaSect = () => {
                     className="absolute rounded-xl inset-0"
                   ></div>
                 </div>
-                <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row sm:left-6  items-end gap-16 2md:left-3">
-                  <p className="text-2xl text-white font-semibold 2xl:text-2xl 2md:text-xl sm:text-xl">
+                <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row  items-end gap-16">
+                  <p className="text-xl text-white font-semibold sm:text-xl">
                     {/* Quis autem vel eum iure reprehenderit qui in ea
                     voluptate.... */}
                     Data is Awaited
@@ -144,7 +146,7 @@ const NewsMediaSect = () => {
                 return (
                   <SwiperSlide key={item.id} className="">
                     <Link href={`${par}/news/info?=name=${item.title}`}>
-                      <div className="bg-white h-[400px] max-w-[370px] rounded-xl border-2 border-customColor">
+                      <div className="bg-white h-[350px] rounded-xl border-2 border-customColor">
                         <img
                           src={item.img}
                           alt=""

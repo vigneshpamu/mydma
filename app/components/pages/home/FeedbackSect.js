@@ -16,26 +16,35 @@ import { Textarea } from '@/components/ui/textarea'
 const FeedbackSect = () => {
   return (
     <>
-      <div className="flex items-center py-20 justify-center h-full sm:py-10">
-        <div className="w-[1347px] relative flex items-center  2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:[600px] justify-center">
+      <div className="flex items-center py-4 justify-center h-full sm:py-10">
+        <div className="  relative flex items-center   justify-center">
           <img
-            src="images/home/feedback/main1.png"
-            className="2md:w-[700px] sm:w-[90%] xsm:h-[400px] object-cover"
+            src="images/home/feedback/main2.png"
+            className="h-[950px] sm:h-[550px] object-cover"
             alt=""
           />
 
           <Dialog>
-            <DialogTrigger className="absolute rounded-md top-[47%] left-[6.1%]  2xl:left-[5%] 2md:left-[10%] xsm:left-[11%] xsm:top-10 bg-white items-center gap-4  active:scale-95 flex p-2 sm:px-2 sm:p-1 border-2 border-customColor px-4">
-              <p className="font-semibold sm:text-sm sm:font-normal">
-                Feedback
+            <div className="flex flex-col gap-5 absolute  top-[10%] left-[5%] ">
+              <div className="flex flex-row  items-center gap-5">
+                <p className="text-2xl font-semibold text-white">Feedback</p>
+                <div className="w-[100px] h-[4px] bg-white"></div>
+              </div>
+              <p className="text-3xl w-[80%] font-semibold text-white">
+                Share your feedbacks and suggestions.
               </p>
-              <img
-                src="/images/home/elements/b-rarrow.png"
-                className="sm:w-[15px] sm:h-auto object-cover"
-                alt=""
-              />
-            </DialogTrigger>
-            <DialogContent className="flex items-start flex-col  sm:w-[350px] md:w-[400px]  rounded-lg">
+              <DialogTrigger className="flex flex-row items-center rounded-lg border-2 border-customColor gap-3 bg-white p-3 max-w-[160px]">
+                <p className="font-semibold sm:text-sm sm:font-normal">
+                  Feedback
+                </p>
+                <img
+                  src="/images/home/elements/b-rarrow.png"
+                  className="sm:w-[15px] sm:h-auto object-cover"
+                  alt=""
+                />
+              </DialogTrigger>
+            </div>
+            <DialogContent className="flex items-start flex-col  w-[350px] md:w-[400px]  rounded-lg">
               <DialogHeader className="text-left flex flex-col gap-3">
                 <DialogTitle className="flex flex-row items-center gap-20 md:gap-10 sm:gap-5">
                   <p>Feedback</p>
@@ -71,16 +80,25 @@ const FeedbackSect = () => {
             </DialogContent>
           </Dialog>
           <Dialog>
-            <DialogTrigger className="absolute rounded-md bottom-[15%] right-[30%] 2xl:right-[28%] xl:right-[25.5%]  lg:right-[22%] lg:bottom-[10%] xsm:right-[17%]  bg-white items-center gap-4 active:scale-95 sm:px-2 sm:p-1  flex p-2 border-2 border-customColor px-4">
-              <p className="font-semibold sm:text-sm sm:font-normal">
-                Complaint
+            <div className="flex flex-col gap-5 absolute rounded-md bottom-[5%] left-[5%] sm:left-[50%]">
+              <div className="flex flex-row  items-center gap-5">
+                <p className="text-2xl font-semibold text-white">Complaints</p>
+                <div className="w-[100px] h-[4px] bg-white"></div>
+              </div>
+              <p className="text-3xl w-[90%] font-semibold text-white">
+                Where we should improve Share your points.
               </p>
-              <img
-                src="/images/home/elements/b-rarrow.png"
-                className="sm:w-[15px] sm:h-auto object-cover"
-                alt=""
-              />
-            </DialogTrigger>
+              <DialogTrigger className="flex flex-row items-center gap-3 bg-white p-3 max-w-[160px] rounded-lg border-2 border-customColor">
+                <p className="font-semibold sm:text-sm sm:font-normal">
+                  Complaints
+                </p>
+                <img
+                  src="/images/home/elements/b-rarrow.png"
+                  className="sm:w-[15px] sm:h-auto object-cover"
+                  alt=""
+                />
+              </DialogTrigger>
+            </div>
             <DialogContent className="flex items-start flex-col  sm:w-[350px] md:w-[400px]  rounded-lg">
               <DialogHeader className="text-left flex flex-col gap-3">
                 <DialogTitle className="flex flex-row items-center gap-20 md:gap-10 sm:gap-5">

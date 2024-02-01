@@ -29,15 +29,17 @@ const EventsSect = () => {
 
   return (
     <>
-      <div className="relative h-[1000px] xl:h-[900px] lg:h-[730px] 2xsm:h-[770px]">
-        <img
-          src="/images/home/events/background.png"
-          className="w-full h-full"
-          alt=""
-        />
-        <div className="flex flex-col text-white gap-20 absolute top-36 left-1/2 transform -translate-x-1/2  w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%] xl:top-12 m-auto">
+      <img
+        src="/images/home/events/background.png"
+        className="w-full h-[450px] object-cover"
+        alt=""
+      />
+      <div className="relative   flex items-center justify-center h-full border-2 pl-2">
+        <div className="flex absolute top-[-420px] flex-col te xt-white gap -20  m-auto">
           <div className="flex flex-col gap-6">
-            <p className="text-5xl sm:text-3xl">Activities & Events</p>
+            <p className="text-xl text-white font-semibold sm:text-3xl">
+              Activities & Events
+            </p>
             <div className="flex flex-row justify-between items-center">
               {/* <p className="w-[600px] text-xl sm:text-sm sm:w-[60%]">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -69,75 +71,77 @@ const EventsSect = () => {
               </div> */}
             </div>
           </div>
-          <Swiper
-            modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-            slidesPerView={3}
-            spaceBetween={20}
-            navigation
-            // ref={swiperRef}
-            breakpoints={{
-              300: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              430: {
-                slidesPerView: 1.25,
-                spaceBetween: 20,
-              },
-              610: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1000: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-              },
-              1300: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-            }}
-            className="w-[1200px] 2xl:w-[1000px] lg:w-[800px] 2md:w-[600px] sm:w-[90%]"
-          >
-            {eventsData.map((item) => {
-              return (
-                <SwiperSlide key={item.id} className="">
-                  <div className="relative cursor-pointer ">
-                    <div className=" ">
-                      <img
-                        src={item.img}
-                        alt="Your Image"
-                        className="w-[360px] h-auto shadow-md object-cover rounded-xl"
-                      />
-                      {/* <div
+          <div className="  ">
+            <Swiper
+              modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+              navigation
+              // ref={swiperRef}
+              breakpoints={{
+                300: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                400: {
+                  slidesPerView: 1.15,
+                  spaceBetween: 20,
+                },
+                610: {
+                  slidesPerView: 2.2,
+                  spaceBetween: 20,
+                },
+                1000: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                1300: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              }}
+              className="max-w-[300px] sm:w-[600px]  md:w-[700px] lg:w-[1000px] mx-auto flex items-center justify-center"
+            >
+              {eventsData.map((item) => {
+                return (
+                  <SwiperSlide key={item.id} className="">
+                    <div className="relative cursor-pointer ">
+                      <div className=" ">
+                        <img
+                          src={item.img}
+                          alt="Your Image"
+                          className="w-f ull h-auto shadow-md object-cover rounded-xl"
+                        />
+                        {/* <div
                           style={{
                             background:
-                              'linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 50%, rgba(0, 0, 0, 0.5) 100%)',
+                            'linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 50%, rgba(0, 0, 0, 0.5) 100%)',
                           }}
                           className="absolute inset-0 rounded-xl object-cover"
                         ></div> */}
-                    </div>
-                    <div className="absolute left-7 bottom-7 flex flex-row items-end gap-16 xl:left-5 xl:bottom-10">
-                      <p className="text-2xl text-white font-semibold  2xl:text-2xl xl:text-xl xl:w-[70%] lg:text-sm">
-                        {/* Quis autem vel eum iure reprehenderit qui in ea
+                      </div>
+                      <div className="absolute left-7 bottom-7 flex flex-row items-end gap-16 xl:left-5 xl:bottom-10">
+                        <p className="text-2xl text-white font-semibold  2xl:text-2xl xl:text-xl xl:w-[70%] lg:text-sm">
+                          {/* Quis autem vel eum iure reprehenderit qui in ea
                         voluptate.... */}
-                        Data is Awaited
-                      </p>
+                          Data is Awaited
+                        </p>
+                      </div>
+                      <div className="flex flex-col px-4 py-2 items-center justify-center absolute top-2 left-2 rounded-md bg-white">
+                        <p className="text-customColor text-4xl font-semibold">
+                          {item.date}
+                        </p>
+                        <p className="text-customColor mt-[-5px]">
+                          {item.month}
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex flex-col px-4 py-2 items-center justify-center absolute top-2 left-2 rounded-md bg-white">
-                      <p className="text-customColor text-4xl font-semibold">
-                        {item.date}
-                      </p>
-                      <p className="text-customColor mt-[-5px]">{item.month}</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              )
-            })}
-          </Swiper>
-          {/* <button className="border-2 text-black border-customColor w-[190px] rounded-lg bg-white p-2 m-auto">
+                  </SwiperSlide>
+                )
+              })}
+            </Swiper>
+            {/* <button className="border-2 text-black border-customColor w-[190px] rounded-lg bg-white p-2 m-auto">
             View All
           </button> */}
+          </div>
         </div>
       </div>
     </>
