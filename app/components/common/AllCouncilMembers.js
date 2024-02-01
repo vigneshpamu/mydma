@@ -118,31 +118,32 @@ const AllCouncilMembers = () => {
   ]
   return (
     <>
-      <div className="relative h-[556px] m-auto">
-        <div className="absolute py-12 w-[1347px] 1xl:w-[90%] left-1/2 transform -translate-x-1/2 m-auto ">
-          <p className="text-5xl font-semibold sm:text-3xl xsm:text-2xl">
+      <div className="relative max-w-[1100px] h-full px-5 pb-20 m-auto">
+        <div className="">
+          <p className="text-xl sm:text-2xl md:text-3xl font-semibold ">
             Members of Council
           </p>
-          <Marquee className="mt-10">
+          <Marquee className="mt-10 px-5">
             {membersData.map((item) => {
               return (
-                <div className="relative max-w-[250px] ml-2 mr-2" key={item.id}>
-                  <div className="min-h-[300px]">
-                    {/* <img
+                <div className="h-full  w-[250px] ml-2 mr-2" key={item.id}>
+                  <div className="h-[300px] w-[250px]">
+                    <img
                       src={item.img}
                       alt=""
-                      className="w-[250px] h-[300px] object-cover"
-                    /> */}
-                    <Image
+                      className="w-full h-full object-cover"
+                    />
+                    {/* <Image
                       src={item.img}
                       alt="council-members"
-                      width={250}
-                      height={300}
-                      className="pointer-events-none"
-                    />
+                      // width={250}
+                      // height={300}
+                      layout="fill"
+                      className="pointer-events-none object-cover"
+                    /> */}
                   </div>
                   <div className="">
-                    <p className="px-2 text-center text-sm mt-2 font-semibold">
+                    <p className="px-2 text-center text-sm w-full mt-2 font-semibold">
                       {item.name}
                     </p>
                   </div>

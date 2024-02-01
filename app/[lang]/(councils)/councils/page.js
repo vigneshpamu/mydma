@@ -295,7 +295,7 @@ const page = () => {
         page={'Councils'}
         desc={`Leadership which Embrace the change.`}
       />
-      <StickyNav start={700} end={900} />
+      {/* <StickyNav start={700} end={900} /> */}
       <CommonCard data={mainData} />
       <AllCouncilMembers />
       <Footer />
