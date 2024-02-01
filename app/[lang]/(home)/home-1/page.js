@@ -55,8 +55,8 @@ const Home_1 = () => {
       className="min- -full"
     >
       <HeroSect lang={langData} />
-      {/* <LeftSideSticky />
-      <RightSideSticky /> */}
+      <LeftSideSticky />
+      <RightSideSticky />
       {/* <StickyNav start={910} end={1200} /> */}
       <VisionSect />
       <NewsMediaSect />

@@ -135,7 +135,7 @@ const HeroSect = ({ lang }) => {
         {heroSwiper.length > 0 &&
           heroSwiper.map((item, index) => (
             <SwiperSlide key={item.id} className="">
-              <div className="w-full h-[600px]  object-cover pointer-events-none md:h-[550px]">
+              <div className="w-full h-[650px]  object-cover pointer-events-none md:h-[600px]">
                 <Image
                   src={item.img}
                   alt="hero"
@@ -152,68 +152,70 @@ const HeroSect = ({ lang }) => {
             </SwiperSlide>
           ))}
       </Swiper>
-      {/* <UpperNav setVisible={setVisible} /> */}
-      <div className="absolute flex flex-col items-center justify-between gap-10 p-4 w-full lg:max-w-[1100px] top-24 md:flex-row md:items-start md:top-32 z-10">
-        <div className="flex flex-col sm:items-center justify-center md:items-start gap-4">
-          <div>
-            <p
-              dir={lang && lang?.isArabic ? 'rtl' : ''}
-              className="text-white sm:text-center md:text-left  text-xl  font-semibold "
-            >
-              {lang && lang?.home?.hero?.heroWel}
-            </p>
-            <p
-              dir={lang && lang?.isArabic ? 'rtl' : ''}
-              className=" text-white sm:text-center sm:text-5xl md:text-left md:text-4xl md:max-w-[450px]  font-semibold 	"
-            >
-              {lang && lang?.home?.hero?.heroDepartment}
-            </p>
+      <UpperNav setVisible={setVisible} />
+      <div className="max-w-[1100px] mx-auto">
+        <div className="absolute  flex flex-col items-center justify-between gap-10 p-4 w-full lg:max-w-[1100px] lg:px-10 top-36 md:flex-row md:items-start md:top-56 z-10">
+          <div className="flex flex-col sm:items-center justify-center md:items-start gap-4">
+            <div>
+              <p
+                dir={lang && lang?.isArabic ? 'rtl' : ''}
+                className="text-white sm:text-center md:text-left  text-xl  font-semibold "
+              >
+                {lang && lang?.home?.hero?.heroWel}
+              </p>
+              <p
+                dir={lang && lang?.isArabic ? 'rtl' : ''}
+                className=" text-white sm:text-center lg:text-5xl lg:max-w-[600px]  sm:text-5xl md:text-left md:text-4xl md:max-w-[450px]  font-semibold 	"
+              >
+                {lang && lang?.home?.hero?.heroDepartment}
+              </p>
+            </div>
+            <div dir={lang && lang?.isArabic ? 'rtl' : ''}>
+              <p className="text-white sm:text-center md:text-left   max-w-[400px]">
+                {lang && lang?.home?.hero?.heroDesc}
+              </p>
+            </div>
           </div>
-          <div dir={lang && lang?.isArabic ? 'rtl' : ''}>
-            <p className="text-white sm:text-center md:text-left   max-w-[400px]">
-              {lang && lang?.home?.hero?.heroDesc}
-            </p>
-          </div>
-        </div>
-        {/* <div className="flex items-center gap-3 2md:hidden">
+          {/* <div className="flex items-center gap-3 2md:hidden">
             <Image
-              src="/images/home/elements/5.png"
-              alt="hero"
-              height={13}
-              width={13}
-              objectFit="cover"
-              className="pointer-events-none"
+            src="/images/home/elements/5.png"
+            alt="hero"
+            height={13}
+            width={13}
+            objectFit="cover"
+            className="pointer-events-none"
             />
             <img src="/images/home/elements/5.png" alt="" className="" />
             <p className="text-white text-2xl tracking-wider">Scroll</p>
           </div> */}
-        <div className="flex flex-col gap-7    ">
-          <div className="flex flex-row items-center gap-5">
-            <p className="text-white text-lg font-semibold 2md:ml-16">
-              Quick Find
-            </p>
-            <div className="w-[100px] h-[3px] bg-gray-100 rounded-sm"></div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 w-full m">
-            {quickFindData.map((item, index) => {
-              return (
-                <Link key={index} href={`/${path}${item.link}`}>
-                  <div className="flex gap-2 items-center justify-center flex-col p-8 md:p-6  bg-white rounded-xl  shadow-lg  hover:bg-gray-5 cursor-pointer">
-                    <div className="w-[50px] h-[50px] ">
-                      <Image
-                        src={`/${item.icon}`}
-                        alt="hero"
-                        height={80}
-                        width={80}
-                        objectFit="cover"
-                        className="pointer-events-none"
-                      />
+          <div className="flex flex-col gap-7    ">
+            <div className="flex flex-row items-center gap-5">
+              <p className="text-white text-lg font-semibold 2md:ml-16">
+                Quick Find
+              </p>
+              <div className="w-[100px] h-[3px] bg-gray-100 rounded-sm"></div>
+            </div>
+            <div className="grid grid-cols-2 gap-4 w-full m">
+              {quickFindData.map((item, index) => {
+                return (
+                  <Link key={index} href={`/${path}${item.link}`}>
+                    <div className="flex gap-2 items-center justify-center flex-col p-8 md:p-6  bg-white rounded-xl  shadow-lg  hover:bg-gray-5 cursor-pointer">
+                      <div className="w-[50px] h-[50px] ">
+                        <Image
+                          src={`/${item.icon}`}
+                          alt="hero"
+                          height={80}
+                          width={80}
+                          objectFit="cover"
+                          className="pointer-events-none"
+                        />
+                      </div>
+                      <p className="font-semibold text-[9px] ">{item.name}</p>
                     </div>
-                    <p className="font-semibold text-[9px] ">{item.name}</p>
-                  </div>
-                </Link>
-              )
-            })}
+                  </Link>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>

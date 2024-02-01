@@ -56,11 +56,11 @@ const ObjectiveSect = () => {
 
   return (
     <>
-      <div className="relative h-[700px] 1xl:h-[750px] xl:h-[1200px] 2md:h-[1300px] md:h-[1100px] sm:h-[1200px] 4xsm:h-[1270px] m-auto">
-        <div className="grid grid-cols-2 xl:grid-cols-1 justify-between xl:gap-10 w-[1347px] 1xl:w-[95%] absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
+      <div className=" max-w-[1100px]   m-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-between xl:gap-10  1xl:w-[95%] abso lute left -1/2 trans form -transla te-x-1/2 m-auto bg-transparent">
           <div className="w-full h-full flex flex-col items-center justify-center gap-7 py-14 xl:py-14 bg-[#036C73]">
             <div className="flex flex-row items-center gap-7">
-              <p className="text-white text-3xl xsm:text-2xl">Evaluation</p>
+              <p className="text-white text-xl xsm:text-2xl">Evaluation</p>
               <div className="w-[120px] h-[5px] rounded-lg bg-white"></div>
             </div>
             <div className="flex flex-col gap-5">
@@ -70,10 +70,10 @@ const ObjectiveSect = () => {
                     key={item.id}
                     className="flex flex-row items-center gap-6"
                   >
-                    <p className="text-white opacity-60 text-5xl md:text-4xl xsm:text-2xl font-bold">
+                    <p className="text-white opacity-60 text-2xl md:text-4xl xsm:text-2xl font-bold">
                       0{item.id}
                     </p>
-                    <p className="text-white text-3xl  md:text-2xl xsm:text-lg font-semibold">
+                    <p className="text-white text-xl  md:text-2xl xsm:text-lg font-semibold">
                       {item.title}
                     </p>
                   </div>
@@ -81,9 +81,9 @@ const ObjectiveSect = () => {
               })}
             </div>
           </div>
-          <div className="flex flex-col gap-5 py-2 px-7 h-full">
+          <div className="flex flex-col gap-5 py-6 px-7 h-full">
             <div>
-              <p className="text-3xl font-bold xsm:text-2xl">
+              <p className="text-xl font-bold xsm:text-2xl">
                 Strategic Objectives
               </p>
             </div>
@@ -91,10 +91,10 @@ const ObjectiveSect = () => {
               {objectiveData.map((item) => {
                 return (
                   <div key={item.id} className="flex flex-row gap-5">
-                    <p className="text-[#E5D5C7] text-6xl md:text-4xl xsm:text-2xl  font-bold">
+                    <p className="text-[#E5D5C7] text-2xl md:text-4xl xsm:text-2xl  font-bold">
                       0{item.id}
                     </p>
-                    <p className="text-lg md:text-sm">{item.desc}</p>
+                    <p className="text-md md:text-sm">{item.desc}</p>
                   </div>
                 )
               })}

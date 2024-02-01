@@ -73,13 +73,13 @@ const Footer = () => {
   ]
   return (
     <>
-      <div className="relative h-full ">
-        {/* <img
+      {/* <img
           src="/images/home/footer/background.png"
           className="w-full h-full"
           alt=""
         /> */}
-        <div className="h-[1100px]">
+      <div className="relative  h-full ">
+        <div className="h-[1100px] lg:h-[650px]">
           <Image
             src="/images/home/footer/background.png"
             alt="meeting-img"
@@ -88,92 +88,94 @@ const Footer = () => {
             className="pointer-events-none  object-cover"
           />
         </div>
-        <div className="flex flex-col gap-2 absolute text-white top-4 left-5 transform -tran slate-x-1/2   m-auto">
-          <div className="flex w-full justify-end items-end">
-            <img src="/images/home/nav/logo/logo.png" alt="" />
-          </div>
-          <div className="flex mt-10 sm:ml-10 flex-col gap-12">
-            <div className="flex flex-col justify-between gap-10 ">
-              <div className="flex flex-col gap-7">
-                <div className="flex flex-row items-center gap-5">
-                  <p className="text-xl lg:text-xl">Contact.</p>
-                  <div className="w-[120px] h-[4px] rounded-lg bg-white"></div>
-                </div>
-                <p className="text-xl font-semibold w-[100%] leading-tight tracking-wide">
-                  Connect with the DHA Sharjah.
-                </p>
-              </div>
-              <div className="flex flex-col gap-7">
-                <p className="text-xl lg:text-xl">Connect with us</p>
+        <div className="max-w-[1100px] flex items-center justify-center mx-auto">
+          <div className="flex ml-5 flex-col gap-2 absolute text-white top-4   transform -tran slate-x-1/2   m-auto">
+            <div className="flex w-full justify-end items-end">
+              <img src="/images/home/nav/logo/logo.png" alt="" />
+            </div>
+            <div className="flex mt-10 sm:ml-10 flex-col gap-12">
+              <div className="flex flex-col lg:flex-row justify-between lg:gap-32 max-w-[1100px]">
                 <div className="flex flex-col gap-7">
-                  {connectData.map((item) => {
-                    return (
-                      <div
-                        key={item.id}
-                        className="flex items-center flex-row gap-4"
-                      >
-                        <img
-                          src={item.img}
-                          alt=""
-                          className="lg:w-[30px] lg:h-[30px]"
-                        />
-                        <p className="w-[60%] 2xl:w-[80%] text-lg lg:text-sm">
-                          {item.info}
-                        </p>
-                      </div>
-                    )
-                  })}
+                  <div className="flex flex-row items-center gap-5">
+                    <p className="text-xl lg:text-xl">Contact.</p>
+                    <div className="w-[120px] h-[4px] rounded-lg bg-white"></div>
+                  </div>
+                  <p className="text-xl font-semibold w-[100%] leading-tight tracking-wide">
+                    Connect with the DHA Sharjah.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-8 md:flex-row md:justify-between">
+                  <div className="flex flex-col gap-7">
+                    <p className="text-xl lg:text-xl">Connect with us</p>
+                    <div className="flex flex-col gap-7">
+                      {connectData.map((item) => {
+                        return (
+                          <div
+                            key={item.id}
+                            className="flex items-center flex-row gap-4"
+                          >
+                            <img
+                              src={item.img}
+                              alt=""
+                              className="lg:w-[30px] lg:h-[30px]"
+                            />
+                            <p className="text-lg lg:text-sm">{item.info}</p>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-7">
+                    <p className="text-xl lg:text-xl">Connect with us</p>
+                    <p className="w-[70%] text-lg lg:text-sm">
+                      The departments official social media channels.
+                    </p>
+                    <div className="flex flex-row gap-3">
+                      {socialData.map((item) => {
+                        return (
+                          <Link href={item.link} key={item.id}>
+                            <div>
+                              <img
+                                src={item.icon}
+                                className="lg:w-[30px] lg:h-[30px]"
+                                alt=""
+                              />
+                            </div>
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-7">
-                <p className="text-xl lg:text-xl">Connect with us</p>
-                <p className="w-[70%] text-lg lg:text-sm">
-                  The departments official social media channels.
-                </p>
-                <div className="flex flex-row gap-3">
-                  {socialData.map((item) => {
-                    return (
-                      <Link href={item.link} key={item.id}>
-                        <div>
-                          <img
-                            src={item.icon}
-                            className="lg:w-[30px] lg:h-[30px]"
-                            alt=""
-                          />
-                        </div>
-                      </Link>
-                    )
-                  })}
-                </div>
+              {/* <div className="w-full h-[3px] bg-gray-400"></div> */}
+              <div className="flex flex-row flex-wrap gap-3 sm:gap-3 sm:flex-wrap">
+                {linkData.map((item) => {
+                  return (
+                    <Link href={item.link} key={item.id}>
+                      <p className="sm:text-sm">{item.name}</p>
+                    </Link>
+                  )
+                })}
               </div>
-            </div>
-            {/* <div className="w-full h-[3px] bg-gray-400"></div> */}
-            <div className="flex flex-row flex-wrap gap-3 sm:gap-3 sm:flex-wrap">
-              {linkData.map((item) => {
-                return (
-                  <Link href={item.link} key={item.id}>
-                    <p className="sm:text-sm">{item.name}</p>
+              <div className="flex flex-col gap-10 justify-between sm:flex-col">
+                <div className="flex flex-row gap-2">
+                  <Link href={'/'}>
+                    <p>Privacy Policy</p>
                   </Link>
-                )
-              })}
-            </div>
-            <div className="flex flex-col gap-10 justify-between sm:flex-col">
-              <div className="flex flex-row gap-2">
-                <Link href={'/'}>
-                  <p>Privacy Policy</p>
-                </Link>
-                <p> | </p>
-                <Link href={'/'}>
-                  <p>Terms and Conditions</p>
-                </Link>
-              </div>
-              <div>
-                <p>
-                  © 2023 All Rights Reserved -
-                  <span className="font-bold">
-                    Department of Municipalities Affairs.
-                  </span>
-                </p>
+                  <p> | </p>
+                  <Link href={'/'}>
+                    <p>Terms and Conditions</p>
+                  </Link>
+                </div>
+                <div>
+                  <p>
+                    © 2023 All Rights Reserved -
+                    <span className="font-bold">
+                      Department of Municipalities Affairs.
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
