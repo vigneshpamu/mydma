@@ -6,6 +6,7 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 
 import StickyNav from '../../common/StickyNav'
 import Image from 'next/image'
+import UpperNav from '../../common/UpperNav'
 
 const HeroSectNews = () => {
   const magazineCard = [
@@ -103,16 +104,15 @@ const HeroSectNews = () => {
 
   return (
     <>
-      <div className="h-full ">
-        {/* <CommonNav /> */}
-        <StickyNav start={0} end={0} />
-        <div className=" h-full cong  ">
-          <img
-            src="/images/magazine/hero/hero.png"
-            className="object-cover pointer-events-none"
-            alt="hero"
-          />
-        </div>
+      {/* <CommonNav /> */}
+      {/* <StickyNav start={0} end={0} /> */}
+
+      <img
+        src="/images/magazine/hero/hero.png"
+        className="w-full h-[400px] object-cover pointer-events-none"
+        alt="hero"
+      />
+      <div className="mt-[-300px] px-5 pb-10">
         <div className="flex text-4xl font-bold items-center justify-center w-full">
           News & Media
           {/* <p className="text-6xl sm:text-2xl font-bold">News & Media</p> */}

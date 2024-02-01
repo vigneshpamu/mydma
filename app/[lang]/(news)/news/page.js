@@ -8,6 +8,7 @@ import CommonHero from '@/app/components/common/CommonHero'
 import CommonCard from '@/app/components/common/CommonCard'
 import StickyNav from '@/app/components/common/StickyNav'
 import HeroSectNews from '@/app/components/pages/news/HeroSectNews'
+import UpperNav from '@/app/components/common/UpperNav'
 const page = () => {
   const mainData = [
     {
@@ -60,6 +61,7 @@ const page = () => {
     >
       <LeftSideSticky />
       <RightSideSticky />
+      {/* <UpperNav /> */}
       {/* <CommonHero
         hero={'/images/news/hero/hero.png'}
         page={'News & Media'}
