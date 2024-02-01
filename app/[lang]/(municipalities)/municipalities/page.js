@@ -76,16 +76,16 @@ const page = () => {
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className="relative max-w-8xl m-auto border-2"
     >
-      <LeftSideSticky />
-      <RightSideSticky />
+      {/* <LeftSideSticky />
+      <RightSideSticky /> */}
       <CommonHero
         hero={'/images/municipalities/hero/hero2.jpg'}
         page={'Municipalities'}
         desc={`Embrace change, for it brings growth and endless possibilities ahead.`}
       />
-      <StickyNav start={700} end={900} />
+      {/* <StickyNav start={700} end={900} /> */}
       <CommonCard data={mainData} />
-      <Footer />
+      {/* <Footer /> */}
     </motion.div>
   )
 }
