@@ -17,8 +17,8 @@ const Page = () => {
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className="relative max-w-8xl m-auto border-2 overflow-hidden"
     >
-      <LeftSideSticky />
-      <RightSideSticky />
+      {/* <LeftSideSticky />
+      <RightSideSticky /> */}
       <HeroSect />
       <MainSect />
       <Footer />

@@ -40,20 +40,20 @@ const MainSect = () => {
   ]
   return (
     <>
-      <div className="relative h-[810px] 2md:h-[1300px]  sm:h-[1550px] xsm:h-[1650px] max-w-[1547px] m-auto">
-        <div className="flex flex-row 2md:flex-col-reverse gap-7 w-[1347px] 1xl:w-[90%] py-8 absolute left-1/2 transform -translate-x-1/2 m-auto bg-transparent">
-          <div className="flex flex-col w-[60%] 2md:w-[100%] gap-10">
+      <div className="relative max-w-[1100px] px-3 pb-8 m-auto">
+        <div className="flex flex-col-reverse sm:flex-row 2md:flex-col-reverse gap-7  m-auto bg-transparent">
+          <div className="flex flex-col gap-10">
             <div className=" flex flex-col gap-3">
-              <p className="text-xl ">
+              <p className="text-lg pt-5">
                 Organizing and supervising the municipality’s activities in the
                 city of Sharjah and providing an integrated innovative services
                 system that exceeds the expectations of stakeholders, supported
                 by cadres
               </p>
             </div>
-            <div className="bg-[#036C73]  xl:px-5 p-10 flex gap-3 flex-row  sm:flex-col sm:gap-10 justify-between">
+            <div className="bg-[#036C73]   p-7 flex flex-col lg:flex-row gap-8  ">
               <div className="flex flex-col gap-7">
-                <p className="text-2xl text-white">Connect with us</p>
+                <p className="text-xl text-white">Connect with us</p>
                 <div className="flex flex-col gap-7">
                   {connectData.map((item) => {
                     return (
@@ -71,17 +71,15 @@ const MainSect = () => {
                           objectFit="cover"
                           className="pointer-events-none  object-cover"
                         />
-                        <p className=" text-white w-[60%] 2xl:w-[80%] text-lg">
-                          {item.info}
-                        </p>
+                        <p className=" text-white max-w-[250px]">{item.info}</p>
                       </div>
                     )
                   })}
                 </div>
               </div>
               <div className="flex flex-col gap-7">
-                <p className="text-2xl text-white">Connect with us</p>
-                <p className="w-[70%] text-lg text-white">
+                <p className="text-xl text-white">Connect with us</p>
+                <p className=" text-white">
                   The departments official social media channels.
                 </p>
                 <div className="flex flex-row gap-3">
@@ -111,10 +109,10 @@ const MainSect = () => {
             src="/images/about/mission/info.png"
             alt=""
           /> */}
-          <form className=" flex flex-col gap-6 bg-gray-50 w-[40%]  2md:w-[100%] p-6">
+          <form className="mt-[-100px] sm:min-w-[350px] flex flex-col gap-6 bg-gray-50  p-6">
             <div className="flex flex-row gap-6 items-center">
-              <p className="text-xl font-semibold">Connect with us</p>
-              <div className="w-[140px] h-[4px] lg:w-[80px] bg-customColor rounded-lg"></div>
+              <p className="text-lg font-semibold">Connect with us</p>
+              <div className="w-[110px] h-[4px] lg:w-[80px] bg-customColor rounded-lg"></div>
             </div>
             <p className="w-[90%]">
               Fill details with your queries or messages in the below form and
