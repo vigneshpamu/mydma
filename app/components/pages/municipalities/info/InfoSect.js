@@ -5,9 +5,9 @@ const InfoSect = ({ dataArr, paramsData }) => {
   console.log(dataArr[0])
   return (
     <>
-      <div className="relative">
-        <div className="flex items-start justify-between gap-5 mx-auto py-8 lg:flex-col le ft-1/2 transform -translat e-x-1/2 w-[1327px] 1xl:w-[90%] m-auto ">
-          <div className=" lg:w-[100%]   xl:w-[52%] py-4 flex flex-col mr-5 gap-10">
+      <div className="relative max-w-[1100px] ">
+        <div className="flex px-4 flex-col-reverse items-start justify-between gap-5 mx-auto py-8  m-auto ">
+          <div className="py-4  flex flex-col mr-5 gap-10">
             <p className="text-4xl font-bold w-[100%] leading-tight xl:text-3xl	sm:text-2xl">
               About {dataArr[0]?.title}
             </p>
@@ -15,14 +15,14 @@ const InfoSect = ({ dataArr, paramsData }) => {
               {dataArr[0]?.information?.municipalityData}
             </p>
           </div>
-          <div className=" bg-gray-50 p-4 w-[424px] lg:w-[100%] z-20 right-0 rounded-lg h-[700px] flex flex-col gap-6">
+          <div className=" bg-gray-50 w-full p-4 mt-[-100px] z-20 right-0 rounded-lg  flex flex-col gap-6">
             <Link href={`${dataArr[0]?.website}`}>
               <div className="flex flex-row gap-3 border-2 cursor-pointer hover:bg-gray-100 transition-all">
                 <div className="border-2 rounded-md w-[130px] h-[130px]">
                   <img
                     src={dataArr[0]?.logo}
                     alt=""
-                    className="rounded-md object-cover"
+                    className="rounded-md w-full h-full object-cover"
                   />
                 </div>
                 <div className="h-[130px] flex flex-col justify-between py-2">
@@ -39,8 +39,6 @@ const InfoSect = ({ dataArr, paramsData }) => {
               <p className="font-semibold">Location</p>
               <iframe
                 src={dataArr[0]?.map}
-                width="400"
-                height="300"
                 allowFullScreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"

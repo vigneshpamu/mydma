@@ -539,16 +539,16 @@ const Page = () => {
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className="relative max-w-8xl m-auto overflow-hidden"
     >
-      <LeftSideSticky />
-      <RightSideSticky />
+      {/* <LeftSideSticky />
+      <RightSideSticky /> */}
       <HeroSect dataArr={dataArr} />
-      <StickyNav start={700} end={1000} />
+      {/* <StickyNav start={700} end={1000} /> */}
       <InfoSect dataArr={dataArr} paramsData={paramsData} />
-      <AllDataComponents dataArr={dataArr[0]} />
-      {dataArr[0]?.awards.length > 0 && <AwardsSect data={dataArr[0]} />}
-      {dataArr[0]?.landmarks.length > 0 && <LandmarkSect data={dataArr[0]} />}
-      {dataArr[0]?.landmarks.length > 0 && <GallerySect data={dataArr[0]} />}
-      <Footer />
+      {/* <AllDataComponents dataArr={dataArr[0]} /> */}
+      {/* {dataArr[0]?.awards.length > 0 && <AwardsSect data={dataArr[0]} />} */}
+      {/* {dataArr[0]?.landmarks.length > 0 && <LandmarkSect data={dataArr[0]} />} */}
+      {/* {dataArr[0]?.landmarks.length > 0 && <GallerySect data={dataArr[0]} />} */}
+      {/* <Footer /> */}
     </motion.div>
   )
 }
