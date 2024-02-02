@@ -133,7 +133,9 @@ const UpperNav = ({ setVisible }) => {
             {linkData.map((item) => {
               return (
                 <Link href={`/${par}${item.link}`} key={item.id}>
-                  <p className="text-white hover:text-gray-100">{item.name}</p>
+                  <p className="text-white text-sm hover:text-gray-100">
+                    {item.name}
+                  </p>
                 </Link>
               )
             })}
