@@ -159,19 +159,19 @@ const HeroSect = ({ lang }) => {
             <div>
               <p
                 dir={lang && lang?.isArabic ? 'rtl' : ''}
-                className="text-white sm:text-center md:text-left  text-xl  font-semibold "
+                className="text-white sm:text-center md:text-left   text-xl  font-semibold "
               >
                 {lang && lang?.home?.hero?.heroWel}
               </p>
               <p
                 dir={lang && lang?.isArabic ? 'rtl' : ''}
-                className=" text-white sm:text-center lg:text-5xl lg:max-w-[600px]  sm:text-5xl md:text-left md:text-4xl md:max-w-[450px]  font-semibold 	"
+                className=" text-white sm:text-center lg:text-5xl   lg:max-w-[600px]  sm:text-5xl md:text-left md:text-4xl md:max-w-[450px]  font-semibold 	"
               >
                 {lang && lang?.home?.hero?.heroDepartment}
               </p>
             </div>
             <div dir={lang && lang?.isArabic ? 'rtl' : ''}>
-              <p className="text-white sm:text-center md:text-left   max-w-[400px]">
+              <p className="text-white sm:tex t-center    max-w-[400px]">
                 {lang && lang?.home?.hero?.heroDesc}
               </p>
             </div>

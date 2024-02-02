@@ -2,9 +2,35 @@
   "isArabic": true,
   "home": {
     "hero": {
-      "heroWel": "مرحبا بك في",
-      "heroDepartment": "دائرة شؤون البلديات.",
-      "heroDesc": "الالتزام بالشفافية وتوفير الثقة المتبادلة وتعزيز العلاقة مع الشركاء والمجتمع."
+      "heroWel": "مرحبا بكم",
+      "heroDepartment": "دائرة شؤون البلديات",
+      "heroDesc": "ملتزمين بالشفافية مع الثقة و الإحترام المبادلة وتعزيز العلاقات مع الشركاء و المجتمع",
+      "Municipalities": "Municipalities",
+      "Councils": "Councils",
+      "Magazines": "Magazines",
+      "News": "News"
+    },
+    "vision": {
+      "vision": "رؤية",
+      "visionHead": "Achieving sustainable development by increasing efficiency and productivity in municipal work.",
+      "visionDesc": "The Department of Municipal Affairs in Sharjah is one of the most important government agencies in the emirate. It is the department responsible and concerned with developing the municipal sector throughout the emirate. The department is keen to advance municipal work in all its fields, relying on its qualified human cadres, and applying the best standards of institutional excellence to achieve To the global level and keep pace with technological developments in all services provided to the public, in order to achieve the visions and aspirations of His Highness Sheikh Dr. Sultan bin Muhammad Al Qasimi, Member of the Supreme Council and Ruler of Sharjah - may God protect him - and the follow-up of His Highness Sheikh Sultan bin Muhammad bin Sultan Al Qasimi, Crown Prince, Deputy Ruler of Sharjah, Chairman of the Executive Council - May God protect him - aiming to achieve comprehensive development and provide a decent quality of life for all Residents of the emirate. Today, the Department is witnessing a remarkable development in highlighting its role and providing its services and upgrading them to the highest smart standards, as the Department of Municipal Affairs website was launched today in its new look to complement the achievement of the aspirations and goals of the Department, to be an important window in embodying communication and constructive institutional interaction with the external public, thus achieving the most important The elements of partnership and success, thank you With you we rise to the best"
+    },
+    "new": {
+      "newsTitle": "الأخبار و الإعلام الحديث"
+    },
+    "magazine": {
+      "magazine": "مجلة",
+      "magazineTitle1": "سنة استثنائية,",
+      "magazineTitle2": " رحلة استثنائي"
+    },
+    "feedback": {
+      "feedback": "تعليقاة",
+      "feedbackDesc": "Share your feedbacks and suggestions.",
+      "complaint": "شكاوي",
+      "complaintDesc": "Where we should improve Share your points."
+    },
+    "entity": {
+      "entityTitle": "زور الجهات الحكومية الأخرى"
     }
   }
 }
