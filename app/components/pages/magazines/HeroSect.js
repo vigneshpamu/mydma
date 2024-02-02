@@ -11,36 +11,36 @@ const HeroSect = () => {
       title: 'DMA Magazine 23',
       desc: '02 Dec 23',
       img: '/images/home/magazine/1.png',
-      link: '/',
+      link: '/magazines/info',
     },
-    // {
-    //   id: 2,
-    //   title: 'DMA Magazine 22',
-    //   desc: '02 Dec 22',
-    //   img: '/images/home/magazine/2.png',
-    //   link: '/',
-    // },
-    // {
-    //   id: 3,
-    //   title: 'DMA Magazine 21',
-    //   desc: '02 Dec 21',
-    //   img: '/images/home/magazine/3.png',
-    //   link: '/',
-    // },
-    // {
-    //   id: 4,
-    //   title: 'DMA Magazine 20',
-    //   desc: '02 Dec 20',
-    //   img: '/images/home/magazine/4.png',
-    //   link: '/',
-    // },
-    // {
-    //   id: 5,
-    //   title: 'DMA Magazine 20',
-    //   desc: '02 Dec 20',
-    //   img: '/images/home/magazine/5.png',
-    //   link: '/',
-    // },
+    {
+      id: 2,
+      title: 'DMA Magazine 22',
+      desc: '02 Dec 22',
+      img: '/images/home/magazine/2.png',
+      link: '/magazines/info',
+    },
+    {
+      id: 3,
+      title: 'DMA Magazine 21',
+      desc: '02 Dec 21',
+      img: '/images/home/magazine/3.png',
+      link: '/magazines/info',
+    },
+    {
+      id: 4,
+      title: 'DMA Magazine 20',
+      desc: '02 Dec 20',
+      img: '/images/home/magazine/4.png',
+      link: '/magazines/info',
+    },
+    {
+      id: 5,
+      title: 'DMA Magazine 20',
+      desc: '02 Dec 20',
+      img: '/images/home/magazine/5.png',
+      link: '/magazines/info',
+    },
   ]
   const router = useRouter()
   const pathname = usePathname()
@@ -64,29 +64,29 @@ const HeroSect = () => {
   }, [])
   return (
     <>
-      <div className="relative h-[1476px] sm:h-[1750px] w-[100%] m-auto">
+      <StickyNav start={0} end={0} />
+      <div className="relative max-w-[1100px] pb-20  m-auto">
         {/* <CommonNav /> */}
-        <StickyNav start={0} end={0} />
         <img
           src="/images/magazine/hero/hero.png"
-          className="w-full h-[750px] md:h-[650px] object-cover pointer-events-none"
+          className="w-full h-[350px] sm:h-[400px] object-cover pointer-events-none"
           alt="hero"
         />
-        <div className="flex flex-col gap-3 items-center justify-center w-[1347px] 1xl:w-[90%] absolute top-[400px] md:top-[15%] sm:top-[11%] xsm:top-[8%] left-1/2 transform -translate-x-1/2 m-auto">
-          <p className="text-2xl font-bold">Magazine</p>
-          <p className="text-5xl font-bold text-center w-[50%] 1xl:w-[70%] xsm:text-2xl mxsm:w-[90%] md:text-3xl md:w-[80%]">
+        <div className="flex flex-col gap-3 items-center mt-[-200px] sm:mt-[-200px] justify-center  m-auto">
+          <p className="text-1xl sm:text-2xl font-bold">Magazine</p>
+          <p className="text-2xl sm:text-3xl font-bold text-center   w-[90%]  md:text-3xl ">
             Check out our magazines, Know Sharjah more...
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center w-[1347px] absolute top-[600px] md:top-[25%] sm:top-[20%] xsm:top-[14%]  left-1/2 transform -translate-x-1/2 m-auto">
-          <div className="grid grid-cols-4 2lg:grid-cols-2 sm:grid-cols-1 gap-5 mt-10 xl:grid-cols-4">
+        <div className="flex flex-col items-center justify-center m-auto py-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
             {magazineCard.map((item) => {
               return (
                 <Link
                   key={item.id}
                   href={`/${par}${item.link}?name=${item.title}`}
                 >
-                  <div className="flex w-full bg-white flex-col gap-4 shadow-lg rounded-2xl p-2 h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                  <div className="flex w-full  bg-white flex-col gap-4 shadow-lg rounded-2xl p-2 h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer">
                     <div>
                       <img src={item.img} alt="" />
                     </div>

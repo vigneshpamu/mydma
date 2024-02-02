@@ -17,8 +17,8 @@ const page = () => {
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className="relative max-w-8xl m-auto overflow-hidden"
     >
-      <LeftSideSticky />
-      <RightSideSticky />
+      {/* <LeftSideSticky />
+      <RightSideSticky /> */}
       <HeroSect />
       <Footer />
     </motion.div>

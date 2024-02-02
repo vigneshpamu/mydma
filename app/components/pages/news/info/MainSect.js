@@ -16,23 +16,21 @@ const MainSect = () => {
   ]
   return (
     <>
-      <div className=" mt-5 flex items-center justify-center">
-        <div className="flex flex-col  w-[1347px] 1xl:w-[90%]   gap-10 pb-20">
-          <div className="flex flex-col gap-10   p-7 bg-[#036C73]">
+      <div className="max-w-[1100px] h-full mx-auto mt-1 flex  ">
+        <div className="flex flex-col    gap-10 pb-10">
+          <div className="flex flex-col gap-5   p-7 bg-[#036C73]">
             <div>
-              <p className="text-4xl font-semibold text-white w-[70%] lg:w-[90%] 2md:text-3xl md:text-2xl ">
+              <p className="text-4xl font-semibold text-white  ">
                 Data is Awaited
               </p>
             </div>
-            <div className="flex flex-row w-[100%] md:flex-wrap text-white justify-between">
-              <div className="flex flex-row  md:flex-wrap gap-10">
-                <p>
-                  Author: <span className="font-bold">DMCWebAdmin</span>
-                </p>
-                <p>
-                  Published on: <span className="font-bold">12-01-2024</span>
-                </p>
-              </div>
+            <div className="flex flex-col items-start gap-3  text-white justify-between">
+              <p>
+                Author: <span className="font-bold">DMCWebAdmin</span>
+              </p>
+              <p>
+                Published on: <span className="font-bold">12-01-2024</span>
+              </p>
               <div className="flex flex-row gap-2 items-center justify-center">
                 <p>Share: </p>
                 <div>
@@ -43,12 +41,10 @@ const MainSect = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row  2md:flex-col gap-24 xl:gap-10">
-            <div className="flex flex-col gap-5">
-              <p className="text-4xl font-bold w-[90%] 2md:text-3xl xsm:w-[100%] ">
-                Data is Awaited
-              </p>
-              <p className="leading-normal tracking-wide text-lg xsm:text-sm">
+          <div className="flex items-start justify-center flex-col md:flex-row md:gap-5 h-full gap-14 px-5">
+            <div className="flex flex-col h-full gap-5">
+              <p className="text-2xl font-bold  ">Data is Awaited</p>
+              <p className="leading-normal tracking-wide text-sm">
                 Data is Awaited. Data is Awaited.Data is Awaited. Data is
                 Awaited. Data is Awaited. Data is Awaited. Data is Awaited. Data
                 is Awaited. Data is Awaited. Data is Awaited. Data is Awaited.
@@ -76,32 +72,36 @@ const MainSect = () => {
               <div className="flex flex-row justify-between mt-5">
                 <button className="active:scale-95 transition-all">
                   <img src="/images/events/info/blog/icon/left.png" alt="" />
-                  <p>PREV</p>
+                  <p className="text-[11px]">PREV</p>
                 </button>
-                <button className="active:scale-95 transition-all">
-                  <img src="/images/events/info/blog/icon/share.png" alt="" />
+                <button className="active:scale-95 max-w-[170px] transition-all">
+                  <img
+                    src="/images/events/info/blog/icon/share.png"
+                    className="w-full"
+                    alt=""
+                  />
                 </button>
                 <button className="active:scale-95 transition-all">
                   <img src="/images/events/info/blog/icon/right.png" alt="" />
-                  <p>NEXT</p>
+                  <p className="text-[11px]">NEXT</p>
                 </button>
               </div>
             </div>
-            <div className="min-w-[420px] mxsm:min-w-[350px] 2xsm:min-w-[300px] h-full bg-gray-100 p-4 py-7 flex flex-col gap-4">
+            <div className="h-full w-full    bg-gray-100 p-4 py-7 flex flex-col gap-4">
               <div className="flex flex-row justify-between items-center">
-                <p className="text-3xl font-bold 2xsm:text-xl">Recent Items</p>
+                <p className="text-2xl font-semibold">Recent Items</p>
                 <div className="w-[100px] h-[4px] bg-customColor"></div>
               </div>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col h-full sm:flex-row md:flex-col gap-5">
                 {recentData.map((item, index) => {
                   return (
                     <div
-                      className="w-full border-2 border-customColor rounded-xl"
+                      className="w-full   sm:min-w-[300px]  border-2 border-customColor rounded-xl"
                       key={index}
                     >
                       <img
                         src={item.img}
-                        className="w-full h-[450px] sm:h-[300px] object-cover"
+                        className=" w-full  object-cover"
                         alt=""
                       />
                       <div className="bg-white  rounded-xl p-4 flex flex-col gap-3">
