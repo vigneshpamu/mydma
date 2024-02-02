@@ -6,7 +6,7 @@ const TitleSect = () => {
   return (
     <>
       <StickyNav start={0} end={0} />
-      <div className="relative max-w-[1100px] h-full  m-auto">
+      <div className="relative max-w-[1100px] h-full pb-10  m-auto">
         {/* <CommonNav /> */}
         <img
           src="/images/magazine/hero/hero.png"

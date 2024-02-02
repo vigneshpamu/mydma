@@ -17,9 +17,9 @@ const page = () => {
       className="relative max-w-8xl m-auto overflow-hidden"
     >
       <TitleSect />
-      {/* <PDFSect /> */}
+      <PDFSect />
       {/* <div className="h-[150px] sm:h-[100px] w-full bg-white"></div> */}
-      {/* <Footer /> */}
+      <Footer />
     </motion.div>
   )
 }

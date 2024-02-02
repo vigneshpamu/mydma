@@ -4,7 +4,7 @@ const PDFSect = () => {
   return (
     <>
       <div className="relative h-[452px]  w-[100%] m-auto bg-gray-300">
-        <div className="flex flex-col gap-3 items-center justify-center w-[1347px]  1xl:w-[90%] absolute to left-1/2 transform -translate-x-1/2 m-auto">
+        <div className="flex flex-col gap-3 items-center justify-center  m-auto">
           <iframe
             allowFullScreen
             scrolling="no"

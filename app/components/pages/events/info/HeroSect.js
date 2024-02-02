@@ -42,11 +42,11 @@ const HeroSect = () => {
           </div>
         </div>
       </div> */}
-      <div className="mt-52 sm:mt-32 xsm:mt-28 flex items-center justify-center ">
-        <div className="w-[1347px] 1xl:w-[90%] ">
+      <div className="mt-24 max-w-[1100px] mx-auto flex items-center justify-center ">
+        <div className="  ">
           <img
             src="/images/events/info/hero/hero.png"
-            className="w-[1347px] object-cover"
+            className="w-full  object-cover"
             alt=""
           />
         </div>
