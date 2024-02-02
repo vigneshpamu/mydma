@@ -307,7 +307,7 @@ const Page = () => {
     >
       <LeftSideSticky />
       <RightSideSticky />
-      <StickyNav start={700} end={1000} />
+      {/* <StickyNav start={700} end={1000} /> */}
       <HeroSect dataArr={dataArr[0]} />
       <MembersSect dataArr={dataArr[0]} />
       <Footer />

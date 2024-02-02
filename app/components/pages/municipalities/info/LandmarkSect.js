@@ -15,16 +15,16 @@ const LandmarkSect = ({ data }) => {
   }, [data])
   return (
     <>
-      <div className={`${landmarkHeight}`}>
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[1347px] 1xl:w-[90%] m-auto ">
-          <div className="w-[900px] lg:w-[95%] flex flex-col gap-7">
+      <div className="h-full max-w-[1100px] py-5 mx-auto px-5">
+        <div className="  ">
+          <div className=" flex flex-col gap-7">
             <div className="flex flex-col gap-4">
-              <p className="font-bold text-3xl sm:text-[25px]">
+              <p className="font-bold text-2xl sm:text-[25px]">
                 Landmarks of {data?.title}
               </p>
               <p>These are the main landmarks of our municipality</p>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-1 gap-y-10 lg:gap-8 lg:gap-x-3">
+            <div className="max-w-[900px] grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-10">
               {data?.landmarks?.length > 0 &&
                 data?.landmarks?.map((item, index) => {
                   return (

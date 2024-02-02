@@ -4,7 +4,7 @@ import GlobalPrac from './components/GlobalPrac'
 const AllDataComponents = ({ dataArr }) => {
   console.log(dataArr)
   return (
-    <div className="">
+    <div className="max-w-[1100px] mx-auto">
       {dataArr?.information?.globalPracticesArray?.length > 0 && (
         <GlobalPrac dataArr={dataArr} />
       )}

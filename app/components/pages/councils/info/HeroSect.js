@@ -7,24 +7,24 @@ const HeroSect = ({ dataArr }) => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <div className="relative  h-[980px] lg:h-[810px] sm:h-[630px] w-[100%] m-auto">
+      <div className="relative h-full m-auto">
         <SideMenu visible={visible} setVisible={setVisible} />
         <img
           src="/images/councils/info/hero/hero.png"
-          className="w-full h-[750px] lg:h-[650px] sm:h-[500px] object-cover pointer-events-none"
+          className="w-full h-[350px]  object-cover pointer-events-none"
           alt="hero"
         />
         {/* <CommonNav setVisible={setVisible} /> */}
         <UpperNav setVisible={setVisible} />
-        <div className="absolute bottom-[20px] lg:bottom-0 left-1/2 transform -translate-x-1/2 w-[1312px] 1xl:w-[90%] m-auto ">
+        <div className="max-w-[1100px] mt-[-60px] m-auto ">
           <div className="relative">
             <img
               src="/images/councils/info/hero/mask.png"
-              className="h-[250px] sm:h-[180px] w-full object-cover"
+              className="h-[150px] sm:h-[180px] w-full object-cover"
               alt=""
             />
-            <div className="absolute top-0 py-10 h-[100%] w-full flex items-center justify-center">
-              <p className="text-6xl font-semibold text-white text-center md:text-4xl xsm:text-3xl">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
+              <p className="text-2xl font-semibold text-white text-center">
                 {dataArr?.slug} <br /> Municipality Council
               </p>
               {/* <p className="text-white text-xl	text-center px-20">

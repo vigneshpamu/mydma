@@ -544,9 +544,9 @@ const Page = () => {
       <HeroSect dataArr={dataArr} />
       {/* <StickyNav start={700} end={1000} /> */}
       <InfoSect dataArr={dataArr} paramsData={paramsData} />
-      {/* <AllDataComponents dataArr={dataArr[0]} /> */}
+      <AllDataComponents dataArr={dataArr[0]} />
       {/* {dataArr[0]?.awards.length > 0 && <AwardsSect data={dataArr[0]} />} */}
-      {/* {dataArr[0]?.landmarks.length > 0 && <LandmarkSect data={dataArr[0]} />} */}
+      {dataArr[0]?.landmarks.length > 0 && <LandmarkSect data={dataArr[0]} />}
       {/* {dataArr[0]?.landmarks.length > 0 && <GallerySect data={dataArr[0]} />} */}
       {/* <Footer /> */}
     </motion.div>

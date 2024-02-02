@@ -115,9 +115,9 @@ const StickyNav = ({ start, end }) => {
         }`}
       >
         {/* Your navigation content goes here */}
-        <div className="h-full z-230  border-red-500 bg-white m-auto flex flex-col justify-between p-4  lg:w-[800px] 2md:w-[100%]">
-          <div className="flex items-center justify-between align-middle w-[1347px] 2xl:w-[1200px] xl:w-[1000px] lg:w-[800px] 2md:w-[100%] m-auto">
-            <div className="flex items-center align-middle justify-center gap-20 2md:gap-7">
+        <div className="h-full max-w-[1100px]  z-230 sm:gap-2 border-red-500 bg-white m-auto flex flex-col justify-between p-4   ">
+          <div className="flex w-full items-center justify-between  m-auto">
+            <div className="flex items-center align-middle justify-center gap-10 ">
               {navData2.map((item, index) => {
                 return index === 0 ? (
                   <img
@@ -155,20 +155,16 @@ const StickyNav = ({ start, end }) => {
                 null
               })}
             </div>
-            <div className="sm:w-[250px] flex items-center justify-end xsm:w-[35%]">
-              <img
-                src="/images/home/vision/logo.png"
-                className="sm:w-[80%] xsm:w-full"
-                alt=""
-              />
+            <div className="w-[150px] flex items-center justify-end">
+              <img src="/images/home/vision/logo.png" className="" alt="" />
             </div>
           </div>
-          <div className="w-[1347px] m-auto h-[2px] bg-gray-300 mt-0 mb-4 lg:w-[100%] 2md:hidden"></div>
-          <div className="flex items-center justify-center gap-16 2md:hidden">
+          <div className="w-[95%] hidden sm:block m-auto h-[3px] bg-gray-200 mt-0 mb-4 "></div>
+          <div className="sm:flex mt -3 items-center justify-center gap-7 hidden">
             {linkData.map((item) => {
               return (
                 <Link href={`/${par}${item.link}`} key={item.id}>
-                  <p className="text-black hover:text-gray-100 font-semibold">
+                  <p className="text-black hover:opacity-70 font-semibold">
                     {item.name}
                   </p>
                 </Link>

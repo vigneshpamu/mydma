@@ -105,14 +105,14 @@ const HeroSectNews = () => {
   return (
     <>
       {/* <CommonNav /> */}
-      {/* <StickyNav start={0} end={0} /> */}
+      <StickyNav start={0} end={0} />
 
       <img
         src="/images/magazine/hero/hero.png"
         className="w-full h-[400px] object-cover pointer-events-none"
         alt="hero"
       />
-      <div className="mt-[-300px] px-5 pb-10">
+      <div className="mt-[-270px] sm:mt-[-190px] px-5 pb-10">
         <div className="flex text-4xl font-bold items-center justify-center w-full">
           News & Media
           {/* <p className="text-6xl sm:text-2xl font-bold">News & Media</p> */}
@@ -120,7 +120,7 @@ const HeroSectNews = () => {
             Know More About <br /> DMA Sharjah
           </p> */}
         </div>
-        <div className="flex items-center justify-center ">
+        <div className="flex items-center max-w-[1100px] mx-auto justify-center ">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
             {mainData.map((item) => {
               return (
