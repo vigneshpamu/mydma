@@ -7,6 +7,7 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 import StickyNav from '../../common/StickyNav'
 import Image from 'next/image'
 import UpperNav from '../../common/UpperNav'
+import { Skeleton } from '@/components/ui/skeleton'
 
 const HeroSectNews = () => {
   const magazineCard = [
@@ -146,9 +147,16 @@ const HeroSectNews = () => {
                       />
                     </div>
                     <div className="flex flex-col gap-3">
-                      <p className="text-2xl 1xl:text-xl font-bold text-[#036C73] w-[90%">
-                        Data is Awaited
-                      </p>
+                      <Skeleton className="w-full h-full px-2 rounded-sm">
+                        <p className="text-2xl 1xl:text-xl font-bold text-[#036C73] w-[90%">
+                          Data is Awaited
+                        </p>
+                      </Skeleton>
+                      <Skeleton className="w-full h-[0px] px-2 rounded-sm">
+                        <p className="text-sm 1xl:text-xl font-bold text-[#036C73] w-[90%]">
+                          Data is Awaited Data is Awaited Data is Awaited
+                        </p>
+                      </Skeleton>
                       {/* <div className="flex flex-row gap-3 items-center ">
                         <p className="text-[#036C73]">Read More</p>
                         <p className="mt-1 text-xl text-[#036C73]">

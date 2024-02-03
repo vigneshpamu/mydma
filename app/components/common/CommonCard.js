@@ -44,7 +44,7 @@ const CommonCard = ({ data }) => {
                 key={index}
                 href={`/${par}${item.link}?name=${item.title}`}
               >
-                <div className="h-[400px]  rounded-xl relative transition-all hover:scale-105">
+                <div className="h-[350px]  rounded-xl relative transition-all hover:scale-105">
                   {/* <img
                     src={item.img}
                     className="w-[100%] h-[100%] rounded-xl object-cover"
@@ -64,7 +64,7 @@ const CommonCard = ({ data }) => {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t rounded-xl from-slate-900 opacity-70 to-transparent"></div>
                   <div className="absolute left-5 bottom-3 flex flex-col justify-between h-[100px] lg:h-[100px]">
-                    <p className="text-white text-2xl font-semibold lg:text-xl">
+                    <p className="text-white text-2xl font-semibold lg:text-2xl w-[80%]">
                       {item.title}
                     </p>
                     {/* <p className="text-white text-xl md:text-sm">Know</p> */}

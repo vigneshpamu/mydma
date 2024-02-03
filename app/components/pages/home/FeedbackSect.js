@@ -19,7 +19,7 @@ const FeedbackSect = () => {
       <div className="flex items-center py-4 justify-center h-full sm:py-10">
         <div className="  relative flex items-center   justify-center">
           <img
-            src="images/home/feedback/main2.png"
+            src="/images/home/feedback/main2.png"
             className="h-[950px] sm:h-[550px] object-cover"
             alt=""
           />

@@ -79,7 +79,7 @@ const Footer = () => {
           alt=""
         /> */}
       <div className="relative  h-full ">
-        <div className="h-[1100px] lg:h-[650px]">
+        <div className="h-[1100px] md:h-[800px] lg:h-[650px]">
           <Image
             src="/images/home/footer/background.png"
             alt="meeting-img"

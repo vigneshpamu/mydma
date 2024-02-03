@@ -7,7 +7,7 @@ const VisionSect = () => {
     <>
       <div className="relative h-full max-w-[1100px] mx-auto p-3">
         <img
-          src="images/home/vision/background.png"
+          src="/images/home/vision/background.png"
           className="w-full h-[150px] sm:h-[250px] md:h-[150px]  object-cover"
           alt=""
         />

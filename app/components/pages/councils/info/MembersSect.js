@@ -1,3 +1,4 @@
+import { Skeleton } from '@/components/ui/skeleton'
 import React from 'react'
 
 const MembersSect = ({ dataArr }) => {
@@ -9,58 +10,66 @@ const MembersSect = ({ dataArr }) => {
           <p className="text-center font-bold text-xl   md:text-3xl m-auto">
             Members of Executive Council
           </p>
-          <div className="flex flex-col sm:flex-row sm:px-2 sm:gap-4 lg:gap-20  sm:items-end sm:justify-center items-center justify-between gap-10">
-            <div className="relative w-[350px]   h-[400px]">
-              <img
-                src="/images/councils/info/members/bg.png"
-                className="w-full  h-[200px] z-0 absolute bottom-0"
-                alt=""
-              />
-              <img
-                src={dataArr?.councilMembers?.chairman?.img}
-                className="w-[200px] h-[240px] border-2 border-customColor rounded-lg z-10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
-                alt=""
-              />
-              <div className="absolute bottom-7 w-full flex flex-col gap-2 text-center 2lg:gap-3 lg:bottom-5 items-center justify-center">
-                <p className="text-mde font-bold text-white  w-[85%] ">
-                  {dataArr?.councilMembers?.chairman?.name}
-                </p>
-                <p className="text-sm text-white text-center w-[70%] ">
-                  {dataArr?.councilMembers?.chairman?.role}
-                </p>
-              </div>
-            </div>
-            {dataArr?.councilMembers?.vicePresident?.img.length > 0 && (
-              <div className="relative w-[350px]  h-[350px]">
+          {dataArr?.councilMembers ? (
+            <div className="flex flex-col sm:flex-row sm:px-2 sm:gap-4 lg:gap-20  sm:items-end sm:justify-center items-center justify-between gap-10">
+              <div className="relative w-[350px]   h-[400px]">
                 <img
                   src="/images/councils/info/members/bg.png"
-                  className="w-full h-[160px]  object-cover absolute bottom-0"
+                  className="w-full  h-[200px] z-0 absolute bottom-0"
                   alt=""
                 />
                 <img
-                  src={dataArr?.councilMembers?.vicePresident?.img}
+                  src={dataArr?.councilMembers?.chairman?.img}
                   className="w-[200px] h-[240px] border-2 border-customColor rounded-lg z-10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
                   alt=""
                 />
-                <div className="absolute bottom-5 w-full flex flex-col gap-2 text-center 2lg:gap-3 lg:bottom-5 items-center justify-center">
-                  <p className="text-mde font-bold text-white w-[85%] ">
-                    {dataArr?.councilMembers?.vicePresident?.name}
+                <div className="absolute bottom-7 w-full flex flex-col gap-2 text-center 2lg:gap-3 lg:bottom-5 items-center justify-center">
+                  <p className="text-mde font-bold text-white  w-[85%] ">
+                    {dataArr?.councilMembers?.chairman?.name}
                   </p>
                   <p className="text-sm text-white text-center w-[70%] ">
-                    {dataArr?.councilMembers?.vicePresident?.role}
+                    {dataArr?.councilMembers?.chairman?.role}
                   </p>
                 </div>
               </div>
-            )}
-          </div>
-          <div className="grid max-w-[1100px] justify-items-center place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-5 lg:gap-x-10	 gap-y-8  px-10 m-auto">
+              {dataArr?.councilMembers?.vicePresident?.img.length > 0 && (
+                <div className="relative w-[350px]  h-[350px]">
+                  <img
+                    src="/images/councils/info/members/bg.png"
+                    className="w-full h-[160px]  object-cover absolute bottom-0"
+                    alt=""
+                  />
+                  <img
+                    src={dataArr?.councilMembers?.vicePresident?.img}
+                    className="w-[200px] h-[240px] border-2 border-customColor rounded-lg z-10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
+                    alt=""
+                  />
+                  <div className="absolute bottom-5 w-full flex flex-col gap-2 text-center 2lg:gap-3 lg:bottom-5 items-center justify-center">
+                    <p className="text-mde font-bold text-white w-[85%] ">
+                      {dataArr?.councilMembers?.vicePresident?.name}
+                    </p>
+                    <p className="text-sm text-white text-center w-[70%] ">
+                      {dataArr?.councilMembers?.vicePresident?.role}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="w-[800px] mx-auto">
+              <Skeleton className="w-full h-full p-5 rounded-sm flex items-center justify-center">
+                <p className="text-4xl">Data and Image Awaited</p>
+              </Skeleton>
+            </div>
+          )}
+          <div className="grid max-w-[1100px] mt-8 justify-items-center place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-5 lg:gap-x-10	 gap-y-8  px-10 m-auto">
             {dataArr?.councilMembers?.otherMembers?.map((item) => {
               return (
                 <div
                   key={item.id}
                   className="relative w-full flex flex-col gap-3 items-center justify-between "
                 >
-                  <div className="w-[250px] h-[270px] rounded-lg border-2 border-customColor px-2">
+                  <div className="w-[250px] h-[250px] rounded-lg border-2 border-customColor ">
                     <img
                       src={item.img}
                       className="w-full h-full rounded-lg object-cover"

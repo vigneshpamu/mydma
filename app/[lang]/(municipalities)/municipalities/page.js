@@ -85,7 +85,7 @@ const page = () => {
       />
       <StickyNav start={700} end={900} />
       <CommonCard data={mainData} />
-      {/* <Footer /> */}
+      <Footer />
     </motion.div>
   )
 }

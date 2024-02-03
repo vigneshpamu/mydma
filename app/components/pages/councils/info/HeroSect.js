@@ -25,7 +25,7 @@ const HeroSect = ({ dataArr }) => {
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
               <p className="text-2xl font-semibold text-white text-center">
-                {dataArr?.slug} <br /> Municipality Council
+                {dataArr?.slug} Council
               </p>
               {/* <p className="text-white text-xl	text-center px-20">
                 The Executive Council of the Emirate of Sharjah, the supreme

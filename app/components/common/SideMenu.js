@@ -77,7 +77,7 @@ const SideMenu = ({ visible, setVisible }) => {
           />
           <img
             className="absolute right-3 top-4"
-            src="images/home/nav/logo/slogo.png"
+            src="/images/home/nav/logo/slogo.png"
             alt=""
           />
           <button

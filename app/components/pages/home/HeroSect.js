@@ -62,7 +62,7 @@ const HeroSect = ({ lang }) => {
     { id: 3, img: '/images/home/hero/jp5.jpg' },
     { id: 1, img: '/images/home/hero/h1.png' },
     { id: 4, img: '/images/home/hero/jp6.jpg' },
-    { id: 4, img: '/images/home/hero/jp7.jpg' },
+    { id: 5, img: '/images/home/hero/jp7.jpg' },
     // { id: 5, img: '' },
     // { id: 6, img: '' },
     // { id: 7, img: '' },

@@ -1,3 +1,4 @@
+import { Skeleton } from '@/components/ui/skeleton'
 import React from 'react'
 import { MdWhatsapp } from 'react-icons/md'
 
@@ -20,9 +21,11 @@ const MainSect = () => {
         <div className="flex flex-col    gap-10 pb-10">
           <div className="flex flex-col gap-5   p-7 bg-[#036C73]">
             <div>
-              <p className="text-4xl font-semibold text-white  ">
-                Data is Awaited
-              </p>
+              <Skeleton className="w-full h-full px-2 rounded-sm">
+                <p className="text-4xl font-semibold text-black  ">
+                  Data is Awaited
+                </p>
+              </Skeleton>
             </div>
             <div className="flex flex-col items-start gap-3  text-white justify-between">
               <p>
@@ -43,16 +46,20 @@ const MainSect = () => {
           </div>
           <div className="flex items-start justify-center flex-col md:flex-row md:gap-5 h-full gap-14 px-5">
             <div className="flex flex-col h-full gap-5">
-              <p className="text-2xl font-bold  ">Data is Awaited</p>
-              <p className="leading-normal tracking-wide text-sm">
-                Data is Awaited. Data is Awaited.Data is Awaited. Data is
-                Awaited. Data is Awaited. Data is Awaited. Data is Awaited. Data
-                is Awaited. Data is Awaited. Data is Awaited. Data is Awaited.
-                Data is Awaited. Data is Awaited. Data is Awaited.Data is
-                Awaited. Data is Awaited. Data is Awaited. Data is Awaited. Data
-                is Awaited. Data is Awaited. Data is Awaited. Data is Awaited.
-                Data is Awaited. Data is Awaited
-              </p>
+              <Skeleton className="w-full h-full px-2 rounded-sm">
+                <p className="text-2xl font-bold  ">Data is Awaited</p>
+              </Skeleton>
+              <Skeleton className="w-full h-full px-2 rounded-sm">
+                <p className="leading-normal tracking-wide text-sm">
+                  Data is Awaited. Data is Awaited.Data is Awaited. Data is
+                  Awaited. Data is Awaited. Data is Awaited. Data is Awaited.
+                  Data is Awaited. Data is Awaited. Data is Awaited. Data is
+                  Awaited. Data is Awaited. Data is Awaited. Data is
+                  Awaited.Data is Awaited. Data is Awaited. Data is Awaited.
+                  Data is Awaited. Data is Awaited. Data is Awaited. Data is
+                  Awaited. Data is Awaited. Data is Awaited. Data is Awaited
+                </p>
+              </Skeleton>
               <img src="/images/events/info/blog/demo.png" alt="" />
               {/* <p className="leading-normal tracking-wide text-lg xsm:text-sm">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -105,10 +112,12 @@ const MainSect = () => {
                         alt=""
                       />
                       <div className="bg-white  rounded-xl p-4 flex flex-col gap-3">
-                        <p className="text-customColor font-semibold text-2xl">
-                          {item.title}
-                        </p>
-                        <p>{item.desc}</p>
+                        <Skeleton className="w-full h-full px-2 rounded-sm">
+                          <p className="text-customColor font-semibold text-2xl">
+                            {item.title}
+                          </p>
+                          <p>{item.desc}</p>
+                        </Skeleton>
                       </div>
                     </div>
                   )
