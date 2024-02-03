@@ -22,11 +22,15 @@ const RightSideSticky = () => {
   ]
   return (
     <>
-      <div className="fixed top-60 right-6 flex flex-col gap-2 !z-10 sm:hidden">
+      <div className="fixed top-60 right-6 flex-col gap-2 !z-10 hidden md:flex">
         {socialData.map((item) => {
           return (
             <Link href={item.link} key={item.id}>
-              <img className="shadow-lg rounded-full" src={item.icon} alt="" />
+              <img
+                className="shadow-lg rounded-full w-[80%]"
+                src={item.icon}
+                alt=""
+              />
             </Link>
           )
         })}

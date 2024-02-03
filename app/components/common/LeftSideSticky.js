@@ -39,12 +39,12 @@ const LeftSideSticky = () => {
             <DialogTrigger>
               <img
                 src="/images/home/side/1.png"
-                className="transition-all sm:hidden	 hover:opacity-90 cursor-pointer"
+                className="transition-all w-[80%] hidden	md:block hover:opacity-90 cursor-pointer"
                 alt=""
               />
               <img
                 src="/images/home/side/1.1.png"
-                className="transition-all hidden sm:block	 hover:opacity-90 cursor-pointer"
+                className="transition-all  md:hidden hover:opacity-90 cursor-pointer"
                 alt=""
               />
             </DialogTrigger>
@@ -89,12 +89,12 @@ const LeftSideSticky = () => {
             <DialogTrigger>
               <img
                 src="/images/home/side/2.png"
-                className="transition-all sm:hidden	 hover:opacity-90 cursor-pointer"
+                className="transition-all hidden w-[80%]	md:block  hover:opacity-90 cursor-pointer"
                 alt=""
               />
               <img
                 src="/images/home/side/2.1.png"
-                className="transition-all hidden sm:block	 hover:opacity-90 cursor-pointer"
+                className="transition-all  md:hidden	 hover:opacity-90 cursor-pointer"
                 alt=""
               />
             </DialogTrigger>
