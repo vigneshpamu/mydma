@@ -136,7 +136,7 @@ const HeroSectNews = () => {
                         alt=""
                       /> */}
                     <div className="sm:h-[300px] w-full">
-                      <Image
+                      {/* <Image
                         src={item.img}
                         alt="news-img"
                         height={750}
@@ -144,7 +144,10 @@ const HeroSectNews = () => {
                         // layout="fill"
                         objectFit="cover"
                         className="pointer-events-none sm:h-[100%]  object-cover"
-                      />
+                      /> */}
+                      <Skeleton className="h-[300px] flex items-center justify-center text-3xl w-[350px] px-2 rounded-sm">
+                        Image Awaited
+                      </Skeleton>
                     </div>
                     <div className="flex flex-col gap-3">
                       <Skeleton className="w-full h-full px-2 rounded-sm">
@@ -152,11 +155,7 @@ const HeroSectNews = () => {
                           Data is Awaited
                         </p>
                       </Skeleton>
-                      <Skeleton className="w-full h-[0px] px-2 rounded-sm">
-                        <p className="text-sm 1xl:text-xl font-bold text-[#036C73] w-[90%]">
-                          Data is Awaited Data is Awaited Data is Awaited
-                        </p>
-                      </Skeleton>
+
                       {/* <div className="flex flex-row gap-3 items-center ">
                         <p className="text-[#036C73]">Read More</p>
                         <p className="mt-1 text-xl text-[#036C73]">

@@ -62,13 +62,11 @@ const SideMenu = ({ visible, setVisible }) => {
   return (
     <>
       <div
-        className={`netflix-nav netflix-nav-black ${visible ? 'visible' : ''}`}
+        className={`common-nav common-nav-black ${visible ? 'visible' : ''}`}
         onClick={() => setVisible(false)}
       >
         <div
-          className={`netflix-nav netflix-nav-white  ${
-            visible ? 'visible' : ''
-          }`}
+          className={`common-nav common-nav-white  ${visible ? 'visible' : ''}`}
         >
           <img
             src="/images/home/nav/pattern2.png"
@@ -81,12 +79,12 @@ const SideMenu = ({ visible, setVisible }) => {
             alt=""
           />
           <button
-            className="netflix-nav-btn netflix-close-btn"
+            className=" border-0 bg-transparent cursor-pointer text-xl nav-close-btn"
             onClick={() => setVisible(false)}
           >
             <FaTimes />
           </button>
-          <ul className="absolute top-1/3  left-20 flex flex-col gap-8 netflix-list">
+          <ul className="absolute top-1/3  left-20 flex flex-col gap-8 nav-list">
             {linkData.map((item) => {
               return (
                 <Link href={`/${par}${item.link}`} key={item.id}>
