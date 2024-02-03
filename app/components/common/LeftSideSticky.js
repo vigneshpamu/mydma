@@ -33,7 +33,7 @@ const LeftSideSticky = () => {
   }
   return (
     <>
-      <div className="fixed bottom-20 flex flex-col gap-2 !z-20">
+      <div className="fixed bottom-20 flex flex-col gap-2 !z-50">
         <div>
           <Dialog>
             <DialogTrigger>

@@ -1,3 +1,4 @@
+import { Skeleton } from '@/components/ui/skeleton'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,7 +8,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
     <>
       <div className="relative max-w-[1100px] mx-auto">
         <div className="flex px-4 lg:flex-row flex-col-reverse items-start justify-between gap-5 mx-auto py-8  m-auto ">
-          {dataArr[0]?.information?.municipalityData && (
+          {dataArr[0]?.information?.municipalityData ? (
             <div className="py-4  flex flex-col mr-5 gap-10">
               <p className="text-4xl font-bold w-[100%] leading-tight xl:text-3xl	sm:text-2xl">
                 About {dataArr[0]?.title}
@@ -15,6 +16,32 @@ const InfoSect = ({ dataArr, paramsData }) => {
               <p className="text-xl tracking-wide	xl:text-lg">
                 {dataArr[0]?.information?.municipalityData}
               </p>
+            </div>
+          ) : (
+            <div>
+              <div className="py-4  flex flex-col mr-5 gap-10">
+                <p className="text-4xl font-bold w-[100%] leading-tight xl:text-3xl	sm:text-2xl">
+                  About {dataArr[0]?.title}
+                </p>
+                <Skeleton className="h-full w-full p-5">
+                  <p className="text-xl tracking-wide	xl:text-lg">
+                    Data is Awaited Data is Awaited Data is Awaited Data is
+                    Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                    is Awaited Data is Awaited Data is Awaited Data is Awaited
+                    Data is Awaited Data is Awaited Data is Awaited Data is
+                    Awaited Data is Awaited Data is Awaited Data is Awaited
+                  </p>
+                </Skeleton>
+                <Skeleton className="h-full w-full p-5">
+                  <p className="text-xl tracking-wide	xl:text-lg">
+                    Data is Awaited Data is Awaited Data is Awaited Data is
+                    Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                    is Awaited Data is Awaited Data is Awaited Data is Awaited
+                    Data is Awaited Data is Awaited Data is Awaited Data is
+                    Awaited Data is Awaited Data is Awaited Data is Awaited
+                  </p>
+                </Skeleton>
+              </div>
             </div>
           )}
           <div className=" bg-gray-50 md:min-w-[400px] w-full p-4 mt-[-100px] z-20 right-0 rounded-lg  flex flex-col gap-6">

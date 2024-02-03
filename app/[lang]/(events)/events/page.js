@@ -63,8 +63,8 @@ const Page = () => {
       className="relative max-w-8xl m-auto overflow-hidden"
     >
       <StickyNav start={0} end={0} />
-      {/* <LeftSideSticky />
-      <RightSideSticky /> */}
+      <LeftSideSticky />
+      <RightSideSticky />
       <MainSect />
       <Footer />
     </motion.div>

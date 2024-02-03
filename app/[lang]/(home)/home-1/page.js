@@ -59,6 +59,7 @@ const Home_1 = () => {
       <RightSideSticky />
       {/* <StickyNav start={910} end={1200} /> */}
       <VisionSect />
+
       <NewsMediaSect />
       {/* <EventsSect /> */}
       <MagazineSect />

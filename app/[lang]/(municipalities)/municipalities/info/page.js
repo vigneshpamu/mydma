@@ -539,8 +539,8 @@ const Page = () => {
       exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className="relative max-w-8xl m-auto overflow-hidden"
     >
-      {/* <LeftSideSticky />
-      <RightSideSticky /> */}
+      <LeftSideSticky />
+      <RightSideSticky />
       <HeroSect dataArr={dataArr} />
       {/* <StickyNav start={700} end={1000} /> */}
       <InfoSect dataArr={dataArr} paramsData={paramsData} />

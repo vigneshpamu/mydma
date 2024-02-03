@@ -6,6 +6,7 @@ import StickyNav from '@/app/components/common/StickyNav'
 import LeftSideSticky from '@/app/components/common/LeftSideSticky'
 import RightSideSticky from '@/app/components/common/RightSideSticky'
 import Footer from '@/app/components/common/Footer'
+import { Skeleton } from '@/components/ui/skeleton'
 
 const MainSect = () => {
   const eventData = [
@@ -81,9 +82,12 @@ const MainSect = () => {
                   </p>
                 </div>
                 <div className="absolute bottom-16 left-0 px-5 2md:left-2">
-                  <p className="text-xl font-semibold text-white 2lg:text-2xl 2md:text-xl">
-                    {event.event}
-                  </p>
+                  <Skeleton className="h-full w-full p-5">
+                    <p className="text-xl font-semibold text-black 2lg:text-2xl 2md:text-xl">
+                      {/* {event.event} */}
+                      Data is Awaited
+                    </p>
+                  </Skeleton>
                 </div>
                 <div className="absolute bottom-5 right-4 px-4">
                   <p className="text-xl font-semibold text-white 2md:text-sm">
@@ -92,8 +96,10 @@ const MainSect = () => {
                 </div>
               </div>
             ) : (
-              <div className="border-2  rounded-lg flex items-center justify-center">
-                <p className="text-5xl font-bold">No Event</p>
+              <div className="border-2 w-full  rounded-lg flex items-center justify-center">
+                <Skeleton className="h-full w-full p-5">
+                  <p className="text-5xl font-bold">No Event</p>
+                </Skeleton>
               </div>
             )}
           </div>

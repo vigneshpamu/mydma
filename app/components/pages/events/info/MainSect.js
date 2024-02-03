@@ -1,3 +1,4 @@
+import { Skeleton } from '@/components/ui/skeleton'
 import React from 'react'
 import { MdWhatsapp } from 'react-icons/md'
 
@@ -26,9 +27,11 @@ const MainSect = () => {
                 </p>
                 <p className="text-xl text-customColor md:text-sm">JAN</p>
               </div>
-              <p className="text-xl sm:text-3xl lg:text-4xl font-semibold text-white  md:text-2xl">
-                Quis autem vel eum iure reprehenderit qui in ea voluptate.
-              </p>
+              <Skeleton className="h-full w-full p-5">
+                <p className="text-xl sm:text-3xl lg:text-4xl font-semibold text-black  md:text-2xl">
+                  Data is Awaited
+                </p>
+              </Skeleton>
             </div>
 
             <div className="flex flex-col sm:flex-row  md:flex-wrap text-white justify-between">
@@ -50,40 +53,44 @@ const MainSect = () => {
           </div>
           <div className="flex px-4 flex-row 2md:flex-col gap-24 xl:gap-10">
             <div className="flex flex-col gap-5">
-              <p className="text-2xl sm:text-3xl lg:text-4xl font-bold w-[90%] 2md:text-3xl xsm:w-[100%] ">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-              </p>
-              <p className="leading-normal tracking-wide text-sm sm:text-lg lg:text-xl">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Sed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt.
-              </p>
+              <Skeleton className="w-full p-5">
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold w-[90%] 2md:text-3xl xsm:w-[100%] ">
+                  Data is Awaited
+                </p>
+              </Skeleton>
+              <Skeleton className="w-full p-5">
+                <p className="leading-normal tracking-wide text-sm sm:text-lg lg:text-xl">
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited Data is Awaited Data is Awaited Data is Awaited
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited Data is Awaited Data is Awaited Data is Awaited
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited Data is Awaited Data is Awaited Data is Awaited
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited
+                </p>
+              </Skeleton>
               <img src="/images/events/info/blog/demo.png" alt="" />
-              <p className="leading-normal tracking-wide text-sm sm:text-lg lg:text-xl">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Sed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt.
-              </p>
+              <Skeleton className="w-full p-5">
+                <p className="leading-normal tracking-wide text-sm sm:text-lg lg:text-xl">
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited Data is Awaited Data is Awaited Data is Awaited
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited Data is Awaited Data is Awaited Data is Awaited
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited Data is Awaited Data is Awaited Data is Awaited
+                  Data is Awaited Data is Awaited Data is Awaited Data is
+                  Awaited Data is Awaited Data is Awaited Data is Awaited Data
+                  is Awaited
+                </p>
+              </Skeleton>
               <div className="flex flex-row justify-between mt-5">
                 <button className="active:scale-95 transition-all">
                   <img src="/images/events/info/blog/icon/left.png" alt="" />

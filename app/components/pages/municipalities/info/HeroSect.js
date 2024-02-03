@@ -12,7 +12,7 @@ const HeroSect = ({ dataArr }) => {
         <div className="relative">
           <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
           <img
-            src={`/${dataArr[0]?.img}`}
+            src={`${dataArr[0]?.img}`}
             className="w-full h-[400px] md:h-[600px]  object-cover pointer-events-none"
             alt="hero"
           />
