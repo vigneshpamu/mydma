@@ -1,7 +1,7 @@
 'use client'
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react'
-
+import { Skeleton } from '@/components/ui/skeleton'
 import HeroSect from '@/app/components/pages/home/HeroSect'
 import LeftSideSticky from '@/app/components/common/LeftSideSticky'
 import StickyNav from '@/app/components/common/StickyNav'

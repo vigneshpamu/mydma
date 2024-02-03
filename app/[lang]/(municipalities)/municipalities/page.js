@@ -83,7 +83,7 @@ const page = () => {
         page={'Municipalities'}
         desc={`Embrace change, for it brings growth and endless possibilities ahead.`}
       />
-      {/* <StickyNav start={700} end={900} /> */}
+      <StickyNav start={700} end={900} />
       <CommonCard data={mainData} />
       {/* <Footer /> */}
     </motion.div>

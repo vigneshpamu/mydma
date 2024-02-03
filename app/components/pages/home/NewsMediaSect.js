@@ -5,6 +5,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
+import { Skeleton } from '@/components/ui/skeleton'
 const NewsMediaSect = () => {
   const newsData = [
     {
@@ -126,11 +127,13 @@ const NewsMediaSect = () => {
                   ></div>
                 </div>
                 <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row  items-end gap-16">
-                  <p className="text-xl text-white font-semibold sm:text-xl">
-                    {/* Quis autem vel eum iure reprehenderit qui in ea
+                  <Skeleton className="w-full px-3 h-full rounded-lg">
+                    <p className="text-xl text-customColor font-semibold sm:text-xl">
+                      {/* Quis autem vel eum iure reprehenderit qui in ea
                     voluptate.... */}
-                    Data is Awaited
-                  </p>
+                      Data is Awaited
+                    </p>
+                  </Skeleton>
                   <div>
                     <img
                       src="/images/home/elements/rarrow.png"
@@ -153,14 +156,18 @@ const NewsMediaSect = () => {
                           className="w-full h-[190px]"
                         />
                         <div className="p-3 flex flex-col gap-3">
-                          <p className="text-2xl font-semibold xl:text-xl  text-customColor">
-                            {/* {item.title} */}
-                            Data is Awaited
-                          </p>
+                          <Skeleton className="w-full px-3 h-full rounded-lg">
+                            <p className="text-2xl font-semibold xl:text-xl  text-customColor">
+                              {/* {item.title} */}
+                              Data is Awaited
+                            </p>
+                          </Skeleton>
                           {/* <p className="text-xl xl:text-lg xsm:text-sm">
                             {item.desc}
                           </p> */}
-                          <p>Data is Awaited</p>
+                          <Skeleton className="w-full px-3 h-full rounded-lg">
+                            <p className="h-[80px]">Data is Awaited</p>
+                          </Skeleton>
                         </div>
                       </div>
                     </Link>

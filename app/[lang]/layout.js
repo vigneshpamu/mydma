@@ -24,7 +24,7 @@ export default function RootLayout({ children, params }) {
   // setLang(params.lang === 'en' ? 'ar' : 'en') // Toggle between 'en' and 'fr'
   return (
     <html lang={params.lang}>
-      <body className={openSans.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

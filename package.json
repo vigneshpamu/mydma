@@ -21,6 +21,7 @@
     "eslint-config-next": "14.0.4",
     "framer-motion": "^10.18.0",
     "lucide-react": "^0.316.0",
+    "mocka-placeholder": "^1.0.2",
     "negotiator": "^0.6.3",
     "next": "14.0.4",
     "postcss": "8.4.33",

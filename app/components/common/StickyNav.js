@@ -115,7 +115,7 @@ const StickyNav = ({ start, end }) => {
         }`}
       >
         {/* Your navigation content goes here */}
-        <div className="h-full max-w-[1100px]  z-230 sm:gap-2 border-red-500 bg-white m-auto flex flex-col justify-between p-4   ">
+        <div className="h-full  max-w-[1100px]  z-230 sm:gap-2 border-red-500 bg-white m-auto flex flex-col justify-between p-4 pt-7">
           <div className="flex w-full items-center justify-between  m-auto">
             <div className="flex items-center align-middle justify-center gap-10 ">
               {navData2.map((item, index) => {
