@@ -5,10 +5,11 @@
       "heroWel": "Welcome to",
       "heroDepartment": "Department of Municipalities Affairs.",
       "heroDesc": "Committing to transparency, providing mutual trust and strengthening the relationship with partners and the community.",
-      "Municipalities": "Municipalities",
-      "Councils": "Councils",
-      "Magazines": "Magazines",
-      "News": "News"
+      "municipalities": "Municipalities",
+      "councils": "Councils",
+      "magazines": "Magazines",
+      "news": "News",
+      "quick": "Quick Find"
     },
     "vision": {
       "vision": "Vision",
