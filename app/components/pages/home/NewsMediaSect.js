@@ -105,7 +105,7 @@ const NewsMediaSect = () => {
                 spaceBetween: 20,
               },
             }}
-            className="w-[350px] sm:w-[600px]  md:w-[700px] lg:w-[1000px]"
+            className="w-[340px] sm:w-[600px]  md:w-[700px] lg:w-[1000px]"
           >
             <SwiperSlide className="relative">
               <Link
