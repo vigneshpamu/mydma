@@ -133,16 +133,16 @@ const page = () => {
   ]
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 1.25 } }}
-      exit={{ opacity: 0, transition: { duration: 1.25 } }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1, transition: { duration: 1.25 } }}
+      // exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className="relative max-w-8xl m-auto  border-2 overflow-h idden"
     >
-      {/* <LeftSideSticky />
-      <RightSideSticky /> */}
+      <LeftSideSticky />
+      <RightSideSticky />
       <HeroSect />
       <MissionSect />
-      {/* <StickyNav start={1250} end={1450} /> */}
+      <StickyNav start={700} end={900} />
       <ObjectiveSect />
       <ChairManMessageSect />
       <OrganisationStructureSect />

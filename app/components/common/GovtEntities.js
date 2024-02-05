@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import React from 'react'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
@@ -109,9 +110,13 @@ const GovtEntities = () => {
               {entitiesData.length > 0 &&
                 entitiesData.map((item, index) => (
                   <SwiperSlide key={item.id} className="">
-                    <img
+                    <Image
                       src={item.img}
-                      alt=""
+                      alt="hero"
+                      height={30}
+                      width={350}
+                      // layout="fill"
+                      objectFit="cover"
                       className="w-[350px] object-cover"
                     />
                   </SwiperSlide>

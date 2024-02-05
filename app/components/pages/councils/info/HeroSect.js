@@ -1,6 +1,7 @@
 import CommonNav from '@/app/components/common/CommonNav'
 import SideMenu from '@/app/components/common/SideMenu'
 import UpperNav from '@/app/components/common/UpperNav'
+import Image from 'next/image'
 import React, { useState } from 'react'
 
 const HeroSect = ({ dataArr }) => {
@@ -9,22 +10,36 @@ const HeroSect = ({ dataArr }) => {
     <>
       <div className="relative h-full m-auto">
         <SideMenu visible={visible} setVisible={setVisible} />
-        <img
+
+        <Image
           src="/images/councils/info/hero/hero.png"
           className="w-full h-[350px]  object-cover pointer-events-none"
-          alt="hero"
+          alt=""
+          height={40}
+          width={1100}
+          // layout="fill"
+          objectFit="cover"
         />
         {/* <CommonNav setVisible={setVisible} /> */}
         <UpperNav setVisible={setVisible} />
         <div className="max-w-[1100px] mt-[-60px] m-auto ">
           <div className="relative">
-            <img
+            {/* <img
               src="/images/councils/info/hero/mask.png"
               className="h-[150px] sm:h-[180px] w-full object-cover"
               alt=""
+            /> */}
+            <Image
+              src="/images/councils/info/hero/mask.png"
+              className="h-[150px] sm:h-[180px] w-full object-cover"
+              alt=""
+              height={40}
+              width={1100}
+              // layout="fill"
+              objectFit="cover"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
-              <p className="text-2xl font-semibold text-white text-center">
+              <p className="text-2xl md:text-4xl font-semibold text-white text-center">
                 {dataArr?.slug} Council
               </p>
               {/* <p className="text-white text-xl	text-center px-20">

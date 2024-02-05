@@ -6,6 +6,8 @@ import { MdWhatsapp } from 'react-icons/md'
 import Footer from '@/app/components/common/Footer'
 import HeroSect from '@/app/components/pages/events/info/HeroSect'
 import MainSect from '@/app/components/pages/events/info/MainSect'
+import LeftSideSticky from '@/app/components/common/LeftSideSticky'
+import RightSideSticky from '@/app/components/common/RightSideSticky'
 
 const page = () => {
   const recentData = [
@@ -23,11 +25,13 @@ const page = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 1.25 } }}
-        exit={{ opacity: 0, transition: { duration: 1.25 } }}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1, transition: { duration: 1.25 } }}
+        // exit={{ opacity: 0, transition: { duration: 1.25 } }}
         className="relative max-w-8xl m-auto"
       >
+        <LeftSideSticky />
+        <RightSideSticky />
         <StickyNav start={0} end={0} />
         <HeroSect />
         <MainSect />

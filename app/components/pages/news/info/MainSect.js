@@ -1,4 +1,5 @@
 import { Skeleton } from '@/components/ui/skeleton'
+import Image from 'next/image'
 import React from 'react'
 import { MdWhatsapp } from 'react-icons/md'
 
@@ -78,18 +79,33 @@ const MainSect = () => {
               </p> */}
               <div className="flex flex-row justify-between mt-5">
                 <button className="active:scale-95 transition-all">
-                  <img src="/images/events/info/blog/icon/left.png" alt="" />
+                  {/* <img src="/images/events/info/blog/icon/left.png" alt="" /> */}
+                  <Image
+                    src="/images/events/info/blog/icon/left.png"
+                    height={40}
+                    width={40}
+                    className="w-full object-cover"
+                    alt="hero"
+                  />
                   <p className="text-[11px]">PREV</p>
                 </button>
                 <button className="active:scale-95 max-w-[170px] transition-all">
-                  <img
+                  <Image
                     src="/images/events/info/blog/icon/share.png"
-                    className="w-full"
-                    alt=""
+                    height={40}
+                    width={130}
+                    className="w-full object-cover"
+                    alt="hero"
                   />
                 </button>
                 <button className="active:scale-95 transition-all">
-                  <img src="/images/events/info/blog/icon/right.png" alt="" />
+                  <Image
+                    src="/images/events/info/blog/icon/right.png"
+                    height={40}
+                    width={40}
+                    className="w-full object-cover"
+                    alt="hero"
+                  />
                   <p className="text-[11px]">NEXT</p>
                 </button>
               </div>
@@ -103,13 +119,20 @@ const MainSect = () => {
                 {recentData.map((item, index) => {
                   return (
                     <div
-                      className="w-full   sm:min-w-[300px]  border-2 border-customColor rounded-xl"
+                      className="w-full   sm:min-w-[300px] cursor-pointer border-2 border-customColor rounded-xl"
                       key={index}
                     >
-                      <img
+                      {/* <img
                         src={item.img}
                         className=" w-full  object-cover"
                         alt=""
+                      /> */}
+                      <Image
+                        src={item.img}
+                        height={0}
+                        width={250}
+                        className="w-full object-cover"
+                        alt="hero"
                       />
                       <div className="bg-white  rounded-xl p-4 flex flex-col gap-3">
                         <Skeleton className="w-full h-full px-2 rounded-sm">

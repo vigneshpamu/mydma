@@ -1,6 +1,6 @@
 'use client'
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import HeroSect from '@/app/components/pages/home/HeroSect'
 import LeftSideSticky from '@/app/components/common/LeftSideSticky'
@@ -49,15 +49,15 @@ const Home_1 = () => {
   // console.log(params, 'From Home')
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 1.25 } }}
-      exit={{ opacity: 0, transition: { duration: 1.25 } }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1, transition: { duration: 1.25 } }}
+      // exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className=""
     >
       <HeroSect lang={langData} />
       <LeftSideSticky />
       <RightSideSticky />
-      {/* <StickyNav start={910} end={1200} /> */}
+      <StickyNav start={600} end={800} />
       <VisionSect />
 
       <NewsMediaSect />

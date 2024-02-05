@@ -60,7 +60,7 @@ const CommonCard = ({ data }) => {
                       objectFit="cover"
                       className="pointer-events-none rounded-xl object-cover"
                     />
-                    <div className="absolute w-full rounded-lg h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
+                    <div className="absolute w-full rounded-lg h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-35"></div>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t rounded-xl from-slate-900 opacity-70 to-transparent"></div>
                   <div className="absolute left-5 bottom-3 flex flex-col justify-between h-[100px] lg:h-[100px]">

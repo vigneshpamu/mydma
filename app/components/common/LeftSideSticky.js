@@ -13,6 +13,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import Image from 'next/image'
 
 const LeftSideSticky = () => {
   const [sad, setSad] = useState(false)
@@ -37,15 +38,23 @@ const LeftSideSticky = () => {
         <div>
           <Dialog>
             <DialogTrigger>
-              <img
+              <Image
                 src="/images/home/side/1.png"
-                className="transition-all w-[80%] hidden	md:block hover:opacity-90 cursor-pointer"
-                alt=""
+                alt="hero"
+                height={40}
+                width={40}
+                // layout="fill"
+                objectFit="cover"
+                className="transition-all hidden	md:block hover:opacity-90 cursor-pointer"
               />
-              <img
+              <Image
                 src="/images/home/side/1.1.png"
+                alt="hero"
+                height={40}
+                width={40}
+                // layout="fill"
+                objectFit="cover"
                 className="transition-all  md:hidden hover:opacity-90 cursor-pointer"
-                alt=""
               />
             </DialogTrigger>
             <DialogContent className="flex items-start flex-col  sm:w-[350px] md:w-[400px]  rounded-lg">
@@ -87,15 +96,23 @@ const LeftSideSticky = () => {
         <div>
           <Dialog>
             <DialogTrigger>
-              <img
+              <Image
                 src="/images/home/side/2.png"
-                className="transition-all hidden w-[80%]	md:block  hover:opacity-90 cursor-pointer"
-                alt=""
+                alt="hero"
+                height={40}
+                width={40}
+                // layout="fill"
+                objectFit="cover"
+                className="transition-all hidden	md:block hover:opacity-90 cursor-pointer"
               />
-              <img
+              <Image
                 src="/images/home/side/2.1.png"
-                className="transition-all  md:hidden	 hover:opacity-90 cursor-pointer"
-                alt=""
+                alt="hero"
+                height={40}
+                width={40}
+                // layout="fill"
+                objectFit="cover"
+                className="transition-all  md:hidden hover:opacity-90 cursor-pointer"
               />
             </DialogTrigger>
             <DialogContent className="flex items-start flex-col w-[600px] sm:w-[350px] md:w-[400px]  rounded-lg">

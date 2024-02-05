@@ -160,7 +160,7 @@ const StickyNav = ({ start, end }) => {
             </div>
           </div>
           <div className="w-[95%] hidden sm:block m-auto h-[3px] bg-gray-200 mt-0 mb-4 "></div>
-          <div className="sm:flex mt -3 items-center justify-center gap-7 hidden">
+          <div className="sm:flex items-center justify-center gap-7 hidden">
             {linkData.map((item) => {
               return (
                 <Link href={`/${par}${item.link}`} key={item.id}>

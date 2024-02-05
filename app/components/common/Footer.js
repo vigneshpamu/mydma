@@ -91,7 +91,16 @@ const Footer = () => {
         <div className="max-w-[1100px] flex items-center justify-center mx-auto">
           <div className="flex ml-5 flex-col gap-2 absolute text-white top-4   transform -tran slate-x-1/2   m-auto">
             <div className="flex w-full justify-end items-end">
-              <img src="/images/home/nav/logo/logo.png" alt="" />
+              {/* <img src="/images/home/nav/logo/logo.png" alt="" /> */}
+              <Image
+                src="/images/home/nav/logo/logo.png"
+                alt="hero"
+                height={0}
+                width={270}
+                // layout="fill"
+                objectFit="cover"
+                className="  object-cover"
+              />
             </div>
             <div className="flex mt-10 sm:ml-10 flex-col gap-12">
               <div className="flex flex-col lg:flex-row justify-between lg:gap-32 max-w-[1100px]">
@@ -114,10 +123,19 @@ const Footer = () => {
                             key={item.id}
                             className="flex items-center flex-row gap-4"
                           >
-                            <img
+                            {/* <img
                               src={item.img}
                               alt=""
                               className="lg:w-[30px] lg:h-[30px]"
+                            /> */}
+                            <Image
+                              src={item.img}
+                              alt="hero"
+                              height={30}
+                              width={30}
+                              // layout="fill"
+                              objectFit="cover"
+                              className="  object-cover"
                             />
                             <p className="text-lg lg:text-sm">{item.info}</p>
                           </div>
@@ -135,10 +153,14 @@ const Footer = () => {
                         return (
                           <Link href={item.link} key={item.id}>
                             <div>
-                              <img
+                              <Image
                                 src={item.icon}
-                                className="lg:w-[30px] lg:h-[30px]"
-                                alt=""
+                                alt="hero"
+                                height={30}
+                                width={30}
+                                // layout="fill"
+                                objectFit="cover"
+                                className="  object-cover"
                               />
                             </div>
                           </Link>

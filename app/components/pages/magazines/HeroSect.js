@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import StickyNav from '../../common/StickyNav'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -67,10 +68,19 @@ const HeroSect = () => {
       <StickyNav start={0} end={0} />
       <div className="relative max-w-[1100px] pb-20  m-auto">
         {/* <CommonNav /> */}
-        <img
+        {/* <img
           src="/images/magazine/hero/hero.png"
           className="w-full h-[350px] sm:h-[400px] object-cover pointer-events-none"
           alt="hero"
+        /> */}
+        <Image
+          src="/images/magazine/hero/hero.png"
+          className="w-full h-[350px] sm:h-[400px] object-cover pointer-events-none"
+          alt="hero"
+          height={350}
+          width={1100}
+          // layout="fill"
+          objectFit="cover"
         />
         <div className="flex flex-col gap-3 items-center mt-[-200px] sm:mt-[-200px] justify-center  m-auto">
           <p className="text-1xl sm:text-2xl font-bold">Magazine</p>
@@ -88,7 +98,15 @@ const HeroSect = () => {
                 >
                   <div className="flex w-full  bg-white flex-col gap-4 shadow-lg rounded-2xl p-2 h-full transform hover:scale-105 transition-transform duration-300 cursor-pointer">
                     <div>
-                      <img src={item.img} alt="" />
+                      {/* <img src={item.img} alt="" /> */}
+                      <Image
+                        src={item.img}
+                        className="w-full  object-cover"
+                        height={30}
+                        width={150}
+                        // layout="fill"
+                        objectFit="cover"
+                      />
                     </div>
                     <div className="flex flex-col gap-4 px-2">
                       <div>
@@ -99,7 +117,15 @@ const HeroSect = () => {
                       </div>
                       <div className="flex flex-row justify-between">
                         <p className="text-customColor">View now</p>
-                        <img src="/images/home/elements/rarrow.png" alt="" />
+                        {/* <img src="/images/home/elements/rarrow.png" alt="" /> */}
+                        <Image
+                          src="/images/home/elements/rarrow.png"
+                          className=" object-cover"
+                          height={30}
+                          width={30}
+                          // layout="fill"
+                          objectFit="cover"
+                        />
                       </div>
                     </div>
                   </div>

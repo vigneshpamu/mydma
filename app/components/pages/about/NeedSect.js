@@ -41,10 +41,19 @@ const NeedSect = () => {
                 {needData.length > 0 &&
                   needData.map((item, index) => (
                     <SwiperSlide key={item.id} className="">
-                      <img
+                      {/* <img
                         src={item.img}
                         className=" object-cover"
                         alt="hero"
+                      /> */}
+                      <Image
+                        src={item.img}
+                        alt="hero"
+                        width={2000}
+                        height={2000}
+                        // layout="fill"
+                        objectFit="cover"
+                        className="h-full w-full object-cover sm:max-w-[1000px] mx-auto  "
                       />
                       {/* <div className="w-[1347px] h-[777px] sm:h-[500px] object-cover">
                       <Image

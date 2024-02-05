@@ -1,4 +1,5 @@
 import { Skeleton } from '@/components/ui/skeleton'
+import Image from 'next/image'
 import React from 'react'
 
 const MembersSect = ({ dataArr }) => {
@@ -13,15 +14,34 @@ const MembersSect = ({ dataArr }) => {
           {dataArr?.councilMembers ? (
             <div className="flex flex-col sm:flex-row sm:px-2 sm:gap-4 lg:gap-20  sm:items-end sm:justify-center items-center justify-between gap-10">
               <div className="relative w-[350px]   h-[400px]">
-                <img
+                {/* <img
                   src="/images/councils/info/members/bg.png"
                   className="w-full  h-[200px] z-0 absolute bottom-0"
                   alt=""
+                /> */}
+                <Image
+                  src="/images/councils/info/members/bg.png"
+                  className="w-full  h-[200px] z-0 absolute bottom-0"
+                  alt=""
+                  height={40}
+                  width={400}
+                  // layout="fill"
+                  objectFit="cover"
                 />
-                <img
+                {/* <img
                   src={dataArr?.councilMembers?.chairman?.img}
                   className="w-[200px] h-[240px] border-2 border-customColor rounded-lg z-10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
                   alt=""
+                /> */}
+
+                <Image
+                  src={dataArr?.councilMembers?.chairman?.img}
+                  className="w-[200px] h-[240px] border-2 border-customColor rounded-lg z- 10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
+                  alt=""
+                  height={40}
+                  width={150}
+                  // layout="fill"
+                  objectFit="cover"
                 />
                 <div className="absolute bottom-7 w-full flex flex-col gap-2 text-center 2lg:gap-3 lg:bottom-5 items-center justify-center">
                   <p className="text-mde font-bold text-white  w-[85%] ">
@@ -34,15 +54,29 @@ const MembersSect = ({ dataArr }) => {
               </div>
               {dataArr?.councilMembers?.vicePresident?.img.length > 0 && (
                 <div className="relative w-[350px]  h-[350px]">
-                  <img
+                  {/* <img
                     src="/images/councils/info/members/bg.png"
                     className="w-full h-[160px]  object-cover absolute bottom-0"
                     alt=""
-                  />
-                  <img
-                    src={dataArr?.councilMembers?.vicePresident?.img}
-                    className="w-[200px] h-[240px] border-2 border-customColor rounded-lg z-10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
+                  /> */}
+                  <Image
+                    src="/images/councils/info/members/bg.png"
+                    className="w-full h-[160px]  object-cover absolute bottom-0"
                     alt=""
+                    height={40}
+                    width={400}
+                    // layout="fill"
+                    objectFit="cover"
+                  />
+
+                  <Image
+                    src={dataArr?.councilMembers?.vicePresident?.img}
+                    className="w-[200px] h-[240px] border-2 border-customColor rounded-lg  10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
+                    alt=""
+                    height={40}
+                    width={150}
+                    // layout="fill"
+                    objectFit="cover"
                   />
                   <div className="absolute bottom-5 w-full flex flex-col gap-2 text-center 2lg:gap-3 lg:bottom-5 items-center justify-center">
                     <p className="text-mde font-bold text-white w-[85%] ">
@@ -56,9 +90,9 @@ const MembersSect = ({ dataArr }) => {
               )}
             </div>
           ) : (
-            <div className="w-[800px] mx-auto">
+            <div className="max-w-[800px] mx-auto">
               <Skeleton className="w-full h-full p-5 rounded-sm flex items-center justify-center">
-                <p className="text-4xl">Data and Image Awaited</p>
+                <p className="text-2xl">Data and Image Awaited</p>
               </Skeleton>
             </div>
           )}
@@ -70,10 +104,19 @@ const MembersSect = ({ dataArr }) => {
                   className="relative w-full flex flex-col gap-3 items-center justify-between "
                 >
                   <div className="w-[250px] h-[250px] rounded-lg border-2 border-customColor ">
-                    <img
+                    {/* <img
                       src={item.img}
                       className="w-full h-full rounded-lg object-cover"
                       alt=""
+                    /> */}
+                    <Image
+                      src={item.img}
+                      className="w-full h-full rounded-lg object-cover"
+                      alt=""
+                      height={40}
+                      width={200}
+                      // layout="fill"
+                      objectFit="cover"
                     />
                   </div>
                   <p className="text-center font-semibold text-md max-w-[250px]    ">

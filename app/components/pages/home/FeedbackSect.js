@@ -13,17 +13,26 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import Image from 'next/image'
 const FeedbackSect = () => {
   return (
     <>
-      <div className="flex items-center py-4 justify-center h-full sm:py-10">
+      <div className="flex max-w-[1100px] mx-auto items-center py-4 justify-center h-full sm:py-10">
         <div className="  relative flex items-center   justify-center">
-          <img
+          {/* <img
             src="/images/home/feedback/main2.png"
             className="h-[950px] sm:h-[550px] object-cover"
             alt=""
+          /> */}
+          <Image
+            src="/images/home/feedback/main2.png"
+            alt="hero"
+            height={950}
+            width={2000}
+            // layout="fill"
+            objectFit="cover"
+            className="w-full h-[950px] sm:h-[550px] object-cover"
           />
-
           <Dialog>
             <div className="flex flex-col gap-5 absolute  top-[10%] left-[5%] ">
               <div className="flex flex-row  items-center gap-5">
@@ -37,10 +46,14 @@ const FeedbackSect = () => {
                 <p className="font-semibold sm:text-sm sm:font-normal">
                   Feedback
                 </p>
-                <img
+                <Image
                   src="/images/home/elements/b-rarrow.png"
+                  alt="hero"
+                  height={30}
+                  width={15}
+                  // layout="fill"
+                  objectFit="cover"
                   className="sm:w-[15px] sm:h-auto object-cover"
-                  alt=""
                 />
               </DialogTrigger>
             </div>
@@ -92,10 +105,19 @@ const FeedbackSect = () => {
                 <p className="font-semibold sm:text-sm sm:font-normal">
                   Complaints
                 </p>
-                <img
+                {/* <img
                   src="/images/home/elements/b-rarrow.png"
                   className="sm:w-[15px] sm:h-auto object-cover"
                   alt=""
+                /> */}
+                <Image
+                  src="/images/home/elements/b-rarrow.png"
+                  alt="hero"
+                  height={30}
+                  width={15}
+                  // layout="fill"
+                  objectFit="cover"
+                  className="sm:w-[15px] sm:h-auto object-cover"
                 />
               </DialogTrigger>
             </div>

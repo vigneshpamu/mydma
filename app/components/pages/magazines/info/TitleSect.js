@@ -1,4 +1,5 @@
 import StickyNav from '@/app/components/common/StickyNav'
+import Image from 'next/image'
 import React from 'react'
 import { MdWhatsapp } from 'react-icons/md'
 
@@ -8,10 +9,19 @@ const TitleSect = () => {
       <StickyNav start={0} end={0} />
       <div className="relative max-w-[1100px] h-full pb-10  m-auto">
         {/* <CommonNav /> */}
-        <img
+        {/* <img
           src="/images/magazine/hero/hero.png"
           className="w-full h-[450px] sm:h-[500px]  object-cover pointer-events-none"
           alt="hero"
+        /> */}
+        <Image
+          src="/images/magazine/hero/hero.png"
+          className="w-full h-[450px] sm:h-[500px]  object-cover pointer-events-none"
+          alt="hero"
+          height={350}
+          width={1100}
+          // layout="fill"
+          objectFit="cover"
         />
         <div className="flex flex-col gap-3 items-center justify-center mt-[-300px]">
           <p className="text-xl sm:text-3xl font-bold">Magazines</p>

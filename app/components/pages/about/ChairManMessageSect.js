@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const ChairManMessageSect = () => {
@@ -11,17 +12,20 @@ const ChairManMessageSect = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-10   w-full ">
             <div className="px-2">
-              <img
+              <Image
                 src="/images/about/message/chairman.jpg"
+                alt="hero"
+                height={320}
+                width={300}
+                objectFit="cover"
                 className="  w-full md:h-[500px] rounded-xl h-[400px]  object-cover"
-                alt=""
               />
             </div>
             <div className="flex flex-col gap-6">
               {/* <p className="text-4xl font-bold leading-tight">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
               </p> */}
-              <p className="text-md  md:text-[16px] md:max-w-[600px] leading-relaxed	">
+              <p className="text-md md:text-[13px] w-full  track ing-wide font-light lg:text-[16px] md:max-w-[670px]">
                 The Department of Municipal Affairs in Sharjah is one of the
                 most important government agencies in the emirate. It is the
                 department responsible and concerned with developing the

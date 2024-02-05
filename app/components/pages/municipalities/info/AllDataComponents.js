@@ -9,14 +9,14 @@ const AllDataComponents = ({ dataArr }) => {
         <GlobalPrac dataArr={dataArr} />
       )}
       {dataArr?.information?.vision?.length > 0 && (
-        <div className="flex flex-col gap-3 py-8 w-[1347px] mx-auto">
+        <div className="flex flex-col gap-3 py-8  ">
           <p className="text-4xl font-semibold">Vision</p>
           <p className="text-lg">{dataArr?.information?.vision}</p>
         </div>
       )}
 
       {dataArr?.information?.message?.length > 0 && (
-        <div className="flex flex-col gap-3 py-8 w-[1347px] mx-auto">
+        <div className="flex flex-col gap-3 py-8 ">
           <p className="text-4xl font-semibold">Vision</p>
           <p className="text-lg">{dataArr?.information?.message}</p>
         </div>

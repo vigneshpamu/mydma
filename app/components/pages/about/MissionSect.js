@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import React from 'react'
 
 const MissionSect = () => {
@@ -30,10 +31,18 @@ const MissionSect = () => {
             </div>
           </div>
           <div className="relative   mt-[-150px]   right-1">
-            <img
+            {/* <img
               className="min-w-[150px] sm:min-w-[180px] h-[400px] rounded-xl object-cover"
               src="/images/about/mission/info2.png"
               alt=""
+            /> */}
+            <Image
+              src="/images/about/mission/info2.png"
+              alt="hero"
+              height={320}
+              width={250}
+              objectFit="cover"
+              className="min-w-[150px] sm:min-w-[180px] h-[400px] rounded-xl object-cover"
             />
             <div className="absolute top-[2%]  flex flex-col h-[90%] justify-between left-[10%] ">
               <div>

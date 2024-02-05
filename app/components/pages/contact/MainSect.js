@@ -149,7 +149,14 @@ const MainSect = () => {
               className="flex flex-row items-center justify-evenly bg-customColor w-[250px] m-auto p-4 sm:p-3 rounded-2xl"
             >
               <p className="font-semibold text-xl text-white">Submit</p>
-              <img src="/images/home/elements/w-rarrow.png" alt="" />
+              {/* <img src="/images/home/elements/w-rarrow.png" alt="" /> */}
+              <Image
+                src="/images/home/elements/w-rarrow.png"
+                height={0}
+                width={30}
+                className=" object-cover"
+                alt="hero"
+              />
             </button>
           </form>
         </div>

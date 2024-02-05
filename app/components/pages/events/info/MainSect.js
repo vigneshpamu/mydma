@@ -1,4 +1,5 @@
 import { Skeleton } from '@/components/ui/skeleton'
+import Image from 'next/image'
 import React from 'react'
 import { MdWhatsapp } from 'react-icons/md'
 
@@ -74,7 +75,15 @@ const MainSect = () => {
                   is Awaited
                 </p>
               </Skeleton>
-              <img src="/images/events/info/blog/demo.png" alt="" />
+              {/* <img src="/images/events/info/blog/demo.png" alt="" /> */}
+              <Image
+                src="/images/events/info/blog/demo.png"
+                className="w-full  object-cover"
+                height={30}
+                width={800}
+                // layout="fill"
+                objectFit="w-full cover"
+              />
               <Skeleton className="w-full p-5">
                 <p className="leading-normal tracking-wide text-sm sm:text-lg lg:text-xl">
                   Data is Awaited Data is Awaited Data is Awaited Data is
@@ -93,18 +102,33 @@ const MainSect = () => {
               </Skeleton>
               <div className="flex flex-row justify-between mt-5">
                 <button className="active:scale-95 transition-all">
-                  <img src="/images/events/info/blog/icon/left.png" alt="" />
+                  {/* <img src="/images/events/info/blog/icon/left.png" alt="" /> */}
+                  <Image
+                    src="/images/events/info/blog/icon/left.png"
+                    height={40}
+                    width={40}
+                    className="w-full object-cover"
+                    alt="hero"
+                  />
                   <p className="text-[11px]">PREV</p>
                 </button>
                 <button className="active:scale-95 max-w-[170px] transition-all">
-                  <img
+                  <Image
                     src="/images/events/info/blog/icon/share.png"
-                    className="w-full"
-                    alt=""
+                    height={40}
+                    width={130}
+                    className="w-full object-cover"
+                    alt="hero"
                   />
                 </button>
                 <button className="active:scale-95 transition-all">
-                  <img src="/images/events/info/blog/icon/right.png" alt="" />
+                  <Image
+                    src="/images/events/info/blog/icon/right.png"
+                    height={40}
+                    width={40}
+                    className="w-full object-cover"
+                    alt="hero"
+                  />
                   <p className="text-[11px]">NEXT</p>
                 </button>
               </div>

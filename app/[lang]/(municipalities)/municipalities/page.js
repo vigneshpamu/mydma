@@ -71,13 +71,13 @@ const page = () => {
   const pathname = usePathname()
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 1.25 } }}
-      exit={{ opacity: 0, transition: { duration: 1.25 } }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1, transition: { duration: 1.25 } }}
+      // exit={{ opacity: 0, transition: { duration: 1.25 } }}
       className="relative max-w-8xl m-auto border-2"
     >
-      {/* <LeftSideSticky />
-      <RightSideSticky /> */}
+      <LeftSideSticky />
+      <RightSideSticky />
       <CommonHero
         hero={'/images/municipalities/hero/hero2.jpg'}
         page={'Municipalities'}

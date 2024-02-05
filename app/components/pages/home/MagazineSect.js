@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
@@ -7,25 +8,25 @@ const MagazineSect = () => {
   const magazineCard = [
     {
       id: 1,
-      title: 'DMA Magazine 23',
-      desc: '02 Dec 23',
-      img: '/images/home/magazine/1.png',
+      title: 'DMA Magazine 24',
+      desc: '10 January 24',
+      img: '/images/magazine/mg1.png',
       link: '/magazines/info',
     },
-    {
-      id: 2,
-      title: 'DMA Magazine 22',
-      desc: '02 Dec 22',
-      img: '/images/home/magazine/2.png',
-      link: '/magazines/info',
-    },
-    {
-      id: 3,
-      title: 'DMA Magazine 21',
-      desc: '02 Dec 21',
-      img: '/images/home/magazine/3.png',
-      link: '/magazines/info',
-    },
+    // {
+    //   id: 2,
+    //   title: 'DMA Magazine 22',
+    //   desc: '02 Dec 22',
+    //   img: '/images/home/magazine/2.png',
+    //   link: '/magazines/info',
+    // },
+    // {
+    //   id: 3,
+    //   title: 'DMA Magazine 21',
+    //   desc: '02 Dec 21',
+    //   img: '/images/home/magazine/3.png',
+    //   link: '/magazines/info',
+    // },
   ]
   const router = useRouter()
   const pathname = usePathname()
@@ -38,7 +39,7 @@ const MagazineSect = () => {
 
   return (
     <>
-      <div className=" p-5 bg-gray-50 ">
+      <div className=" p-5 py-10 bg-gray-50 ">
         <div className=" flex flex-col gap-20  max-w-[1100px] mx-auto">
           <div className=" flex flex-col  xsm:items-center xsm:justify-center gap-2 ">
             <div className="flex flex-col gap-4">
@@ -66,7 +67,16 @@ const MagazineSect = () => {
                     >
                       <Link href={`${par}/magazines/info?name=${item.title}`}>
                         <div>
-                          <img src={item.img} className="w-[350px]" alt="" />
+                          {/* <img src={item.img} className="w-[350px]" alt="" /> */}
+                          <Image
+                            src={item.img}
+                            alt="hero"
+                            height={100}
+                            width={500}
+                            // layout="fill"
+                            objectFit="cover"
+                            className="w-[350px]"
+                          />
                         </div>
                         <div className="flex flex-col gap-4 px-2">
                           <div>

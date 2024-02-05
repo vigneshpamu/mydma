@@ -1,4 +1,5 @@
 import { Skeleton } from '@/components/ui/skeleton'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -44,13 +45,17 @@ const InfoSect = ({ dataArr, paramsData }) => {
               </div>
             </div>
           )}
-          <div className=" bg-gray-50 md:min-w-[400px] w-full p-4 mt-[-100px] z-20 right-0 rounded-lg  flex flex-col gap-6">
+          <div className=" bg-gray-50 md:min-w-[400px] w-full p-4 mt-[-100px] z -20 right-0 rounded-lg  flex flex-col gap-6">
             <Link href={`${dataArr[0]?.website}`}>
               <div className="flex flex-row gap-3 border-2 cursor-pointer hover:bg-gray-100 transition-all">
                 <div className="border-2 rounded-md w-[130px] h-[130px]">
-                  <img
+                  <Image
                     src={dataArr[0]?.logo}
-                    alt=""
+                    alt="hero"
+                    height={30}
+                    width={350}
+                    // layout="fill"
+                    objectFit="cover"
                     className="rounded-md w-full h-full object-cover"
                   />
                 </div>
@@ -76,7 +81,7 @@ const InfoSect = ({ dataArr, paramsData }) => {
             </div>
 
             <Link href={`tel:${dataArr[0]?.number}`}>
-              <button className="flex w-[200px] justify-between items-center m-auto z-20 border-2 border-customColor shadow-md p-3 px-4 transition-all hover:text-white hover:bg-customColor rounded-3xl">
+              <button className="flex w-[200px] justify-between items-center m-auto 20z- border-2 border-customColor shadow-md p-3 px-4 transition-all hover:text-white hover:bg-customColor rounded-3xl">
                 <p className="font-bold">Call now</p>
                 <img src="//images/home/elements/b-rarrow.png" alt="" />
               </button>
@@ -86,7 +91,16 @@ const InfoSect = ({ dataArr, paramsData }) => {
                 return (
                   <Link key={index} href={item.link}>
                     <div>
-                      <img src={item.icon} alt="" />
+                      {/* <img src={item.icon} alt="" /> */}
+                      <Image
+                        src={item.icon}
+                        alt="hero"
+                        height={32}
+                        width={32}
+                        // layout="fill"
+                        objectFit="cover"
+                        className=""
+                      />
                     </div>
                   </Link>
                 )

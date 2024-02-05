@@ -1,6 +1,7 @@
 import CommonNav from '@/app/components/common/CommonNav'
 import SideMenu from '@/app/components/common/SideMenu'
 import UpperNav from '@/app/components/common/UpperNav'
+import Image from 'next/image'
 import React, { useState } from 'react'
 
 const HeroSect = ({ dataArr }) => {
@@ -11,8 +12,15 @@ const HeroSect = ({ dataArr }) => {
         <SideMenu visible={visible} setVisible={setVisible} />
         <div className="relative">
           <div className="absolute w-full h-full !bg-gradient-to-t !from-slate-900 !to-transparent opacity-85"></div>
-          <img
+          {/* <img
             src={`${dataArr[0]?.img}`}
+            className="w-full h-[400px] md:h-[600px]  object-cover pointer-events-none"
+            alt="hero"
+          /> */}
+          <Image
+            src={dataArr[0]?.img}
+            height={500}
+            width={500}
             className="w-full h-[400px] md:h-[600px]  object-cover pointer-events-none"
             alt="hero"
           />

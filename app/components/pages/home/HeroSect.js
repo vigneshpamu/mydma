@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import Link from 'next/link'
@@ -7,6 +7,7 @@ import SideMenu from '../../common/SideMenu'
 import { usePathname, useRouter } from 'next/navigation'
 import UpperNav from '../../common/UpperNav'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 const HeroSect = ({ lang }) => {
   const navData = [
     {
@@ -118,54 +119,65 @@ const HeroSect = ({ lang }) => {
   return (
     <>
       <SideMenu visible={visible} setVisible={setVisible} />
-      <Swiper
-        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-        slidesPerView={1}
-        spaceBetween={0}
-        loop={true}
-        effect={'fade'}
-        autoplay={{
-          delay: 6000,
-          disableOnInteraction: false,
-        }}
-        pagination
-        breakpoints={{}}
-        className=""
+      <div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
       >
-        {heroSwiper.length > 0 &&
-          heroSwiper.map((item, index) => (
-            <SwiperSlide key={item.id} className="">
-              <div className="w-full h-[650px]  object-cover pointer-events-none md:h-[600px]">
-                <Image
-                  src={item.img}
-                  alt="hero"
-                  layout="fill"
-                  objectFit="cover"
-                  className="pointer-events-none"
-                />
-                {item.img.length < 1 && (
-                  <p className="text-xl w-full h-full flex items-center justify-center mx-auto mt-[-100px]">
-                    Image is Awaited
-                  </p>
-                )}
-              </div>
-            </SwiperSlide>
-          ))}
-      </Swiper>
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+          slidesPerView={1}
+          spaceBetween={0}
+          loop={true}
+          effect={'fade'}
+          autoplay={{
+            delay: 6000,
+            disableOnInteraction: false,
+          }}
+          pagination
+          breakpoints={{}}
+          className=""
+        >
+          {heroSwiper.length > 0 &&
+            heroSwiper.map((item, index) => (
+              <SwiperSlide key={item.id} className="">
+                <div className="w-full h-[650px]  object-cover pointer-events-none md:h-[600px]">
+                  <Image
+                    src={item.img}
+                    alt="hero"
+                    layout="fill"
+                    objectFit="cover"
+                    className="pointer-events-none"
+                  />
+                  {item.img.length < 1 && (
+                    <p className="text-xl w-full h-full flex items-center justify-center mx-auto mt-[-100px]">
+                      Image is Awaited
+                    </p>
+                  )}
+                </div>
+              </SwiperSlide>
+            ))}
+        </Swiper>
+      </div>
       <UpperNav setVisible={setVisible} />
       <div className="max-w-[1100px] mx-auto">
         <div className="absolute  flex flex-col items-center justify-between gap-10 p-4 w-full lg:max-w-[1100px] lg:px-10 top-36 md:flex-row md:items-start md:top-56 z-10">
-          <div className="flex flex-col sm:items-center justify-center md:items-start gap-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="flex flex-col sm:items-center justify-center md:items-start gap-4"
+          >
             <div>
               <p
                 dir={lang && lang?.isArabic ? 'rtl' : ''}
-                className="text-white sm:text-center md:text-left   text-xl  font-semibold "
+                className="text-white sm:text-center md:text-left   text-xl   font-medium "
               >
                 {lang && lang?.home?.hero?.heroWel}
               </p>
               <p
                 dir={lang && lang?.isArabic ? 'rtl' : ''}
-                className=" text-white sm:text-center lg:text-5xl   lg:max-w-[600px]  sm:text-5xl md:text-left md:text-4xl md:max-w-[450px]  font-semibold 	"
+                className=" text-white sm:text-center lg:text-5xl   lg:max-w-[600px]   sm:text-5xl md:text-left md:text-4xl md:max-w-[450px]  font-medium 	"
               >
                 {lang && lang?.home?.hero?.heroDepartment}
               </p>
@@ -175,19 +187,8 @@ const HeroSect = ({ lang }) => {
                 {lang && lang?.home?.hero?.heroDesc}
               </p>
             </div>
-          </div>
-          {/* <div className="flex items-center gap-3 2md:hidden">
-            <Image
-            src="/images/home/elements/5.png"
-            alt="hero"
-            height={13}
-            width={13}
-            objectFit="cover"
-            className="pointer-events-none"
-            />
-            <img src="/images/home/elements/5.png" alt="" className="" />
-            <p className="text-white text-2xl tracking-wider">Scroll</p>
-          </div> */}
+          </motion.div>
+
           <div className="flex flex-col gap-7    ">
             <div className="flex flex-row items-center gap-5">
               <p className="text-white text-lg font-semibold 2md:ml-16">

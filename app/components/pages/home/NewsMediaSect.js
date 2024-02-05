@@ -6,10 +6,11 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { Skeleton } from '@/components/ui/skeleton'
+import Image from 'next/image'
 const NewsMediaSect = () => {
   const newsData = [
     {
-      id: 1,
+      id: 0,
       img: '/images/home/news/img1.png',
       title: 'Quis autem vel eum iure reprehenderit.',
       desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem....',
@@ -17,6 +18,12 @@ const NewsMediaSect = () => {
     {
       id: 2,
       img: '/images/home/news/img2.png',
+      title: 'Quis autem vel eum iure reprehenderit.',
+      desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem....',
+    },
+    {
+      id: 1,
+      img: '/images/home/news/img1.png',
       title: 'Quis autem vel eum iure reprehenderit.',
       desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem....',
     },
@@ -31,15 +38,16 @@ const NewsMediaSect = () => {
   }, [])
   return (
     <>
-      <div className="p-3 w-fu ll  min-h-full">
+      <div className="p-5  py-10 w-fu ll  min-h-full">
         {/* <img
           src="/images/home/news/background.png"
           className="h-full w-full"
           alt=""
         /> */}
-        <div className="flex flex-col  max-w-[1100px]   gap-10 mx-auto">
-          <div className="flex flex-col gap-6">
+        <div className="flex flex-col  max-w-[1100px]   gap-10 mx-auto !z-10">
+          <div className="flex flex-row gap-6 items-center ">
             <p className="text-xl  font-semibold px-2">Latest News & Media</p>
+            <div className="w-[120px] bg-amber-600 h-[5px] rounded-lg"></div>
             {/* <div className="flex flex-row justify-between items-center">
               <p className="w-[800px] text-xl 2md:text-lg 2md:w-[400px] sm:text-sm ">
                 We offer a wide range of e-Services designed to meet your needs,
@@ -73,6 +81,7 @@ const NewsMediaSect = () => {
           </div>
           <Swiper
             modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={3}
             navigation
             // ref={swiperRef}
             breakpoints={{
@@ -89,7 +98,7 @@ const NewsMediaSect = () => {
                 spaceBetween: 20,
               },
               500: {
-                slidesPerView: 1.4,
+                slidesPerView: 2,
                 spaceBetween: 20,
               },
               658: {
@@ -101,13 +110,14 @@ const NewsMediaSect = () => {
               //   spaceBetween: 20,
               // },
               968: {
-                slidesPerView: 2.8,
+                slidesPerView: 3,
                 spaceBetween: 20,
               },
             }}
-            className="w-[340px] sm:w-[600px]  md:w-[700px] lg:w-[1000px]"
+            // className="max-w-[330px] sm:w-[600px]  md:w-[700px] lg:min-w-[1100px]"
+            className="w-full"
           >
-            <SwiperSlide className="relative">
+            {/* <SwiperSlide className="relative">
               <Link
                 href={`${par}/news/info?=name=Quis autem vel eum iure reprehenderit qui in ea
                     voluptate`}
@@ -118,6 +128,7 @@ const NewsMediaSect = () => {
                     alt="Your Image"
                     className="w-full h-[350px] shadow-md rounded-xl object-cover"
                   />
+                  
                   <div
                     style={{
                       background:
@@ -129,8 +140,8 @@ const NewsMediaSect = () => {
                 <div className="absolute left-5 bottom-10 xl:left-7 flex flex-row  items-end gap-16">
                   <Skeleton className="w-full px-3 h-full rounded-lg">
                     <p className="text-xl text-customColor font-semibold sm:text-xl">
-                      {/* Quis autem vel eum iure reprehenderit qui in ea
-                    voluptate.... */}
+                      Quis autem vel eum iure reprehenderit qui in ea
+                    voluptate....
                       Data is Awaited
                     </p>
                   </Skeleton>
@@ -143,17 +154,26 @@ const NewsMediaSect = () => {
                   </div>
                 </div>
               </Link>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <div className="">
               {newsData.map((item) => {
                 return (
                   <SwiperSlide key={item.id} className="">
                     <Link href={`${par}/news/info?=name=${item.title}`}>
                       <div className="bg-white h-[350px] rounded-xl border-2 border-customColor">
-                        <img
+                        {/* <img
                           src={item.img}
                           alt=""
                           className="w-full h-[190px]"
+                        /> */}
+                        <Image
+                          src={item.img}
+                          alt="hero"
+                          height={100}
+                          width={500}
+                          // layout="fill"
+                          objectFit="cover"
+                          className="w-full h-[190px] object-cover"
                         />
                         <div className="p-3 flex flex-col gap-3">
                           <Skeleton className="w-full px-3 h-full rounded-lg">
