@@ -45,9 +45,9 @@ const NewsMediaSect = () => {
           alt=""
         /> */}
         <div className="flex flex-col  max-w-[1100px]   gap-10 mx-auto !z-10">
-          <div className="flex flex-row gap-6 items-center ">
-            <p className="text-xl  font-semibold px-2">Latest News & Media</p>
-            <div className="w-[120px] bg-amber-600 h-[5px] rounded-lg"></div>
+          <div className="flex flex-row gap-3 items-center ">
+            <p className="text-lg  font-semibold px-2">Latest News & Media</p>
+            <div className="w-[100px] bg-amber-600 h-[5px] rounded-lg"></div>
             {/* <div className="flex flex-row justify-between items-center">
               <p className="w-[800px] text-xl 2md:text-lg 2md:w-[400px] sm:text-sm ">
                 We offer a wide range of e-Services designed to meet your needs,

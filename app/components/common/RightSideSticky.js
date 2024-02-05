@@ -10,7 +10,7 @@ const RightSideSticky = () => {
     },
     {
       id: 2,
-      icon: '/images/home/elements/social_icon/tw.png',
+      icon: '/images/home/elements/social_icon/x.png',
       link: 'https://twitter.com/sharjahdma',
     },
 
@@ -22,12 +22,12 @@ const RightSideSticky = () => {
   ]
   return (
     <>
-      <div className="fixed top-60 right-6 flex-col gap-2 !z-50 hidden md:flex">
+      <div className="fixed top-60 right-3 flex-col gap-2 !z-50 hidden md:flex">
         {socialData.map((item) => {
           return (
-            <Link href={item.link} key={item.id}>
+            <Link href={item.link} target="_blank" key={item.id}>
               <img
-                className="shadow-lg rounded-full w-[80%]"
+                className="shadow-lg rounded-full w-[60%]"
                 src={item.icon}
                 alt=""
               />

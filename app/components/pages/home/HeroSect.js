@@ -119,11 +119,7 @@ const HeroSect = ({ lang }) => {
   return (
     <>
       <SideMenu visible={visible} setVisible={setVisible} />
-      <div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      >
+      <div>
         <Swiper
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
           slidesPerView={1}
@@ -162,12 +158,7 @@ const HeroSect = ({ lang }) => {
       <UpperNav setVisible={setVisible} />
       <div className="max-w-[1100px] mx-auto">
         <div className="absolute  flex flex-col items-center justify-between gap-10 p-4 w-full lg:max-w-[1100px] lg:px-10 top-36 md:flex-row md:items-start md:top-56 z-10">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="flex flex-col sm:items-center justify-center md:items-start gap-4"
-          >
+          <div className="flex flex-col sm:items-center justify-center md:items-start gap-4">
             <div>
               <p
                 dir={lang && lang?.isArabic ? 'rtl' : ''}
@@ -187,7 +178,7 @@ const HeroSect = ({ lang }) => {
                 {lang && lang?.home?.hero?.heroDesc}
               </p>
             </div>
-          </motion.div>
+          </div>
 
           <div className="flex flex-col gap-7    ">
             <div className="flex flex-row items-center gap-5">

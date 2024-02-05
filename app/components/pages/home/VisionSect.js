@@ -24,7 +24,7 @@ const VisionSect = () => {
         <div className="relative h-full max-w-[1100px] mx-auto p-3">
           {/* src="/images/home/vision/background.png" */}
           {/* className="w-full h-[150px] sm:h-[250px] md:h-[150px]  object-cover" */}
-          <div className="  mt-10 sm:mt-32 md:mt-10 flex items-center justify-center  mx-auto flex-col gap-10 ">
+          <div className="  mt-16 sm:mt-32 md:mt-10 flex items-center justify-center  mx-auto flex-col gap-10 ">
             <div className="px-3">
               <div className="flex flex-row gap-3 items-center ">
                 <p className="text-lg font-semibold">Vision</p>
@@ -36,7 +36,7 @@ const VisionSect = () => {
               </h4>
             </div>
           </div>
-          <div className="flex mt-5 flex-col  md:flex-row items-center w-full h-full justify-center pl-4 pb-10 gap-8">
+          <div className="flex mt-5 flex-col max-w-[1100px] mx-auto  md:flex-row items-center w-full h-full justify-center pl-4 pb-10 gap-8">
             {/* <img
               src="/images/about/message/chairman.jpg"
               className=" ml-[-10px] w-[300px] md:w-[400px] md:max-h-[320px] max-h-[300px] rounded-xl object-cover"

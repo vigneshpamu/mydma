@@ -36,7 +36,7 @@ const MembersSect = ({ dataArr }) => {
 
                 <Image
                   src={dataArr?.councilMembers?.chairman?.img}
-                  className="w-[200px] h-[240px] border-2 border-customColor rounded-lg z- 10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
+                  className="w-[200px]  border-2 border-customColor rounded-lg z- 10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
                   alt=""
                   height={40}
                   width={150}
@@ -71,7 +71,7 @@ const MembersSect = ({ dataArr }) => {
 
                   <Image
                     src={dataArr?.councilMembers?.vicePresident?.img}
-                    className="w-[200px] h-[240px] border-2 border-customColor rounded-lg  10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
+                    className="w-[200px]   border-2 border-customColor rounded-lg  10 absolute top-0 left-1/2 transform -translate-x-1/2   m-auto object-cover"
                     alt=""
                     height={40}
                     width={150}
@@ -103,7 +103,7 @@ const MembersSect = ({ dataArr }) => {
                   key={item.id}
                   className="relative w-full flex flex-col gap-3 items-center justify-between "
                 >
-                  <div className="w-[250px] h-[250px] rounded-lg border-2 border-customColor ">
+                  <div className="rounded-lg border-2 border-customColor ">
                     {/* <img
                       src={item.img}
                       className="w-full h-full rounded-lg object-cover"

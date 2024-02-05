@@ -156,7 +156,9 @@ const StickyNav = ({ start, end }) => {
               })}
             </div>
             <div className="w-[150px] flex items-center justify-end">
-              <img src="/images/home/vision/logo.png" className="" alt="" />
+              <Link href={`/`}>
+                <img src="/images/home/vision/logo.png" className="" alt="" />
+              </Link>
             </div>
           </div>
           <div className="w-[95%] hidden sm:block m-auto h-[3px] bg-gray-200 mt-0 mb-4 "></div>

@@ -121,11 +121,13 @@ const UpperNav = ({ setVisible }) => {
               })}
             </div>
             <div className="flex items-center justify-end ">
-              <img
-                src="/images/home/nav/logo/logo1.png"
-                className="w-[175px]"
-                alt=""
-              />
+              <Link href={`/`}>
+                <img
+                  src="/images/home/nav/logo/logo1.png"
+                  className="w-[175px]"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
           <div className="md:block h-[2px] bg-gray-100 mt-0 mb-6 hidden"></div>

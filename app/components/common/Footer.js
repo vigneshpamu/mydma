@@ -109,7 +109,7 @@ const Footer = () => {
                     <p className="text-xl lg:text-xl">Contact.</p>
                     <div className="w-[120px] h-[4px] rounded-lg bg-white"></div>
                   </div>
-                  <p className="text-xl font-semibold w-[100%] leading-tight tracking-wide">
+                  <p className="text-xl font-semibold w-[100%] leading-tight lg:text-2xl tracking-wide">
                     Connect with the DHA Sharjah.
                   </p>
                 </div>
@@ -180,7 +180,7 @@ const Footer = () => {
                   )
                 })}
               </div>
-              <div className="flex flex-col gap-10 justify-between sm:flex-col">
+              <div className="flex flex-col gap-10 justify-between sm:flex-col md:flex-row md:justify-start">
                 <div className="flex flex-row gap-2">
                   <Link href={'/'}>
                     <p>Privacy Policy</p>

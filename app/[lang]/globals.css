@@ -135,13 +135,13 @@
   /* text-align: right; */
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .common-nav-white {
     background-color: #fff;
     /* padding: 40px; */
     position: relative;
     transition-delay: 0s;
-    min-width: 370px;
+    min-width: 360px;
     /* border: 1px solid red; */
     box-shadow: 5px 2px 8px -7px rgba(0, 0, 0, 0.75);
   }

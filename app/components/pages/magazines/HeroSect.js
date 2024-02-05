@@ -14,34 +14,34 @@ const HeroSect = () => {
       img: '/images/home/magazine/1.png',
       link: '/magazines/info',
     },
-    {
-      id: 2,
-      title: 'DMA Magazine 22',
-      desc: '02 Dec 22',
-      img: '/images/home/magazine/2.png',
-      link: '/magazines/info',
-    },
-    {
-      id: 3,
-      title: 'DMA Magazine 21',
-      desc: '02 Dec 21',
-      img: '/images/home/magazine/3.png',
-      link: '/magazines/info',
-    },
-    {
-      id: 4,
-      title: 'DMA Magazine 20',
-      desc: '02 Dec 20',
-      img: '/images/home/magazine/4.png',
-      link: '/magazines/info',
-    },
-    {
-      id: 5,
-      title: 'DMA Magazine 20',
-      desc: '02 Dec 20',
-      img: '/images/home/magazine/5.png',
-      link: '/magazines/info',
-    },
+    // {
+    //   id: 2,
+    //   title: 'DMA Magazine 22',
+    //   desc: '02 Dec 22',
+    //   img: '/images/home/magazine/2.png',
+    //   link: '/magazines/info',
+    // },
+    // {
+    //   id: 3,
+    //   title: 'DMA Magazine 21',
+    //   desc: '02 Dec 21',
+    //   img: '/images/home/magazine/3.png',
+    //   link: '/magazines/info',
+    // },
+    // {
+    //   id: 4,
+    //   title: 'DMA Magazine 20',
+    //   desc: '02 Dec 20',
+    //   img: '/images/home/magazine/4.png',
+    //   link: '/magazines/info',
+    // },
+    // {
+    //   id: 5,
+    //   title: 'DMA Magazine 20',
+    //   desc: '02 Dec 20',
+    //   img: '/images/home/magazine/5.png',
+    //   link: '/magazines/info',
+    // },
   ]
   const router = useRouter()
   const pathname = usePathname()

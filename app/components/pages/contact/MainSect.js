@@ -7,7 +7,7 @@ const MainSect = () => {
     {
       id: 1,
       img: '/images/home/elements/map.png',
-      info: 'Cultural Square, Al Ramla East – Sharjah',
+      info: 'Cultural Square, Al Ramla East – Sharjah.',
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ const MainSect = () => {
                 Organizing and supervising the municipality’s activities in the
                 city of Sharjah and providing an integrated innovative services
                 system that exceeds the expectations of stakeholders, supported
-                by cadres
+                by cadres.
               </p>
             </div>
             <div className="bg-[#036C73]   p-7 flex flex-col lg:flex-row gap-8  ">
@@ -85,7 +85,7 @@ const MainSect = () => {
                 <div className="flex flex-row gap-3">
                   {socialData.map((item) => {
                     return (
-                      <Link href={item.link} key={item.id}>
+                      <Link href={item.link} target="_blank" key={item.id}>
                         <div>
                           <Image
                             src={item.icon}
@@ -116,7 +116,7 @@ const MainSect = () => {
             </div>
             <p className="w-[90%]">
               Fill details with your queries or messages in the below form and
-              submit to us, we will go through and take action
+              submit to us, we will go through and take action.
             </p>
             <div className="flex flex-col gap-6">
               <input
